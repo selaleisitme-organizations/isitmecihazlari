@@ -274,7 +274,7 @@ export default function UrunKatalogu() {
     <SEO 
       title="İşitme Cihazı Fiyatları ve Modelleri 2024 | Şelale İşitme Sarıyer"
       description="En yeni teknoloji işitme cihazı fiyatları ve modelleri. Görünmez kanal içi, kulak arkası ve şarj edilebilir cihazlar. Sarıyer işitme merkezi kataloğu."
-      keywords="işitme cihazı, isitme cihazi, işitme cihazı fiyatları, isitme cihazi fiyatlari, kulaklık fiyatları, görünmez işitme cihazı, gorunmez isitme cihazi, kanal içi işitme cihazı, kulak arkası işitme cihazı, sarıyer işitme, istanbul işitme cihazı, phonak, signia, widex, kulak cihazi, duyma cihazi, isitme testi, bluetooth işitme cihazı, şarj edilebilir işitme cihazı"
+      keywords="işitme cihazı, isitme cihazi, işitme cihazı fiyatları, isitme cihazi fiyatlari, kulaklık fiyatları, görünmez işitme cihazı, gorunmez isitme cihazi, kanal içi işitme cihazı, kulak arkası işitme cihazı, sarıyer işitme, istanbul işitme cihazı, kulak cihazi, duyma cihazi, isitme testi, bluetooth işitme cihazı, şarj edilebilir işitme cihazı"
       ogImage="/images/products/SR_Li_8.png"
       structuredData={structuredData}
     />
