@@ -20,8 +20,8 @@ export default function TerapiProgrami(){
    <>
       {/* SEO Meta Tags - Sayfanın başına eklenmelidir */}
       <SEO 
-        title="İşitsel Rehabilitasyon ve Terapi Programı | Şelale İşitme Merkezi İstanbul"
-        description="İstanbul Sarıyer'de işitme cihazı kullananlar için özel işitsel rehabilitasyon programları. Duyma, anlama ve iletişim becerilerinizi geliştirin. Randevu için arayın: 0532 275 24 14."
+        title="İşitsel Rehabilitasyon | Sarıyer Şelale İşitme"
+        description="Sarıyer Şelale İşitme Merkezi'nde işitme cihazı kullanımını destekleyen işitsel rehabilitasyon ve kişiye özel takip süreci hakkında bilgi alın."
         keywords="işitsel rehabilitasyon, işitme terapisi, işitme cihazı eğitimi, konuşma terapisi, işitme kaybı tedavisi, rehabilitasyon programı, odyoloji, isitme kaybi, isitme cihazi, seltes, seltes işitme, selale işitme, isitme terapisi istanbul, seltes işitme cihazı"
         ogImage="/images/kid.png" // Sayfadaki ilgili görseli kullanın
         structuredData={structuredData}
@@ -65,7 +65,7 @@ export default function TerapiProgrami(){
         <div className="flex justify-center py-6">
           <img
             src="/images/selaleLogo.jpeg"
-            alt="Şelale Logo"
+            alt="Şelale İşitme Merkezi Logosu"
             className="w-32 h-auto rounded-lg shadow-sm"
           />
         </div>
@@ -114,9 +114,9 @@ export default function TerapiProgrami(){
         
         {/*main code */ }
         <section id="isitme-rehabilitasyonu" className="max-w-6xl mx-auto my-16 px-6 bg-white rounded-xl shadow-md text-gray-800">
-  <h2 className="text-3xl font-semibold text-blue-900 border-l-4 border-blue-900 pl-3 mb-6">
+  <h1 className="text-3xl font-semibold text-blue-900 border-l-4 border-blue-900 pl-3 mb-6">
     İşitsel Rehabilitasyon
-  </h2>
+  </h1>
 
   <div className="flex flex-col lg:flex-row gap-8 items-start">
     {/* Text Column */}
