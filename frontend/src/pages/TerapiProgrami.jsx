@@ -21,7 +21,7 @@ export default function TerapiProgrami(){
       {/* SEO Meta Tags - Sayfanın başına eklenmelidir */}
       <SEO 
         title="İşitsel Rehabilitasyon | Sarıyer Şelale İşitme"
-        description="Sarıyer Şelale İşitme Merkezi'nde işitme cihazı kullanımını destekleyen işitsel rehabilitasyon ve kişiye özel takip süreci hakkında bilgi alın."
+        description="Sarıyer Şelale İşitme Merkezi'nde işitme cihazı kullanımını destekleyen işitsel rehabilitasyon ve kişiye özel takip süreci hakkında bilgi alın. Randevu için: 0532 275 24 14"
         keywords="işitsel rehabilitasyon, işitme terapisi, işitme cihazı eğitimi, konuşma terapisi, işitme kaybı tedavisi, rehabilitasyon programı, odyoloji, isitme kaybi, isitme cihazi, seltes, seltes işitme, selale işitme, isitme terapisi istanbul, seltes işitme cihazı"
         ogImage="/images/kid.png" // Sayfadaki ilgili görseli kullanın
         structuredData={structuredData}
