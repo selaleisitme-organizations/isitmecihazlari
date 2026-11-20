@@ -299,7 +299,7 @@ export default function Anasayfa() {
               <h1 className="text-6xl sm:text-7xl font-bold text-white leading-tight drop-shadow-2xl" style={{
                 textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)'
               }}>
-                Şelale İşitme Cihazı Merkezi
+                Sarıyer İşitme Cihazı Merkezi
               </h1>
 
               <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto leading-relaxed font-semibold drop-shadow-lg" style={{
