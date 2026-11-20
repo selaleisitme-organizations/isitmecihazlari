@@ -12,7 +12,9 @@ const SEO = ({
 }) => {
   const location = useLocation();
   // IMPORTANT: Replace this with your actual domain when you buy it
-  const siteUrl = 'http://localhost:5173'; // Change to 'https://yourdomain.com' after deployment
+  const siteUrl = import.meta.env.DEV
+  ? window.location.origin
+  : 'https://selaleisitme.com'; // Change to 'https://yourdomain.com' after deployment
   const fullUrl = canonical || `${siteUrl}${location.pathname}`;
 
   useEffect(() => {
