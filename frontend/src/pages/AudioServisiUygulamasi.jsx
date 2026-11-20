@@ -82,7 +82,7 @@ export default function AudioServis() {
           <div className="flex justify-center py-6">
             <img
               src="/images/selaleLogo.jpeg"
-              alt="Şelale işitme Merkezi Logosu"
+              alt="Şelale İşitme Merkezi Logosu"
               className="w-32 h-auto rounded-lg shadow-sm"
             />
           </div>
