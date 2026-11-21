@@ -115,7 +115,7 @@ export default function TerapiProgrami(){
         {/*main code */ }
         <section id="isitme-rehabilitasyonu" className="max-w-6xl mx-auto my-16 px-6 bg-white rounded-xl shadow-md text-gray-800">
   <h1 className="text-3xl font-semibold text-blue-900 border-l-4 border-blue-900 pl-3 mb-6">
-    İşitsel Rehabilitasyon
+    Sarıyer'de İşitsel Rehabilitasyon
   </h1>
 
   <div className="flex flex-col lg:flex-row gap-8 items-start">
@@ -153,7 +153,7 @@ export default function TerapiProgrami(){
     <div className="flex-1 flex justify-end">
       <img
         src="/images/kid.png"
-        alt="Kid with hearing device"
+        alt="İşitme cihazı kıllanan çocuk"
         className="max-w-full h-auto rounded-lg shadow-md"
       />
     </div>
