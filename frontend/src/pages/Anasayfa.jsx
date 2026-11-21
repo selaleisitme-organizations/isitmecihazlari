@@ -530,7 +530,7 @@ export default function Anasayfa() {
 <section className="py-24 bg-linear-to-br from-blue-50 to-purple-50"> {/* Sınıf düzeltildi */}
   <div className="max-w-6xl mx-auto px-6 text-center">
     <h2 className="text-4xl font-bold text-blue-900 mb-6">
-      İşitme Cihazı Kullanmak Neden Önemlidir?
+     Sarıyer'de İşitme Cihazı Seçimi ve Kullanımının Önemi
     </h2>
     <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-16">
       İşitme kaybı sadece sesleri duymakla ilgili değildir. Sosyal yaşam, zihinsel sağlık ve genel yaşam kalitesi üzerinde derin etkiler bırakabilir. 
