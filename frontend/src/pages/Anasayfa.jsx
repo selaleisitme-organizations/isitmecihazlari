@@ -91,12 +91,13 @@ export default function Anasayfa() {
   "url": "https://selaleisitme.com",
   "telephone": "+905322752414",
   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Merkez Mahallesi",
-    "addressLocality": "Sarıyer",
-    "addressRegion": "İstanbul",
-    "addressCountry": "TR"
-  },
+  "@type": "PostalAddress",
+  "streetAddress": "Merkez Mahallesi, Şehit Mithat Yılmaz Caddesi No:47 D:7",
+  "addressLocality": "Sarıyer",
+  "postalCode": "34396",
+  "addressRegion": "İstanbul",
+  "addressCountry": "TR"
+},
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": "41.1666",
