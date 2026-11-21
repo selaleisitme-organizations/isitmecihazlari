@@ -627,9 +627,9 @@ export default function Anasayfa() {
 
       {/* Text Content */}
       <div className="order-1 md:order-2 text-center md:text-left">
-        <h2 className="text-4xl font-bold text-blue-900 mb-6">
-          İşitme Testi
-        </h2>
+      <h2 className="text-4xl font-bold text-blue-900 mb-6">
+       Sarıyer'de İşitme Testi ve Değerlendirme
+       </h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           İşitme testi, mevcut işitme seviyenizi ve kulak sağlığınızı değerlendirmek için yapılan temel bir ölçümdür. Bu test sayesinde hangi frekanslarda ve ses düzeylerinde zorlandığınız belirlenir. Sonuçlara göre uzmanlarımız size özel bir değerlendirme sunar ve gerekirse uygun işitme cihazı veya terapi planı önerilir. Böylece hem işitme kaybınızın türü netleşir hem de en verimli çözüm yolu belirlenir.
         </p>
