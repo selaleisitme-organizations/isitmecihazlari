@@ -386,9 +386,10 @@ export default function Anasayfa() {
           ))}
         </div>
 
-        <p className="text-lg text-gray-700 mt-6 pt-6 border-t border-gray-300 italic">
-          Unutmayın, erken teşhis işitme sağlığında da fark yaratır.
-        </p>
+        <p className="text-lg text-gray-700 mt-6 leading-relaxed">
+        Şelale İşitme Merkezi olarak SGK kapsamında işitme cihazı desteği ve cihaz temin süreci hakkında danışmanlık sunuyoruz.
+        SGK desteğinden yararlanma koşulları ve güncel ödeme bilgileri hakkında detaylı bilgi almak için Sarıyer merkezimizle iletişime geçebilirsiniz.
+       </p>
       </div>
 
       {/* image */}
