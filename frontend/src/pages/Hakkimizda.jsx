@@ -1,5 +1,6 @@
 import { X, Menu, Phone, MapPin, Target, Zap, Heart } from 'lucide-react';
 import { useState } from 'react';
+import SEO from '../components/SEO';
 
 export default function Hakkimizda(){ 
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,7 +18,11 @@ export default function Hakkimizda(){
   ];
 
   return (
-   
+    <SEO
+  title="Şelale İşitme Merkezi | İstanbul"
+  description="Şelale İşitme Merkezi; İstanbul'da işitme cihazı seçimi, işitme değerlendirmesi ve kişiye özel işitme çözümleri sunar. Merkezimiz Sarıyer'dedir."
+  canonical="https://selaleisitme.com/hakkimizda"
+/>
     <div className="min-h-screen bg-white relative">
       {/* Menü Açma Butonu */}
       <button
