@@ -275,8 +275,8 @@ export default function UrunKatalogu() {
     <>
     {/* SEO Meta Tags */}
     <SEO 
-      title="İşitme Cihazı Modelleri | Şelale İşitme"
-      description="En yeni teknoloji işitme cihazı fiyatları ve modelleri. Görünmez kanal içi, kulak arkası ve şarj edilebilir cihazlar. Sarıyer işitme merkezi kataloğu."
+      title="İşitme Cihazı Modelleri | Sarıyer Şelale İşitme"
+      description="Sarıyer Şelale İşitme Merkezi'nin işitme cihazı kataloğunu keşfedin. RIC, BTE, CIC ve kulak içi modellerin özelliklerini inceleyin."
       keywords="işitme cihazı, isitme cihazi, işitme cihazı fiyatları, isitme cihazi fiyatlari, kulaklık fiyatları, görünmez işitme cihazı, gorunmez isitme cihazi, kanal içi işitme cihazı, kulak arkası işitme cihazı, sarıyer işitme, istanbul işitme cihazı, kulak cihazi, duyma cihazi, isitme testi, bluetooth işitme cihazı, şarj edilebilir işitme cihazı"
       ogImage="/images/products/SR_Li_8.png"
       structuredData={structuredData}
@@ -318,7 +318,7 @@ export default function UrunKatalogu() {
         <div className="flex justify-center py-6">
           <img
             src="/images/selaleLogo.jpeg"
-            alt="Şelale Logo"
+            alt="Şelale İşitme Merkezi Logosu"
             className="w-32 h-auto rounded-lg shadow-sm"
           />
         </div>

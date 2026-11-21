@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import SEO from '../components/SEO';
 import { ChevronLeft, ChevronRight, Check, Calendar, Clock, User, X, Menu, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import API_BASE_URL from '../config';
@@ -199,6 +200,11 @@ export default function RandevuSistemi() {
 
   return (
     <div className="min-h-screen bg-white relative">
+      <SEO
+  title="Sarıyer İşitme Testi ve Randevu | Şelale İşitme"
+  description="Sarıyer Şelale İşitme Merkezi'nde işitme testi ve değerlendirme için online randevu talebinizi oluşturun."
+  canonical="https://selaleisitme.com/randevu"
+/>
  {/*for navigation  */}
 
 <button
@@ -237,7 +243,7 @@ export default function RandevuSistemi() {
         <div className="flex justify-center py-6">
           <img
             src="/images/selaleLogo.jpeg"
-            alt="Şelale Logo"
+            alt="Şelale İşitme Merkezi Logosu"
             className="w-32 h-auto rounded-lg shadow-sm"
           />
         </div>
@@ -286,7 +292,7 @@ export default function RandevuSistemi() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Randevu Alın</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">Sarıyer İşitme Testi ve Randevu</h1>
           <p className="text-gray-600 text-lg">İşitme testiniz için bir randevu oluşturun</p>
         </div>
 

@@ -1,5 +1,6 @@
 import { X, Menu, Phone, MapPin, Target, Zap, Heart } from 'lucide-react';
 import { useState } from 'react';
+import SEO from '../components/SEO';
 
 export default function Hakkimizda(){ 
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,7 +18,11 @@ export default function Hakkimizda(){
   ];
 
   return (
-   
+    <SEO
+  title="Şelale İşitme Merkezi | İstanbul"
+  description="Şelale İşitme Merkezi; İstanbul'da işitme cihazı seçimi, işitme değerlendirmesi ve kişiye özel işitme çözümleri sunar. Merkezimiz Sarıyer'dedir."
+  canonical="https://selaleisitme.com/hakkimizda"
+/>
     <div className="min-h-screen bg-white relative">
       {/* Menü Açma Butonu */}
       <button
@@ -58,7 +63,7 @@ export default function Hakkimizda(){
           <img
            
             src="/images/selaleLogo.jpeg" 
-            alt="Şelale Logo"
+            alt="Şelale İşitme Merkezi Logosu"
             className="w-32 h-auto rounded-lg shadow-sm"
           />
         </div>
@@ -93,9 +98,9 @@ export default function Hakkimizda(){
       
       {/* Ana İçerik - Hakkımızda, Kurucu Profili, Vizyon ve Misyon */}
       <section id="hakkimizda-icerik" className="max-w-6xl mx-auto my-16 px-6 bg-white rounded-xl shadow-md text-gray-800 p-8 md:p-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 border-l-4 border-blue-900 pl-4 mb-10">
-          Hakkımızda
-        </h2>
+        <h1 className="text-3xl md:text-4xl font-extrabold text-blue-900 border-l-4 border-blue-900 pl-4 mb-10">
+          Şelale İşitme Hakkında
+        </h1>
 
         {/* 1. KURUCU PROFİLİ VE FOTOĞRAF */}
 <div className="flex flex-col md:flex-row items-center gap-8 mb-12 border-b pb-8 border-gray-100">
@@ -104,7 +109,7 @@ export default function Hakkimizda(){
     <div className="relative h-96 rounded-2xl shadow-2xl overflow-hidden mb-4">
       <img
         src="/images/Hakkimizda.png" 
-        alt="Fotoğraf"
+        alt="Şelale İşitme kurucusu Ody. Şelale Alağaş"
         className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
       />
     </div>

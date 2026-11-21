@@ -91,12 +91,13 @@ export default function Anasayfa() {
   "url": "https://selaleisitme.com",
   "telephone": "+905322752414",
   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Merkez Mahallesi",
-    "addressLocality": "Sarıyer",
-    "addressRegion": "İstanbul",
-    "addressCountry": "TR"
-  },
+  "@type": "PostalAddress",
+  "streetAddress": "Merkez Mahallesi, Şehit Mithat Yılmaz Caddesi No:47 D:7",
+  "addressLocality": "Sarıyer",
+  "postalCode": "34396",
+  "addressRegion": "İstanbul",
+  "addressCountry": "TR"
+},
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": "41.1666",
@@ -222,7 +223,7 @@ export default function Anasayfa() {
         <div className="flex justify-center py-6">
           <img
             src="/images/selaleLogo.jpeg"
-            alt="Şelale Logo"
+            alt="Şelale İşitme Merkezi Logosu"
             className="w-32 h-auto rounded-lg shadow-sm"
           />
         </div>
@@ -258,7 +259,7 @@ export default function Anasayfa() {
       <div className="fixed top-4 right-6 z-40">
         <img
           src="/images/selaleLogo.jpeg"
-          alt="Şelale Logo"
+          alt="Şelale İşitme Merkezi Logosu"
           className="w-20 h-auto rounded-lg shadow-md border border-gray-200"
         />
       </div>
@@ -299,7 +300,7 @@ export default function Anasayfa() {
               <h1 className="text-6xl sm:text-7xl font-bold text-white leading-tight drop-shadow-2xl" style={{
                 textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)'
               }}>
-                Şelale İşitme Cihazı Merkezi
+                Sarıyer İşitme Cihazı Merkezi
               </h1>
 
               <p className="text-xl sm:text-2xl text-white max-w-2xl mx-auto leading-relaxed font-semibold drop-shadow-lg" style={{
@@ -363,8 +364,7 @@ export default function Anasayfa() {
       <div>
         <h2 className="text-4xl font-bold text-blue-900 mb-6">Neden Şelale?</h2>
         <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-          Şelale İşitme Cihazları olarak Sarıyer'de, en kaliteli ürünleri ve profesyonel hizmet anlayışını bir araya getiriyoruz. Kurucumuz ve Yönetim Kurulu Başkanımız hipokrat yeminli Ody. Şelale Alağaş önderliğinde, her bireyin işitme ihtiyaçlarına en uygun çözümü sunmak için çalışıyoruz.
-        </p>
+         Şelale İşitme Merkezi olarak Sarıyer'de işitme cihazı seçimi, işitme testleri ve işitme sağlığı danışmanlığı alanlarında hizmet sunuyoruz. Kurucumuz ve Yönetim Kurulu Başkanımız Ody. Şelale Alağaş önderliğinde, bireylerin işitme ihtiyaçlarını değerlendirerek kendilerine uygun çözümleri belirlemelerine yardımcı oluyoruz. İstanbul'da işitme cihazı ve işitme merkezi arayanları Sarıyer'deki merkezimize bekliyoruz.        </p>
         <p className="text-lg text-gray-700 mb-6 leading-relaxed">
           Teknolojinin sunduğu en son yenilikleri takip ederek, yüksek performanslı işitme cihazlarını sizlerle buluşturuyoruz. Amacımız doğru bilgilendirme, güvenilir testler ve sürekli danışmanlık ile kulak sağlığınızı korumanıza yardımcı olmaktır.
         </p>
@@ -386,16 +386,17 @@ export default function Anasayfa() {
           ))}
         </div>
 
-        <p className="text-lg text-gray-700 mt-6 pt-6 border-t border-gray-300 italic">
-          Unutmayın, erken teşhis işitme sağlığında da fark yaratır.
-        </p>
+        <p className="text-lg text-gray-700 mt-6 leading-relaxed">
+        Şelale İşitme Merkezi olarak SGK kapsamında işitme cihazı desteği ve cihaz temin süreci hakkında danışmanlık sunuyoruz.
+        SGK desteğinden yararlanma koşulları ve güncel ödeme bilgileri hakkında detaylı bilgi almak için Sarıyer merkezimizle iletişime geçebilirsiniz.
+       </p>
       </div>
 
       {/* image */}
       <div className="relative h-96 rounded-2xl shadow-2xl overflow-hidden">
         <img
           src="/images/NedenSelale.jpeg"
-          alt="Neden Şelale"
+          alt="Neden Şelale "
           className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
         />
       </div>
@@ -497,7 +498,7 @@ export default function Anasayfa() {
                     <div className={`rounded-2xl overflow-hidden shadow-2xl ${isCurrent ? 'ring-4 ring-blue-500' : ''}`}>
                       <img
                         src={image}
-                        alt={`Carousel ${index + 1}`}
+                        alt={`Şelale İşitme Merkezi hizmet ve çalışma alanları görseli ${index + 1}`}
                         className="w-[400px] h-[400px] object-cover"
                       />
                     </div>
@@ -530,7 +531,7 @@ export default function Anasayfa() {
 <section className="py-24 bg-linear-to-br from-blue-50 to-purple-50"> {/* Sınıf düzeltildi */}
   <div className="max-w-6xl mx-auto px-6 text-center">
     <h2 className="text-4xl font-bold text-blue-900 mb-6">
-      İşitme Cihazı Kullanmak Neden Önemlidir?
+     Sarıyer'de İşitme Cihazı Seçimi ve Kullanımının Önemi
     </h2>
     <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-16">
       İşitme kaybı sadece sesleri duymakla ilgili değildir. Sosyal yaşam, zihinsel sağlık ve genel yaşam kalitesi üzerinde derin etkiler bırakabilir. 
@@ -587,7 +588,7 @@ export default function Anasayfa() {
           <img
             key={index}
             src={image}
-            alt={`İşitme Testi Görseli ${index + 1}`}
+            alt={`Şelale İşitme Merkezi işitme testi görseli ${index + 1}`}
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
               currentTestImage === index ? 'opacity-100' : 'opacity-0'
             }`}
@@ -627,9 +628,9 @@ export default function Anasayfa() {
 
       {/* Text Content */}
       <div className="order-1 md:order-2 text-center md:text-left">
-        <h2 className="text-4xl font-bold text-blue-900 mb-6">
-          İşitme Testi
-        </h2>
+      <h2 className="text-4xl font-bold text-blue-900 mb-6">
+       Sarıyer'de İşitme Testi ve Değerlendirme
+       </h2>
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
           İşitme testi, mevcut işitme seviyenizi ve kulak sağlığınızı değerlendirmek için yapılan temel bir ölçümdür. Bu test sayesinde hangi frekanslarda ve ses düzeylerinde zorlandığınız belirlenir. Sonuçlara göre uzmanlarımız size özel bir değerlendirme sunar ve gerekirse uygun işitme cihazı veya terapi planı önerilir. Böylece hem işitme kaybınızın türü netleşir hem de en verimli çözüm yolu belirlenir.
         </p>
@@ -665,7 +666,7 @@ export default function Anasayfa() {
   </div>
 
   <div className="max-w-6xl mx-auto px-4 relative z-10">
-    <h2 className="text-4xl font-bold mb-16 text-center">Bize Ulaşın</h2>
+    <h2 className="text-4xl font-bold mb-16 text-center">Sarıyer Şelale İşitme Merkezi İletişim ve Ulaşım</h2>
 
     <div className="grid md:grid-cols-2 gap-8">
       {/* Left card: Phone & Hours */}
