@@ -51,11 +51,11 @@ const SEO = ({
     updateMetaTag('og:site_name', 'Şelale İşitme Merkezi', true);
 
     // Twitter tags
-    updateMetaTag('twitter:card', 'summary_large_image', true);
-    updateMetaTag('twitter:title', title, true);
-    updateMetaTag('twitter:description', description, true);
-    updateMetaTag('twitter:image', `${siteUrl}${ogImage}`, true);
-    updateMetaTag('twitter:url', fullUrl, true);
+    updateMetaTag('twitter:card', 'summary_large_image');
+    updateMetaTag('twitter:title', title);
+    updateMetaTag('twitter:description', description);
+    updateMetaTag('twitter:image', `${siteUrl}${ogImage}`);
+    updateMetaTag('twitter:url', fullUrl);
 
     // Update canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
