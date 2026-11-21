@@ -12,4 +12,4 @@ Crawl-delay: 1
 
 # Sitemap location
 # IMPORTANT: Update this URL when you buy your domain!
-Sitemap: http://localhost:5173/sitemap.xml
+Sitemap: https://selaleisitme.com/sitemap.xml

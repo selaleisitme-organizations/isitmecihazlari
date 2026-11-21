@@ -16,17 +16,20 @@ export default function UrunKatalogu() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "İşitme Cihazı Modelleri ve Fiyatları",
+    "name": "İşitme Cihazı Modelleri",
     "description": "Sarıyer Şelale İşitme Merkezi'nde en yeni teknoloji RIC, BTE, CIC ve görünmez işitme cihazları. Bluetooth'lu ve şarj edilebilir modeller.",
     "provider": {
       "@type": "MedicalBusiness",
       "name": "Şelale İşitme Merkezi",
       "telephone": "0532 275 24 14",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Sarıyer",
-        "addressRegion": "İstanbul"
-      }
+     "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Şht. Mithat Yılmaz Cd. No:47 D:7",
+     "addressLocality": "Sarıyer",
+     "postalCode": "34396",
+     "addressRegion": "İstanbul",
+    "addressCountry": "TR"
+}
     },
     "mainEntity": {
       "@type": "ItemList",
@@ -365,7 +368,7 @@ export default function UrunKatalogu() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
 
         <h1 className="text-5xl font-bold text-blue-900">
-          Ürün Kataloğu
+          Sarıyer İşitme Cihazı Modelleri
         </h1>
         <p className="text-blue-900 text-lg mt-4">
           En yeni işitme cihazlarını keşfedin
