@@ -222,7 +222,7 @@ export default function Anasayfa() {
         <div className="flex justify-center py-6">
           <img
             src="/images/selaleLogo.jpeg"
-            alt="Şelale Logo"
+            alt="Şelale İşitme Merkezi Logosu"
             className="w-32 h-auto rounded-lg shadow-sm"
           />
         </div>
@@ -258,7 +258,7 @@ export default function Anasayfa() {
       <div className="fixed top-4 right-6 z-40">
         <img
           src="/images/selaleLogo.jpeg"
-          alt="Şelale Logo"
+          alt="Şelale İşitme Merkezi Logosu"
           className="w-20 h-auto rounded-lg shadow-md border border-gray-200"
         />
       </div>
@@ -395,7 +395,7 @@ export default function Anasayfa() {
       <div className="relative h-96 rounded-2xl shadow-2xl overflow-hidden">
         <img
           src="/images/NedenSelale.jpeg"
-          alt="Neden Şelale"
+          alt="Neden Şelale "
           className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
         />
       </div>
@@ -497,7 +497,7 @@ export default function Anasayfa() {
                     <div className={`rounded-2xl overflow-hidden shadow-2xl ${isCurrent ? 'ring-4 ring-blue-500' : ''}`}>
                       <img
                         src={image}
-                        alt={`Carousel ${index + 1}`}
+                        alt={`Şelale İşitme Merkezi hizmet ve çalışma alanları görseli ${index + 1}`}
                         className="w-[400px] h-[400px] object-cover"
                       />
                     </div>
@@ -587,7 +587,7 @@ export default function Anasayfa() {
           <img
             key={index}
             src={image}
-            alt={`İşitme Testi Görseli ${index + 1}`}
+            alt={`Şelale İşitme Merkezi işitme testi görseli ${index + 1}`}
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
               currentTestImage === index ? 'opacity-100' : 'opacity-0'
             }`}
