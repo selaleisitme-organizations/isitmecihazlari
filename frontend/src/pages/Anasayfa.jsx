@@ -666,7 +666,7 @@ export default function Anasayfa() {
   </div>
 
   <div className="max-w-6xl mx-auto px-4 relative z-10">
-    <h2 className="text-4xl font-bold mb-16 text-center">Bize Ulaşın</h2>
+    <h2 className="text-4xl font-bold mb-16 text-center">Sarıyer Şelale İşitme Merkezi İletişim ve Ulaşım</h2>
 
     <div className="grid md:grid-cols-2 gap-8">
       {/* Left card: Phone & Hours */}
