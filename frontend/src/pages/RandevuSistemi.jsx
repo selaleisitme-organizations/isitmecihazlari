@@ -292,7 +292,7 @@ export default function RandevuSistemi() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Randevu Alın</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">Sarıyer İşitme Testi ve Randevu</h1>
           <p className="text-gray-600 text-lg">İşitme testiniz için bir randevu oluşturun</p>
         </div>
 
