@@ -223,6 +223,9 @@ export default function OnlineTest(){
 
       {/* Ana İçerik */}
       <section className="max-w-3xl mx-auto my-12 px-4 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">
+  Ücretsiz Online İşitme Testi
+</h1>
         {!headphonesChecked && step === 0 && (
           <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-8 mb-8">
             <Headphones className="w-16 h-16 text-blue-900 mx-auto mb-4" />
