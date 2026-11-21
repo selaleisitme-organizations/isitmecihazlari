@@ -364,8 +364,7 @@ export default function Anasayfa() {
       <div>
         <h2 className="text-4xl font-bold text-blue-900 mb-6">Neden Şelale?</h2>
         <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-          Şelale İşitme Cihazları olarak Sarıyer'de, en kaliteli ürünleri ve profesyonel hizmet anlayışını bir araya getiriyoruz. Kurucumuz ve Yönetim Kurulu Başkanımız hipokrat yeminli Ody. Şelale Alağaş önderliğinde, her bireyin işitme ihtiyaçlarına en uygun çözümü sunmak için çalışıyoruz.
-        </p>
+         Şelale İşitme Merkezi olarak Sarıyer'de işitme cihazı seçimi, işitme testleri ve işitme sağlığı danışmanlığı alanlarında hizmet sunuyoruz. Kurucumuz ve Yönetim Kurulu Başkanımız Ody. Şelale Alağaş önderliğinde, bireylerin işitme ihtiyaçlarını değerlendirerek kendilerine uygun çözümleri belirlemelerine yardımcı oluyoruz. İstanbul'da işitme cihazı ve işitme merkezi arayanları Sarıyer'deki merkezimize bekliyoruz.        </p>
         <p className="text-lg text-gray-700 mb-6 leading-relaxed">
           Teknolojinin sunduğu en son yenilikleri takip ederek, yüksek performanslı işitme cihazlarını sizlerle buluşturuyoruz. Amacımız doğru bilgilendirme, güvenilir testler ve sürekli danışmanlık ile kulak sağlığınızı korumanıza yardımcı olmaktır.
         </p>
