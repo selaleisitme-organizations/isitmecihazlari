@@ -1,15 +1,16 @@
+
 import { useEffect, useMemo, useState } from "react";
-import "./ModernRandevu.css";
+import "./RandevuForm.css";
 
-// Vercel frontend project's existing environment variable.
-// This must be the BACKEND URL, never a Supabase secret key.
-const API_BASE = (import.meta.env.VITE_API_URL || "").replace(/\/+$/, "");
+const API_BASE = (import.meta.env.VITE_API_URL || "")
+  .replace(/\/+$/, "");
 
-// EXAMPLE working hours. Match these with the clinic's real schedule before publishing.
 const TIME_SLOTS = [
-  "09:00", "09:30", "10:00", "10:30", "11:00", "11:30",
-  "12:00", "12:30", "13:00", "13:30", "14:00", "14:30",
-  "15:00", "15:30", "16:00", "16:30", "17:00", "17:30",
+  "09:00", "09:30", "10:00", "10:30",
+  "11:00", "11:30", "12:00", "12:30",
+  "13:00", "13:30", "14:00", "14:30",
+  "15:00", "15:30", "16:00", "16:30",
+  "17:00", "17:30",
 ];
 
 const TOPICS = [
@@ -33,6 +34,7 @@ function Icon({ name, size = 20, className = "" }) {
     className,
     "aria-hidden": true,
   };
+
   const paths = {
     arrow: <><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></>,
     back: <><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></>,
@@ -41,19 +43,24 @@ function Icon({ name, size = 20, className = "" }) {
     check: <><path d="m5 12 4 4L19 6"/></>,
     shield: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></>,
     heart: <><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></>,
-    mail: <><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></>,
-    phone: <><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.7 19.7 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3A2 2 0 0 1 9 3.7l.7 3a2 2 0 0 1-.6 1.9L7 10.5a16 16 0 0 0 6.5 6.5l1.9-2.1a2 2 0 0 1 1.9-.6l3 .7a2 2 0 0 1 1.7 1.9Z"/></>,
-    sparkle: <><path d="m12 3 1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3Z"/><path d="m19 17 .5 1.5L21 19l-1.5.5L19 21l-.5-1.5L17 19l1.5-.5L19 17Z"/></>,
+    sparkle: <><path d="m12 3 1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3Z"/></>,
   };
+
   return <svg {...common}>{paths[name] || paths.check}</svg>;
 }
 
 function turkeyToday() {
   const parts = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/Istanbul",
-    year: "numeric", month: "2-digit", day: "2-digit",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
   }).formatToParts(new Date());
-  const values = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+
+  const values = Object.fromEntries(
+    parts.map(({ type, value }) => [type, value])
+  );
+
   return `${values.year}-${values.month}-${values.day}`;
 }
 
@@ -65,16 +72,28 @@ function maxBookableDay(today) {
 
 function formatTurkishDate(day) {
   if (!day) return "Henüz seçilmedi";
+
   const date = new Date(`${day}T12:00:00Z`);
   return new Intl.DateTimeFormat("tr-TR", {
-    day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
   }).format(date);
 }
 
-const initialForm = { name: "", phone: "", email: "", age: "", topic: "", note: "" };
+const initialForm = {
+  name: "",
+  phone: "",
+  email: "",
+  age: "",
+  topic: "",
+  note: "",
+};
 
-export default function ModernRandevu() {
+export default function RandevuForm() {
   const today = turkeyToday();
+
   const [form, setForm] = useState(initialForm);
   const [day, setDay] = useState("");
   const [time, setTime] = useState("");
@@ -83,7 +102,7 @@ export default function ModernRandevu() {
   const [availabilityError, setAvailabilityError] = useState("");
   const [reloadKey, setReloadKey] = useState(0);
   const [consent, setConsent] = useState(false);
-  const [website, setWebsite] = useState(""); // bot honeypot
+  const [website, setWebsite] = useState("");
   const [sending, setSending] = useState(false);
   const [submitError, setSubmitError] = useState("");
   const [completed, setCompleted] = useState(null);
@@ -98,13 +117,15 @@ export default function ModernRandevu() {
       setAvailabilityError("");
       return;
     }
+
     if (!API_BASE) {
       setAvailabilityState("error");
-      setAvailabilityError("Backend adresi tanımlanmamış (VITE_API_URL). Site yöneticisine bildirin.");
+      setAvailabilityError("Backend adresi tanımlanmamış.");
       return;
     }
 
     const controller = new AbortController();
+
     setAvailabilityState("loading");
     setAvailabilityError("");
     setBookedTimes([]);
@@ -116,25 +137,39 @@ export default function ModernRandevu() {
           `${API_BASE}/api/appointments/booked?date=${encodeURIComponent(day)}`,
           { signal: controller.signal }
         );
+
         const json = await response.json().catch(() => ({}));
+
         if (!response.ok || !Array.isArray(json.times)) {
-          throw new Error(json.error || "Uygun saatler şu anda alınamıyor.");
+          throw new Error(
+            json.error || "Uygun saatler şu anda alınamıyor."
+          );
         }
+
         setBookedTimes(json.times);
         setAvailabilityState("ready");
       } catch (error) {
         if (error.name === "AbortError") return;
+
         setAvailabilityState("error");
-        setAvailabilityError(error.message || "Saatler yüklenemedi.");
+        setAvailabilityError(
+          error.message || "Saatler yüklenemedi."
+        );
       }
     }
+
     loadTimes();
     return () => controller.abort();
   }, [day, reloadKey]);
 
   function updateField(event) {
     const { name, value } = event.target;
-    setForm(current => ({ ...current, [name]: value }));
+
+    setForm(current => ({
+      ...current,
+      [name]: value,
+    }));
+
     setSubmitError("");
   }
 
@@ -146,76 +181,124 @@ export default function ModernRandevu() {
 
   function isInPast(selectedTime) {
     if (!day) return false;
-    return new Date(`${day}T${selectedTime}:00+03:00`).getTime() <= Date.now();
+
+    return new Date(
+      `${day}T${selectedTime}:00+03:00`
+    ).getTime() <= Date.now();
   }
 
   async function submit(event) {
     event.preventDefault();
     setSubmitError("");
+
     if (sending) return;
 
-    if (!form.name.trim() || !form.phone.trim() || !form.email.trim()) {
-      setSubmitError("Ad soyad, telefon ve e-posta alanlarını doldurun.");
+    if (
+      !form.name.trim() ||
+      !form.phone.trim() ||
+      !form.email.trim()
+    ) {
+      setSubmitError(
+        "Ad soyad, telefon ve e-posta alanlarını doldurun."
+      );
       return;
     }
+
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
       setSubmitError("Geçerli bir e-posta adresi girin.");
       return;
     }
+
     const phoneDigits = form.phone.replace(/\D/g, "");
+
     if (phoneDigits.length < 10 || phoneDigits.length > 15) {
       setSubmitError("Geçerli bir telefon numarası girin.");
       return;
     }
-    if (form.age !== "" && (!Number.isInteger(Number(form.age)) || Number(form.age) < 0 || Number(form.age) > 120)) {
+
+    if (
+      form.age !== "" &&
+      (
+        !Number.isInteger(Number(form.age)) ||
+        Number(form.age) < 0 ||
+        Number(form.age) > 120
+      )
+    ) {
       setSubmitError("Yaş 0 ile 120 arasında olmalıdır.");
       return;
     }
-    if (!day || !time || availabilityState !== "ready" || busySet.has(time) || isInPast(time)) {
+
+    if (
+      !day ||
+      !time ||
+      availabilityState !== "ready" ||
+      busySet.has(time) ||
+      isInPast(time)
+    ) {
       setSubmitError("Lütfen uygun bir tarih ve saat seçin.");
       return;
     }
+
     if (!consent) {
-      setSubmitError("Lütfen kişisel veri bilgilendirmesini okuyup onaylayın.");
+      setSubmitError(
+        "Lütfen kişisel veri bilgilendirmesini okuyup onaylayın."
+      );
       return;
     }
 
-    const issue = [form.topic, form.note.trim()].filter(Boolean).join(" — ");
+    const issue = [
+      form.topic,
+      form.note.trim()
+    ].filter(Boolean).join(" — ");
+
     const payload = {
       name: form.name.trim(),
       phone: form.phone.trim(),
       email: form.email.trim(),
       age: form.age === "" ? null : Number(form.age),
       issue: issue || "",
-      date: day, // YYYY-MM-DD is compatible with the existing backend code
-      time,       // HH:mm is compatible with appointment_time check constraint
-      website,    // honeypot: humans leave this empty
+      date: day,
+      time,
+      website,
     };
 
     setSending(true);
+
     try {
-      const response = await fetch(`${API_BASE}/api/appointments`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        `${API_BASE}/api/appointments`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
       const json = await response.json().catch(() => ({}));
 
       if (response.status === 409) {
         setTime("");
         setReloadKey(value => value + 1);
-        setSubmitError(json.error || "Bu saat doldu. Başka bir saat seçin.");
+        setSubmitError(
+          json.error || "Bu saat doldu. Başka bir saat seçin."
+        );
         return;
       }
+
       if (!response.ok) {
-        throw new Error(json.error || "Randevu talebiniz doğrulanamadı.");
+        throw new Error(
+          json.error || "Randevu talebiniz doğrulanamadı."
+        );
       }
 
-      setCompleted({ name: form.name.trim(), day, time });
+      setCompleted({
+        name: form.name.trim(),
+        day,
+        time
+      });
     } catch (error) {
-      // The current backend saves first, then sends email. A failed notification
-      // may return 500 even though the record was inserted. Avoid encouraging
-      // repeat submissions until that backend behavior is corrected.
       setSubmitError(
         `Talebinizin kaydedildiği doğrulanamadı. Tekrar göndermeden önce işletmeyle iletişime geçin. (${error.message})`
       );
@@ -241,114 +324,402 @@ export default function ModernRandevu() {
       <div className="sf-orb sf-orb-two" aria-hidden="true" />
 
       <header className="sf-header">
-        <a href="https://www.selaleisitme.com/" className="sf-brand" aria-label="Şelale İşitme ana sayfası">
-          <span className="sf-brand-mark"><Icon name="heart" size={23} /></span>
+        <a
+          href="https://www.selaleisitme.com/"
+          className="sf-brand"
+        >
+          <span className="sf-brand-mark">
+            <Icon name="heart" size={23} />
+          </span>
+
           <span className="sf-brand-copy">
             <strong>Şelale İşitme</strong>
             <small>İşitme Cihazları Merkezi</small>
           </span>
         </a>
-        <a className="sf-home-link" href="https://www.selaleisitme.com/">
-          <Icon name="back" size={16} /> <span>Ana siteye dön</span>
+
+        <a
+          className="sf-home-link"
+          href="https://www.selaleisitme.com/"
+        >
+          <Icon name="back" size={16} />
+          <span>Ana siteye dön</span>
         </a>
       </header>
 
       <main className="sf-layout">
-        <section className="sf-intro" aria-labelledby="sf-intro-heading">
-          <span className="sf-eyebrow"><Icon name="sparkle" size={17} /> ONLINE RANDEVU</span>
-          <h1 id="sf-intro-heading">Daha iyi duymak için <em>ilk adımı</em> atın.</h1>
+        <section className="sf-intro">
+          <span className="sf-eyebrow">
+            <Icon name="sparkle" size={17} />
+            ONLINE RANDEVU
+          </span>
+
+          <h1>
+            Daha iyi duymak için <em>ilk adımı</em> atın.
+          </h1>
+
           <p className="sf-intro-text">
-            Size uygun günü ve saati seçin. Randevu talebinizi birkaç kolay adımda oluşturun.
+            Size uygun günü ve saati seçin.
+            Randevu talebinizi birkaç kolay adımda oluşturun.
           </p>
-          <div className="sf-steps" aria-label="Randevu süreci">
-            <div className="sf-step"><span className="sf-step-icon"><Icon name="calendar" size={21}/></span><span><strong>01 · Tarihinizi seçin</strong><small>Size uygun günü ve saati belirleyin.</small></span></div>
-            <div className="sf-step"><span className="sf-step-icon"><Icon name="heart" size={21}/></span><span><strong>02 · Bilgilerinizi paylaşın</strong><small>Kısa randevu talep formunu doldurun.</small></span></div>
-            <div className="sf-step"><span className="sf-step-icon"><Icon name="check" size={21}/></span><span><strong>03 · Onay bekleyin</strong><small>Ekibimiz randevunuzu değerlendirsin.</small></span></div>
+
+          <div className="sf-steps">
+            <div className="sf-step">
+              <span className="sf-step-icon">
+                <Icon name="calendar" size={21} />
+              </span>
+              <span>
+                <strong>01 · Tarihinizi seçin</strong>
+                <small>Size uygun günü ve saati belirleyin.</small>
+              </span>
+            </div>
+
+            <div className="sf-step">
+              <span className="sf-step-icon">
+                <Icon name="heart" size={21} />
+              </span>
+              <span>
+                <strong>02 · Bilgilerinizi paylaşın</strong>
+                <small>Kısa randevu talep formunu doldurun.</small>
+              </span>
+            </div>
+
+            <div className="sf-step">
+              <span className="sf-step-icon">
+                <Icon name="check" size={21} />
+              </span>
+              <span>
+                <strong>03 · Onay bekleyin</strong>
+                <small>Ekibimiz randevunuzu değerlendirsin.</small>
+              </span>
+            </div>
           </div>
-          <div className="sf-intro-footer"><Icon name="shield" size={18} /> Bilgileriniz yalnızca randevu sürecinde kullanılır.</div>
+
+          <div className="sf-intro-footer">
+            <Icon name="shield" size={18} />
+            Bilgileriniz yalnızca randevu sürecinde kullanılır.
+          </div>
         </section>
 
-        <section className="sf-form-card" aria-labelledby="sf-form-heading">
+        <section className="sf-form-card">
           {completed ? (
-            <div className="sf-success" role="status" aria-live="polite">
-              <span className="sf-success-icon"><Icon name="check" size={39}/></span>
-              <span className="sf-mini-kicker">TALEP ALINDI</span>
+            <div className="sf-success" role="status">
+              <span className="sf-success-icon">
+                <Icon name="check" size={39} />
+              </span>
+
+              <span className="sf-mini-kicker">
+                TALEP ALINDI
+              </span>
+
               <h2>Randevu talebiniz ulaştı!</h2>
-              <p>Teşekkürler, <strong>{completed.name}</strong>. Talebiniz incelemeye alındı; randevunuz henüz kesinleşmedi.</p>
+
+              <p>
+                Teşekkürler, <strong>{completed.name}</strong>.
+                Talebiniz incelemeye alındı;
+                randevunuz henüz kesinleşmedi.
+              </p>
+
               <div className="sf-confirmation">
-                <span><Icon name="calendar" size={17}/> {formatTurkishDate(completed.day)}</span>
-                <span><Icon name="clock" size={17}/> {completed.time}</span>
+                <span>
+                  <Icon name="calendar" size={17} />
+                  {formatTurkishDate(completed.day)}
+                </span>
+                <span>
+                  <Icon name="clock" size={17} />
+                  {completed.time}
+                </span>
               </div>
-              <button type="button" className="sf-primary" onClick={startAgain}>Yeni randevu talebi <Icon name="arrow" size={19}/></button>
-              <a className="sf-secondary-link" href="https://www.selaleisitme.com/">Ana sayfaya dön</a>
+
+              <button
+                type="button"
+                className="sf-primary"
+                onClick={startAgain}
+              >
+                Yeni randevu talebi
+                <Icon name="arrow" size={19} />
+              </button>
+
+              <a
+                className="sf-secondary-link"
+                href="https://www.selaleisitme.com/"
+              >
+                Ana sayfaya dön
+              </a>
             </div>
           ) : (
             <>
               <div className="sf-form-heading">
-                <span className="sf-mini-kicker">RANDEVU OLUŞTUR</span>
-                <h2 id="sf-form-heading">Sizin için uygun zamanı bulalım.</h2>
+                <span className="sf-mini-kicker">
+                  RANDEVU OLUŞTUR
+                </span>
+                <h2>Sizin için uygun zamanı bulalım.</h2>
                 <p>Yıldızlı (*) alanlar zorunludur.</p>
               </div>
 
               <form className="sf-form" onSubmit={submit}>
-                <div className="sf-section-heading"><span>1</span><strong>İletişim bilgileriniz</strong></div>
-                <div className="sf-fields">
-                  <label className="sf-field sf-field-wide"><span>Ad Soyad *</span><input name="name" value={form.name} onChange={updateField} placeholder="Adınız ve soyadınız" autoComplete="name" maxLength={120} required/></label>
-                  <label className="sf-field"><span>Telefon *</span><input type="tel" name="phone" value={form.phone} onChange={updateField} placeholder="05XX XXX XX XX" autoComplete="tel" maxLength={24} required/></label>
-                  <label className="sf-field"><span>E-posta *</span><input type="email" name="email" value={form.email} onChange={updateField} placeholder="ornek@mail.com" autoComplete="email" maxLength={180} required/></label>
-                  <label className="sf-field sf-age-field"><span>Yaş <small>(isteğe bağlı)</small></span><input name="age" type="number" min="0" max="120" step="1" value={form.age} onChange={updateField} placeholder="Örn. 32" /></label>
-                  <label className="sf-field sf-topic-field"><span>Başvuru konusu <small>(isteğe bağlı)</small></span><select name="topic" value={form.topic} onChange={updateField}><option value="">Konu seçiniz</option>{TOPICS.map(topic => <option key={topic} value={topic}>{topic}</option>)}</select></label>
+                <div className="sf-section-heading">
+                  <span>1</span>
+                  <strong>İletişim bilgileriniz</strong>
                 </div>
 
-                <div className="sf-section-heading sf-second"><span>2</span><strong>Randevu tarihi ve saati</strong></div>
-                <div className="sf-date-label"><Icon name="calendar" size={18}/><span>Randevu günü *</span></div>
-                <input className="sf-date-picker" type="date" min={today} max={maxDay} value={day} onChange={changeDay} required aria-label="Randevu günü" />
+                <div className="sf-fields">
+                  <label className="sf-field sf-field-wide">
+                    <span>Ad Soyad *</span>
+                    <input
+                      name="name"
+                      value={form.name}
+                      onChange={updateField}
+                      placeholder="Adınız ve soyadınız"
+                      autoComplete="name"
+                      maxLength={120}
+                      required
+                    />
+                  </label>
 
-                <div className="sf-time-title"><span><Icon name="clock" size={18}/> Uygun saatler *</span><small>Türkiye saati (GMT+3)</small></div>
-                {!day && <p className="sf-hint">Uygun saatleri görmek için önce tarih seçin.</p>}
-                {day && availabilityState === "loading" && <p className="sf-hint" role="status">Uygun saatler kontrol ediliyor...</p>}
-                {day && availabilityState === "error" && <div className="sf-inline-error" role="alert">{availabilityError}<button type="button" onClick={() => setReloadKey(value => value + 1)}>Tekrar dene</button></div>}
+                  <label className="sf-field">
+                    <span>Telefon *</span>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={form.phone}
+                      onChange={updateField}
+                      placeholder="05XX XXX XX XX"
+                      autoComplete="tel"
+                      maxLength={24}
+                      required
+                    />
+                  </label>
+
+                  <label className="sf-field">
+                    <span>E-posta *</span>
+                    <input
+                      type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={updateField}
+                      placeholder="ornek@mail.com"
+                      autoComplete="email"
+                      maxLength={180}
+                      required
+                    />
+                  </label>
+
+                  <label className="sf-field sf-age-field">
+                    <span>Yaş (isteğe bağlı)</span>
+                    <input
+                      name="age"
+                      type="number"
+                      min="0"
+                      max="120"
+                      step="1"
+                      value={form.age}
+                      onChange={updateField}
+                      placeholder="Örn. 32"
+                    />
+                  </label>
+
+                  <label className="sf-field sf-topic-field">
+                    <span>Başvuru konusu (isteğe bağlı)</span>
+                    <select
+                      name="topic"
+                      value={form.topic}
+                      onChange={updateField}
+                    >
+                      <option value="">Konu seçiniz</option>
+                      {TOPICS.map(topic => (
+                        <option key={topic} value={topic}>
+                          {topic}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                </div>
+
+                <div className="sf-section-heading sf-second">
+                  <span>2</span>
+                  <strong>Randevu tarihi ve saati</strong>
+                </div>
+
+                <div className="sf-date-label">
+                  <Icon name="calendar" size={18} />
+                  <span>Randevu günü *</span>
+                </div>
+
+                <input
+                  className="sf-date-picker"
+                  type="date"
+                  min={today}
+                  max={maxDay}
+                  value={day}
+                  onChange={changeDay}
+                  required
+                />
+
+                <div className="sf-time-title">
+                  <span>
+                    <Icon name="clock" size={18} />
+                    Uygun saatler *
+                  </span>
+                  <small>Türkiye saati (GMT+3)</small>
+                </div>
+
+                {!day && (
+                  <p className="sf-hint">
+                    Uygun saatleri görmek için önce tarih seçin.
+                  </p>
+                )}
+
+                {day && availabilityState === "loading" && (
+                  <p className="sf-hint">
+                    Uygun saatler kontrol ediliyor...
+                  </p>
+                )}
+
+                {day && availabilityState === "error" && (
+                  <div className="sf-inline-error">
+                    {availabilityError}
+                    <button
+                      type="button"
+                      onClick={() => setReloadKey(x => x + 1)}
+                    >
+                      Tekrar dene
+                    </button>
+                  </div>
+                )}
+
                 {day && availabilityState === "ready" && (
-                  <div className="sf-time-grid" role="group" aria-label="Randevu saatleri">
+                  <div className="sf-time-grid">
                     {TIME_SLOTS.map(slot => {
-                      const unavailable = busySet.has(slot) || isInPast(slot);
+                      const unavailable =
+                        busySet.has(slot) || isInPast(slot);
+
                       return (
                         <button
                           key={slot}
                           type="button"
                           disabled={unavailable}
                           aria-pressed={time === slot}
-                          aria-label={`${slot}${unavailable ? " dolu veya geçmiş" : " uygun"}`}
-                          className={`sf-time ${time === slot ? "sf-time-selected" : ""}`}
-                          onClick={() => { setTime(slot); setSubmitError(""); }}
-                        >{slot}</button>
+                          className={
+                            `sf-time ${
+                              time === slot ? "sf-time-selected" : ""
+                            }`
+                          }
+                          onClick={() => {
+                            setTime(slot);
+                            setSubmitError("");
+                          }}
+                        >
+                          {slot}
+                        </button>
                       );
                     })}
                   </div>
                 )}
-                {day && availabilityState === "ready" && <div className="sf-time-legend"><span><i className="sf-dot sf-dot-free"/>Uygun</span><span><i className="sf-dot sf-dot-full"/>Dolu / geçmiş</span></div>}
 
-                <label className="sf-field sf-note"><span>Ek not <small>(isteğe bağlı)</small></span><textarea name="note" value={form.note} onChange={updateField} maxLength={350} rows={3} placeholder="Eklemek istediğiniz kısa bir not varsa yazabilirsiniz."/></label>
-                <div className="sf-honeypot" aria-hidden="true"><label htmlFor="sf-website">Website</label><input id="sf-website" tabIndex={-1} autoComplete="off" value={website} onChange={event => setWebsite(event.target.value)} /></div>
+                {day && availabilityState === "ready" && (
+                  <div className="sf-time-legend">
+                    <span>
+                      <i className="sf-dot sf-dot-free" />
+                      Uygun
+                    </span>
+                    <span>
+                      <i className="sf-dot sf-dot-full" />
+                      Dolu / geçmiş
+                    </span>
+                  </div>
+                )}
 
-                <div className="sf-privacy">
-                  <label className="sf-consent"><input type="checkbox" checked={consent} onChange={event => setConsent(event.target.checked)}/><span>Randevu talebime ilişkin kişisel veri bilgilendirmesini okudum. *</span></label>
-                  <p>İlettiğiniz iletişim ve randevu bilgileri, talebinizi değerlendirmek ve sizinle iletişime geçmek için kullanılır. <strong>Yayın öncesinde kurumun tam KVKK aydınlatma metni buraya bağlanmalıdır.</strong></p>
+                <label className="sf-field sf-note">
+                  <span>Ek not (isteğe bağlı)</span>
+                  <textarea
+                    name="note"
+                    value={form.note}
+                    onChange={updateField}
+                    maxLength={350}
+                    rows={3}
+                    placeholder="Eklemek istediğiniz kısa bir not varsa yazabilirsiniz."
+                  />
+                </label>
+
+                <div className="sf-honeypot" aria-hidden="true">
+                  <label htmlFor="sf-website">Website</label>
+                  <input
+                    id="sf-website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={website}
+                    onChange={event =>
+                      setWebsite(event.target.value)
+                    }
+                  />
                 </div>
 
-                {submitError && <div role="alert" className="sf-submit-error">{submitError}</div>}
-                <button type="submit" className="sf-primary" disabled={sending || availabilityState !== "ready" || !time || !consent}>
-                  {sending ? "Talebiniz gönderiliyor..." : "Randevu Talebi Gönder"}
-                  {!sending && <Icon name="arrow" size={19}/>}
+                <div className="sf-privacy">
+                  <label className="sf-consent">
+                    <input
+                      type="checkbox"
+                      checked={consent}
+                      onChange={event =>
+                        setConsent(event.target.checked)
+                      }
+                    />
+                    <span>
+                      Randevu talebime ilişkin kişisel veri
+                      bilgilendirmesini okudum. *
+                    </span>
+                  </label>
+
+                  <p>
+                    İlettiğiniz bilgiler randevu talebinizi
+                    değerlendirmek ve sizinle iletişime geçmek
+                    için kullanılır. Yayın öncesinde kurumun
+                    KVKK aydınlatma metni buraya bağlanmalıdır.
+                  </p>
+                </div>
+
+                {submitError && (
+                  <div
+                    role="alert"
+                    className="sf-submit-error"
+                  >
+                    {submitError}
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  className="sf-primary"
+                  disabled={
+                    sending ||
+                    availabilityState !== "ready" ||
+                    !time ||
+                    !consent
+                  }
+                >
+                  {sending
+                    ? "Talebiniz gönderiliyor..."
+                    : "Randevu Talebi Gönder"}
+
+                  {!sending && (
+                    <Icon name="arrow" size={19} />
+                  )}
                 </button>
-                <p className="sf-bottom-note"><Icon name="shield" size={16}/> Randevu, işletme tarafından onaylandığında kesinleşir.</p>
+
+                <p className="sf-bottom-note">
+                  <Icon name="shield" size={16} />
+                  Randevu, işletme tarafından onaylandığında kesinleşir.
+                </p>
               </form>
             </>
           )}
         </section>
       </main>
-      <footer className="sf-footer">© {new Date().getFullYear()} Şelale İşitme Cihazları · Sağlıklı iletişime bir adım daha yakın.</footer>
+
+      <footer className="sf-footer">
+        © {new Date().getFullYear()} Şelale İşitme Cihazları
+        · Sağlıklı iletişime bir adım daha yakın.
+      </footer>
     </div>
   );
 }
-
