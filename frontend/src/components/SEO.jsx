@@ -11,10 +11,10 @@ const SEO = ({
   structuredData
 }) => {
   const location = useLocation();
-  // IMPORTANT: Replace this with your actual domain when you buy it
+  // www is the canonical host: selaleisitme.com redirects there, and the sitemap lists www URLs.
   const siteUrl = import.meta.env.DEV
   ? window.location.origin
-  : 'https://selaleisitme.com'; // Change to 'https://yourdomain.com' after deployment
+  : 'https://www.selaleisitme.com';
   const fullUrl = canonical || `${siteUrl}${location.pathname}`;
 
   useEffect(() => {

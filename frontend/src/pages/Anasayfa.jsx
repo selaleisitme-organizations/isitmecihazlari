@@ -88,7 +88,7 @@ export default function Anasayfa() {
   "@type": "MedicalBusiness",
   "name": "Şelale İşitme Cihazı Merkezi",
   "description": "İstanbul Sarıyer'de işitme cihazları, işitme testleri ve rehabilitasyon hizmetleri. SGK anlaşmalı, 30+ yıl deneyim.",
-  "url": "https://selaleisitme.com",
+  "url": "https://www.selaleisitme.com",
   "telephone": "+905322752414",
   "address": {
   "@type": "PostalAddress",
@@ -112,7 +112,7 @@ export default function Anasayfa() {
     }
   ],
   "priceRange": "$$",
-  "image": "https://selaleisitme.com/images/selaleLogo.jpeg",
+  "image": "https://www.selaleisitme.com/images/selaleLogo.jpeg",
   "medicalSpecialty": "Audiology",
   "availableService": [
     {
