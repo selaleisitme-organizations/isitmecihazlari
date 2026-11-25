@@ -632,31 +632,35 @@ export default function Anasayfa() {
                   <button
                     type="button"
                     onClick={prevLocationImage}
-                    className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-black/40 text-white hover:bg-black/60 rounded-full transition"
+                    className="absolute left-3 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 text-white rounded-full shadow-lg transition duration-200 hover:bg-black/75 hover:scale-125 active:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
                     aria-label={t("anasayfa.hearingTest.previousImage")}
                   >
-                    <ChevronLeft className="w-6 h-6" />
+                    <ChevronLeft className="w-8 h-8" />
                   </button>
                   <button
                     type="button"
                     onClick={nextLocationImage}
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-black/40 text-white hover:bg-black/60 rounded-full transition"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 text-white rounded-full shadow-lg transition duration-200 hover:bg-black/75 hover:scale-125 active:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
                     aria-label={t("anasayfa.hearingTest.nextImage")}
                   >
-                    <ChevronRight className="w-6 h-6" />
+                    <ChevronRight className="w-8 h-8" />
                   </button>
 
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex z-10">
                     {locationImages.map((image, index) => (
                       <button
                         type="button"
                         key={image}
                         onClick={() => setCurrentLocationImage(index)}
                         aria-label={`${t("anasayfa.contact.mapAlt")} ${index + 1}`}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                          currentLocationImage === index ? 'bg-white w-6' : 'bg-white/50 hover:bg-white/75'
-                        }`}
-                      />
+                        className="group/dot p-3 focus:outline-none"
+                      >
+                        <span
+                          className={`block h-3 rounded-full shadow transition-all duration-300 group-hover/dot:scale-125 ${
+                            currentLocationImage === index ? 'bg-white w-6' : 'w-3 bg-white/60 group-hover/dot:bg-white'
+                          }`}
+                        />
+                      </button>
                     ))}
                   </div>
                 </div>
