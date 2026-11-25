@@ -106,8 +106,8 @@ export default function Hakkimizda() {
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12 border-b pb-8 border-gray-100">
           <div className="flex flex-col items-center">
             <div className="relative h-96 rounded-2xl shadow-2xl overflow-hidden mb-4">
-              <img
-                src="/images/Hakkimizda.png" 
+              <img loading="lazy" decoding="async"
+                src="/images/Hakkimizda.webp" 
                 alt={t("aboutPage.founderPhotoAlt")}
                 className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
               />

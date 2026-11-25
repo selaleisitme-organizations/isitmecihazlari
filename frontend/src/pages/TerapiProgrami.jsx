@@ -119,8 +119,8 @@ export default function TerapiProgrami() {
 
             {/* Image Column */}
             <div className="flex-1 flex justify-end">
-              <img
-                src="/images/kid.png"
+              <img loading="lazy" decoding="async"
+                src="/images/kid.webp"
                 alt={t("therapyPage.imageAlt")}
                 className="max-w-full h-auto rounded-lg shadow-md"
               />

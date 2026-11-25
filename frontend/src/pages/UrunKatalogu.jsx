@@ -79,7 +79,7 @@ export default function UrunKatalogu() {
       priceTag: "Premium",
       description: "48 Kanal, 6 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, Acclimatic, Binaural Senkronizasyon, Genişletilmiş Dinamik Aralık, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android), Rüzgar Gürültüsü Kesme, Tinnitus Terapi, Tinnitus Notch Terapi, Oculmatic 2.0, Spatial Spot, Hareket Sensörü, Güçlendirilmiş Ani Ses Baskılayıcı, Selectronic, Oto Optimizasyon, Headset mod (iOS & LE Audio), HiFi, Oto EchoClear, AudioFocus 360, Spatial Spot, Bluetooth LE Audio Multi-Track Processing 2.0 (Hedef Ses 5)",
       features: ["Şarj edilebilir", "Bluetooth", "Gürültü Kesme"],
-      image: "/images/products/SR_Li_8.png",
+      image: "/images/products/SR_Li_8.webp",
     },
     {
       id: 5,
@@ -88,7 +88,7 @@ export default function UrunKatalogu() {
       priceTag: "Orta",
       description: "32 Kanal, 6 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, Acclimatic, Binaural Senkronizasyon, Genişletilmiş Dinamik Aralık, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android), Rüzgar Gürültüsü Kesme, Tinnitus Terapi, Notch Terapi, Entegre Hareket Sensörü, Güçlendirilmiş Ani Ses Baskılayıcı, SpeechAudio, Selectronic, Oto Optimizasyon, Tinnitus Notch Terapi, Oculmatic 2.0, Headset mod (iOS & LE Audio), Bluetooth LE Audio, Multi-Track Processing 2.0 (Hedef Ses 2)",
       features: ["Şarj edilebilir", "Bluetooth", "Gürültü Kesme"],
-      image: "/images/products/SR_Li_8.png",
+      image: "/images/products/SR_Li_8.webp",
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ export default function UrunKatalogu() {
       priceTag: "Giriş",
       description: "16 Kanal, 4 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, Acclimatic, Binaural Senkronizasyon, Genişletilmiş Dinamik Aralık, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android), Rüzgar Gürültüsü Kesme, 2earPhone, AudioLink, Güçlendirilmiş Ani Ses Baskılayıcı, Speech360, Selectronic, Bluetooth LE Audio, Multi-Track Processing 2.0 (Hedef Ses 2), Oto Optimizasyon",
       features: ["Şarj edilebilir", "Bluetooth", "Gürültü Kesme"],
-      image: "/images/products/SR_Li_8.png",
+      image: "/images/products/SR_Li_8.webp",
     },
     {
       id: 7,
@@ -106,7 +106,7 @@ export default function UrunKatalogu() {
       priceTag: "Premium",
       description: "64 Kanal, Multi-Track Processing 2.0 (Hedef Ses 2), Speech360, 2earPhone, AudioLink, Güçlendirilmiş Ani Ses Baskılayıcı, Bluetooth LE Audio, Binaural Senkronizasyon, Rüzgar Gürültüsü Kesme, Oto Optimizasyon, Selectronic, Acclimatic, Genişletilmiş Dinamik Aralık, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android)",
       features: ["Şarj edilebilir", "Bluetooth", "Gürültü Kesme"],
-      image: "/images/products/RLi8.png",
+      image: "/images/products/RLi8.webp",
     },
     {
       id: 8,
@@ -115,7 +115,7 @@ export default function UrunKatalogu() {
       priceTag: "Orta",
       description: "32 Kanal, Selectronic, Acclimatic, Otomatik Yönsel Mikrofon, Rüzgar Gürültüsü Kesme, Genişletilmiş Dinamik Aralık, Binaural Senkronizasyon, Frekans Sıkıştırma, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android), Gürültü Kesme",
       features: ["Şarj edilebilir", "Bluetooth", "Gürültü Kesme"],
-      image: "/images/products/RLi8.png",
+      image: "/images/products/RLi8.webp",
     },
     {
       id: 9,
@@ -124,7 +124,7 @@ export default function UrunKatalogu() {
       priceTag: "Giriş",
       description: "16 Kanal, 4 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, IP 68, Manuel Ses Kontrolü, Standart Dinamik Aralık",
       features: ["Şarj edilebilir", "Bluetooth", "Gürültü Kesme"],
-      image: "/images/products/RLi8.png",
+      image: "/images/products/RLi8.webp",
     },
     {
       id: 10,
@@ -225,7 +225,7 @@ export default function UrunKatalogu() {
       priceTag: "",
       description: "24 Kanal, %100 Görünmez Tasarım (IIC/CIC), Doğal Kulak Kepçesi Efekti (Pinna Effect), 10 Numara Pil, Dip Kanal Yerleşimi, Gelişmiş Feedback (Ötme) Kalkanı, Tek Mikrofonlu Omni-Directional Duyum, Kişiye Özel 3D Üretim, Sound Smoothing (Ani Ses Baskılama), Tinnitus Maskeleme, Nano Kaplama, Vent (Havalandırma) Teknolojisi, Kulak İçi Konfor Yazılımı",
       features: ["Tinnitus Terapisi", "Gürültü Kesme"],
-      image: "/images/products/CıcMicro.png",
+      image: "/images/products/CıcMicro.webp",
     },
     {
       id: 23,
@@ -234,7 +234,7 @@ export default function UrunKatalogu() {
       priceTag: "",
       description: "24 Kanal, %100 Görünmez Tasarım (IIC/CIC), Doğal Kulak Kepçesi Efekti (Pinna Effect), 10 Numara Pil, Dip Kanal Yerleşimi, Gelişmiş Feedback (Ötme) Kalkanı, Tek Mikrofonlu Omni-Directional Duyum, Kişiye Özel 3D Üretim, Sound Smoothing (Ani Ses Baskılama), Tinnitus Maskeleme, Nano Kaplama, Vent (Havalandırma) Teknolojisi, Kulak İçi Konfor Yazılımı",
       features: ["Tinnitus Terapisi", "Gürültü Kesme"],
-      image: "/images/products/CicDouble.png",
+      image: "/images/products/CicDouble.webp",
     },
     {
       id: 24,
@@ -243,7 +243,7 @@ export default function UrunKatalogu() {
       priceTag: "",
       description: "48 Kanal, Çift Yönsel Mikrofon (Dual Mic), Bluetooth Ses Aktarımı (iOS ve Android), OVP (Kendi Sesini Doğal Duyma Teknolojisi), Gürültü İçinde Konuşma Odaklanma, Binaural Senkronizasyon, IP 68 Su ve Toz Koruması, 312 veya 13 Numara Pil, Kişiye Özel 3D Lazer Baskı, Rüzgar Gürültüsü Kesme, Tinnitus (Çınlama) Terapisi, Genişletilmiş Dinamik Aralık, Acclimatic, Otomatik Ortam Analizi, Telecoil (Opsiyonel)",
       features: ["Dip Kanal CIC Modeli","Tinnitus Terapisi", "Gürültü Kesme"],
-      image: "/images/products/CıcXp.png",
+      image: "/images/products/CıcXp.webp",
     },
     
   ];
@@ -592,7 +592,7 @@ export default function UrunKatalogu() {
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl border border-blue-100 transition"
             >
               <div className="relative">
-                <img
+                <img loading="lazy" decoding="async"
                   src={p.image}
                   alt={p.name}
                   className="w-full h-52 object-cover"

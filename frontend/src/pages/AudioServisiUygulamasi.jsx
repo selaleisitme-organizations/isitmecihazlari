@@ -131,7 +131,7 @@ export default function AudioServis() {
           {/* App 1 */}
           <div className="grid md:grid-cols-2 gap-10 items-center mb-24 border-b border-gray-100 pb-12">
             <div>
-              <img
+              <img loading="lazy" decoding="async"
                 src="/images/products/hearing-aid-app.jpg"
                 alt={t("audioServis.app1.imageAlt")}
                 className="rounded-lg shadow-lg mx-auto w-full max-w-md object-cover"
@@ -155,7 +155,7 @@ export default function AudioServis() {
           {/* App 2 */}
           <div className="grid md:grid-cols-2 gap-10 items-center mb-24 border-b border-gray-100 pb-12">
             <div className="md:order-2">
-              <img
+              <img loading="lazy" decoding="async"
                 src="/images/products/wp2.jpg"
                 alt={t("audioServis.app2.imageAlt")}
                 className="rounded-lg shadow-lg mx-auto w-full max-w-md object-cover"
@@ -180,7 +180,7 @@ export default function AudioServis() {
           {/* App 3 */}
           <div className="grid md:grid-cols-2 gap-10 items-center mb-24">
             <div>
-              <img
+              <img loading="lazy" decoding="async"
                 src="/images/products/wp3.png"
                 alt={t("audioServis.app3.imageAlt")}
                 className="rounded-lg shadow-lg mx-auto w-full max-w-md object-cover"
