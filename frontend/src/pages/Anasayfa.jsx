@@ -577,6 +577,15 @@ export default function Anasayfa() {
                     <p className="text-xl font-bold mt-1">{t("navigation.phone")}</p>
                   </div>
 
+                  <div className="mb-4">
+                    <p className="text-lg font-semibold">✉️ {t("anasayfa.contact.emailLabel")}</p>
+                    {["selaleisitme@gmail.com", "selalealagas@hotmail.com"].map((email) => (
+                      <a key={email} href={`mailto:${email}`} dir="ltr" className="block text-lg font-bold mt-1 break-all hover:underline">
+                        {email}
+                      </a>
+                    ))}
+                  </div>
+
                   <div>
                     <p className="text-lg font-semibold">🕓 {t("anasayfa.contact.hoursLabel")}</p>
                     <p className="mt-1 whitespace-pre-line">
