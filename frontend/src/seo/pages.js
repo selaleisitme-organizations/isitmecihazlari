@@ -4,7 +4,7 @@
 //
 // Wording rules (owner, 2026-11-25): no device brand or model names (medical device advertising rules), no
 // superlatives or guarantees, no try-before-you-buy, and the clinic test is not called free. The online test
-// on this site is free, so it may say so.
+// on this site is free, so it may say so. The clinic is SGK-contracted (confirmed 2026-11-25).
 
 export const SITE_URL = "https://www.selaleisitme.com";
 export const SITE_NAME = "Şelale İşitme";
@@ -14,7 +14,7 @@ export const PAGES = {
   "/": {
     title: "Sarıyer İşitme Cihazı Merkezi | Şelale İşitme",
     description:
-      "Sarıyer'de işitme testi, kulağınıza özel kalıpla işitme cihazı uygulaması, bakım ve adaptasyon takibi. SGK katkılı cihaz desteği. ☎ 0532 275 24 14",
+      "SGK anlaşmalı işitme merkezi. Sarıyer'de işitme testi, kulağınıza özel kalıpla işitme cihazı uygulaması, bakım ve adaptasyon takibi. ☎ 0532 275 24 14",
     ogImage: DEFAULT_OG_IMAGE,
   },
   "/randevu": {
@@ -34,9 +34,9 @@ export const PAGES = {
     ogImage: "/images/kid.png",
   },
   "/odeme-planlari": {
-    title: "SGK İşitme Cihazı Desteği ve Ödeme | Şelale İşitme",
+    title: "SGK Anlaşmalı İşitme Cihazı ve Ödeme | Şelale İşitme",
     description:
-      "SGK katkısıyla işitme cihazı alma süreci ve ödeme seçenekleri hakkında bilgi alın. Ayrıntılar için Sarıyer merkezimizi arayın.",
+      "SGK anlaşmalı merkezimizde SGK katkısıyla işitme cihazı alma süreci ve ödeme seçenekleri. Ayrıntılar için Sarıyer merkezimizi arayın.",
   },
   "/audio-servis": {
     title: "İşitme Cihazı Telefon Uygulamaları | Şelale İşitme",
@@ -69,7 +69,7 @@ export const BUSINESS = {
   "@id": `${SITE_URL}/#business`,
   name: "Şelale İşitme Cihazları",
   description:
-    "Sarıyer'de işitme testi, kulağa özel kalıpla işitme cihazı uygulaması, cihaz bakım ve onarımı, adaptasyon takibi ve işitsel rehabilitasyon.",
+    "SGK anlaşmalı işitme merkezi. Sarıyer'de işitme testi, kulağa özel kalıpla işitme cihazı uygulaması, cihaz bakım ve onarımı, adaptasyon takibi ve işitsel rehabilitasyon.",
   url: `${SITE_URL}/`,
   telephone: "+905322752414",
   image: `${SITE_URL}/images/selaleLogo.jpeg`,
