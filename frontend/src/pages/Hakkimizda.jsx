@@ -23,7 +23,7 @@ export default function Hakkimizda() {
     <SEO
       title="Şelale İşitme Merkezi | İstanbul"
       description="Şelale İşitme Merkezi; İstanbul'da işitme cihazı seçimi, işitme değerlendirmesi ve kişiye özel işitme çözümleri sunar. Merkezimiz Sarıyer'dedir."
-      canonical="https://selaleisitme.com/hakkimizda"
+      canonical="https://www.selaleisitme.com/hakkimizda"
     />
     <div className="min-h-screen bg-white relative">
       {/* Menü Açma Butonu */}

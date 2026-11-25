@@ -10,6 +10,5 @@ Disallow: /api/
 # Crawl delay (optional, helps prevent server overload)
 Crawl-delay: 1
 
-# Sitemap location
-# IMPORTANT: Update this URL when you buy your domain!
-Sitemap: https://selaleisitme.com/sitemap.xml
+# Sitemap location (www is the canonical host; selaleisitme.com redirects there)
+Sitemap: https://www.selaleisitme.com/sitemap.xml

@@ -24,7 +24,7 @@ export default function OdemePlanlari() {
       <SEO
         title="SGK İşitme Cihazı Desteği | Sarıyer Şelale İşitme"
         description="Şelale İşitme Merkezi'nin SGK kapsamında işitme cihazı temin süreci hakkında bilgi alın. Detaylar için Sarıyer merkezimizle iletişime geçin."
-        canonical="https://selaleisitme.com/odeme-planlari"
+        canonical="https://www.selaleisitme.com/odeme-planlari"
       />
       <button
         onClick={() => setSidebarOpen(true)}
