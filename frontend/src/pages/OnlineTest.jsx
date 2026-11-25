@@ -1,7 +1,6 @@
 import { X, Menu, Phone, MapPin, Headphones } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import * as Tone from "tone";
 import SEO from '../components/SEO';
 import { seoFor } from '../seo/pages'; 
 
@@ -51,6 +50,8 @@ export default function OnlineTest() {
 
   const playTone = async () => {
     try {
+      // The audio library is large and only this test uses it, so it loads when the first tone plays.
+      const Tone = await import("tone");
       await Tone.start();
       const panner = new Tone.Panner(ear === "left" ? -1 : 1).toDestination();
       const synth = new Tone.Oscillator(frequencies[frequencyIndex], "sine").connect(panner);

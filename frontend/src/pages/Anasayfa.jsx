@@ -16,20 +16,20 @@ export default function Anasayfa() {
   const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0);
 
   const testImages = [
-    '/images/hastaTest.jpeg', 
-    '/images/HearingTest.jpeg', 
+    '/images/hastaTest.webp', 
+    '/images/HearingTest.webp', 
   ];
   const headerImages = [
-    '/images/anasayfaBigPic.jpeg',
-    '/images/waterfall.jpg'
+    '/images/anasayfaBigPic.webp',
+    '/images/waterfall.webp'
   ];
   
   const carouselImages = [
-    '/images/H1.png',
-    '/images/H2.png',
-    '/images/H3.png',
-    '/images/H4.png',
-    '/images/H5.jpeg',
+    '/images/H1.webp',
+    '/images/H2.webp',
+    '/images/H3.webp',
+    '/images/H4.webp',
+    '/images/H5.webp',
   ];
   const slideInterval = 5000;
 
@@ -174,7 +174,7 @@ export default function Anasayfa() {
 
         {/* Top-right Logo */}
         <div className="fixed top-4 right-6 z-40">
-          <img
+          <img loading="lazy" decoding="async"
             src="/images/selaleLogo.jpeg"
             alt="Şelale İşitme Merkezi Logosu"
             className="w-20 h-auto rounded-lg shadow-md border border-gray-200"
@@ -298,8 +298,8 @@ export default function Anasayfa() {
 
                 {/* image */}
                 <div className="relative h-96 rounded-2xl shadow-2xl overflow-hidden">
-                  <img
-                    src="/images/NedenSelale.jpeg"
+                  <img loading="lazy" decoding="async"
+                    src="/images/NedenSelale.webp"
                     alt={t("anasayfa.about.imageAlt")}
                     className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
                   />
@@ -403,7 +403,7 @@ export default function Anasayfa() {
                       }}
                     >
                       <div className={`rounded-2xl overflow-hidden shadow-2xl ${isCurrent ? 'ring-4 ring-blue-500' : ''}`}>
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={image}
                           alt={`${t("anasayfa.carousel.imageAlt")} ${index + 1}`}
                           className="w-[400px] h-[400px] object-cover"
@@ -467,7 +467,7 @@ export default function Anasayfa() {
                 {/* Image Carousel */}
                 <div className="order-2 md:order-1 relative h-[500px] rounded-lg shadow-xl overflow-hidden">
                   {testImages.map((image, index) => (
-                    <img
+                    <img loading="lazy" decoding="async"
                       key={index}
                       src={image}
                       alt={`${t("anasayfa.hearingTest.imageAlt")} ${index + 1}`}
@@ -601,8 +601,8 @@ export default function Anasayfa() {
                   rel="noopener noreferrer"
                   className="relative block rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition duration-300"
                 >
-                  <img
-                    src="/images/Location.jpeg"
+                  <img loading="lazy" decoding="async"
+                    src="/images/Location.webp"
                     alt={t("anasayfa.contact.mapAlt")}
                     className="w-full h-96 object-cover"
                   />
