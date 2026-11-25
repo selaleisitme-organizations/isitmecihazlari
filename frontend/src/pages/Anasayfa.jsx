@@ -14,11 +14,20 @@ export default function Anasayfa() {
   const [currentTestImage, setCurrentTestImage] = useState(0);
   const [currentHeaderImage, setCurrentHeaderImage] = useState(0);
   const [currentCarouselIndex, setCurrentCarouselIndex] = useState(0);
+  const [currentLocationImage, setCurrentLocationImage] = useState(0);
 
   const testImages = [
     '/images/hastaTest.webp', 
     '/images/HearingTest.webp', 
   ];
+  // Photos of the center's storefront; each one opens the location in Google Maps.
+  const locationImages = [
+    '/images/Location1.webp',
+    '/images/Location2.webp',
+  ];
+  const nextLocationImage = () => setCurrentLocationImage((i) => (i + 1) % locationImages.length);
+  const prevLocationImage = () => setCurrentLocationImage((i) => (i - 1 + locationImages.length) % locationImages.length);
+
   const headerImages = [
     '/images/anasayfaBigPic.webp',
     '/images/waterfall.webp'
@@ -594,24 +603,67 @@ export default function Anasayfa() {
                   </div>
                 </div>
 
-                {/* Right card: Map */}
-                <a
-                  href="https://maps.app.goo.gl/BXqB7sb4okM2u4hD9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative block rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition duration-300"
-                >
-                  <img loading="lazy" decoding="async"
-                    src="/images/Location.webp"
-                    alt={t("anasayfa.contact.mapAlt")}
-                    className="w-full h-96 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <span className="text-white text-xl font-bold">
-                      📍 {t("anasayfa.contact.mapButton")}
-                    </span>
+                {/* Right card: location photos. Pressing a photo opens Google Maps;
+                    the arrows and dots sit outside the link so they only change the photo. */}
+                <div dir="ltr" className="relative h-96 rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition duration-300">
+                  <a
+                    href="https://maps.app.goo.gl/BXqB7sb4okM2u4hD9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group absolute inset-0 block"
+                  >
+                    {locationImages.map((image, index) => (
+                      <img loading="lazy" decoding="async"
+                        key={image}
+                        src={image}
+                        alt={`${t("anasayfa.contact.mapAlt")} ${index + 1}`}
+                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+                          currentLocationImage === index ? 'opacity-100' : 'opacity-0'
+                        }`}
+                      />
+                    ))}
+                    <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                      <span className="text-white text-xl font-bold">
+                        📍 {t("anasayfa.contact.mapButton")}
+                      </span>
+                    </div>
+                  </a>
+
+                  <button
+                    type="button"
+                    onClick={prevLocationImage}
+                    className="absolute left-3 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 text-white rounded-full shadow-lg transition duration-200 hover:bg-black/75 hover:scale-125 active:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
+                    aria-label={t("anasayfa.hearingTest.previousImage")}
+                  >
+                    <ChevronLeft className="w-8 h-8" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={nextLocationImage}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 text-white rounded-full shadow-lg transition duration-200 hover:bg-black/75 hover:scale-125 active:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
+                    aria-label={t("anasayfa.hearingTest.nextImage")}
+                  >
+                    <ChevronRight className="w-8 h-8" />
+                  </button>
+
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex z-10">
+                    {locationImages.map((image, index) => (
+                      <button
+                        type="button"
+                        key={image}
+                        onClick={() => setCurrentLocationImage(index)}
+                        aria-label={`${t("anasayfa.contact.mapAlt")} ${index + 1}`}
+                        className="group/dot p-3 focus:outline-none"
+                      >
+                        <span
+                          className={`block h-3 rounded-full shadow transition-all duration-300 group-hover/dot:scale-125 ${
+                            currentLocationImage === index ? 'bg-white w-6' : 'w-3 bg-white/60 group-hover/dot:bg-white'
+                          }`}
+                        />
+                      </button>
+                    ))}
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </section>
