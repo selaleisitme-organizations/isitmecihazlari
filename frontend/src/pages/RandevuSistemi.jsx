@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import SEO from '../components/SEO';
+import { seoFor } from '../seo/pages';
 import { ChevronLeft, ChevronRight, Check, Calendar, Clock, User, X, Menu, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import API_BASE_URL from '../config';
@@ -200,11 +201,7 @@ export default function RandevuSistemi() {
 
   return (
     <div className="min-h-screen bg-white relative">
-      <SEO
-  title="Sarıyer İşitme Testi ve Randevu | Şelale İşitme"
-  description="Sarıyer Şelale İşitme Merkezi'nde işitme testi ve değerlendirme için online randevu talebinizi oluşturun."
-  canonical="https://www.selaleisitme.com/randevu"
-/>
+      <SEO {...seoFor("/randevu")} />
  {/*for navigation  */}
 
 <button

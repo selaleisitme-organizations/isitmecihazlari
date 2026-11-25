@@ -1,7 +1,8 @@
 import { X, Menu, Phone, MapPin, Headphones } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import * as Tone from "tone";
-import SEO from '../components/SEO'; 
+import SEO from '../components/SEO';
+import { seoFor } from '../seo/pages'; 
 
 export default function OnlineTest(){ 
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -137,13 +138,7 @@ export default function OnlineTest(){
   return (
     <>
       {/* SEO Meta Tags - Add this at the top of your component */}
-      <SEO 
-        title="Ücretsiz Online İşitme Testi | Şelale İşitme Merkezi Sarıyer İstanbul"
-        description="İstanbul Sarıyer'de ücretsiz online işitme testi. İşitme kaybı testi, odyogram, işitme cihazı danışmanlığı. Hemen test olun, randevu alın. ☎️ 0532 275 24 14"
-        keywords="işitme testi, çevrimiçi işitme testi, online işitme testi, ücretsiz işitme testi, işitme kaybı testi, odyogram, işitme cihazı, Sarıyer işitme merkezi, İstanbul işitme testi, işitme problemi, kulak testi, hearing test turkey, hearing test"
-        ogImage="/images/IC.png"
-        structuredData={structuredData}
-      />
+      <SEO {...seoFor("/online-test")} structuredData={structuredData} />
 
       <div className="min-h-screen bg-white relative">
         {/* Rest of your component code stays the same */}
