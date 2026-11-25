@@ -3,11 +3,12 @@ import {
   Heart, ChevronRight, Volume2, Search, X, Menu, Phone, MapPin
 } from "lucide-react";
 import { Link } from "react-router-dom";
-// SEO Bileşenini içe aktarıyoruz
+import { useTranslation } from "react-i18next";
 import SEO from '../components/SEO';
 import { seoFor } from '../seo/pages';
 
 export default function UrunKatalogu() {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -248,17 +249,42 @@ export default function UrunKatalogu() {
   ];
 
   const categories = [
-    { id: "all", name: "Tümü" },
-    { id: "ric", name: "RIC (Kanal İçi Hoparlörlü Kulak Arkası)" },
-    { id: "bte", name: "BTE (Kulak Arkası)" },
-    { id: "cic", name: "CIC (Tamamen Kanal İçi)" },
-    { id: "ite", name: "ITE (Hazır Kulak İçi)" },
-    { id: "itc", name: "ITC (Kanal İçi)" },
-    { id: "cros", name: "CROS/BICROS" },
-    { id: "acc", name: "Aksesuarlar" },
+    { id: "all", name: t("urunKatalogu.categories.all") },
+    { id: "ric", name: t("urunKatalogu.categories.ric") },
+    { id: "bte", name: t("urunKatalogu.categories.bte") },
+    { id: "cic", name: t("urunKatalogu.categories.cic") },
+    { id: "ite", name: t("urunKatalogu.categories.ite") },
+    { id: "itc", name: t("urunKatalogu.categories.itc") },
+    { id: "cros", name: t("urunKatalogu.categories.cros") },
+    { id: "acc", name: t("urunKatalogu.categories.acc") },
   ];
 
-  const filteredProducts = products.filter((p) => {
+  const navLinks = [
+    { to: "/", label: t("navigation.home"), active: false },
+    { to: "/randevu", label: t("navigation.appointment"), active: false },
+    { to: "/terapi-programi", label: t("navigation.rehabilitation"), active: false },
+    { to: "/urun-katalogu", label: t("navigation.productCatalog"), active: true },
+    { to: "/odeme-planlari", label: t("navigation.sgk"), active: false },
+    { to: "/audio-servis", label: t("navigation.phoneApp"), active: false },
+    { to: "/hakkimizda", label: t("navigation.about"), active: false },
+    { to: "/online-test", label: t("navigation.freeHearingTest"), active: false },
+  ];
+
+  const localizedProducts = products.map((p) => {
+    const locName = t(`urunKatalogu.products.p${p.id}.name`, { defaultValue: p.name });
+    const locPrice = t(`urunKatalogu.products.p${p.id}.priceTag`, { defaultValue: p.priceTag });
+    const locDesc = t(`urunKatalogu.products.p${p.id}.description`, { defaultValue: p.description });
+    const locFeat = t(`urunKatalogu.products.p${p.id}.features`, { returnObjects: true, defaultValue: p.features });
+    return {
+      ...p,
+      name: locName,
+      priceTag: locPrice,
+      description: locDesc,
+      features: Array.isArray(locFeat) ? locFeat : p.features,
+    };
+  });
+
+  const filteredProducts = localizedProducts.filter((p) => {
     const matchesCategory = selectedCategory === "all" || p.category === selectedCategory;
     const matchesSearch =
       p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -274,13 +300,12 @@ export default function UrunKatalogu() {
 
   return (
     <>
-    {/* SEO Meta Tags */}
     <SEO {...seoFor("/urun-katalogu")} structuredData={structuredData} />
 
     <div className="min-h-screen bg-white relative">
       <button
         onClick={() => setSidebarOpen(true)}
-        aria-label="Menü"
+        aria-label={t("navigation.menu")}
         className={`fixed top-6 left-6 z-50 bg-blue-900 hover:bg-blue-800 text-white p-3 rounded-lg shadow-lg focus:outline-none transition-opacity duration-300 ${
           sidebarOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
@@ -301,7 +326,7 @@ export default function UrunKatalogu() {
         }}
       >
         <div className="flex items-center justify-between p-5 border-b border-gray-200">
-          <h3 className="text-lg font-bold text-blue-900">Menü</h3>
+          <h3 className="text-lg font-bold text-blue-900">{t("navigation.menu")}</h3>
           <button
             onClick={() => setSidebarOpen(false)}
             className="p-1 text-gray-600 hover:text-gray-900 focus:outline-none"
@@ -319,40 +344,26 @@ export default function UrunKatalogu() {
         </div>
 
         <nav className="p-5 space-y-3">
-          <Link to="/" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Anasayfa
-          </Link>
-          <Link to="/randevu" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Randevu Alın
-          </Link>
-          <Link to="/terapi-programi" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Rehabilitasyon Programı
-          </Link>
-          <Link to="/urun-katalogu" onClick={() => setSidebarOpen(false)} className="block text-blue-900 font-semibold">
-            Ürün Kataloğu
-          </Link>
-          <Link to="/odeme-planlari" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            SGK
-          </Link>
-          <Link to="/audio-servis" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Telefon Uygulaması
-          </Link>
-          <Link to="/hakkimizda" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Hakkımızda
-          </Link>
-          <Link to="/online-test" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Ücretsiz İşitme Testi
-          </Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              onClick={() => setSidebarOpen(false)}
+              className={`block font-medium ${link.active ? 'text-blue-900 font-semibold' : 'text-gray-800 hover:text-blue-900'}`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
         <div style={{ marginTop: "auto" }} className="p-5 border-t border-gray-200">
           <div className="flex items-center gap-3 mb-2">
             <Phone className="w-5 h-5 text-blue-900" />
-            <span className="text-gray-800 font-medium">0532 275 24 14</span>
+            <span className="text-gray-800 font-medium">{t("navigation.phone")}</span>
           </div>
           <div className="flex items-center gap-3">
             <MapPin className="w-5 h-5 text-blue-900" />
-            <span className="text-gray-800 font-medium">Merkez Mah., Sarıyer</span>
+            <span className="text-gray-800 font-medium">{t("navigation.address")}</span>
           </div>
         </div>
       </aside>
@@ -363,10 +374,10 @@ export default function UrunKatalogu() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
 
         <h1 className="text-5xl font-bold text-blue-900">
-          Sarıyer İşitme Cihazı Modelleri
+          {t("urunKatalogu.header.title")}
         </h1>
         <p className="text-blue-900 text-lg mt-4">
-          En yeni işitme cihazlarını keşfedin
+          {t("urunKatalogu.header.subtitle")}
         </p>
       </header>
 
@@ -374,10 +385,10 @@ export default function UrunKatalogu() {
       <div className="max-w-7xl mx-auto px-6 pb-12">
         <div className="bg-linear-to.br from-blue-50 to-blue-100 rounded-2xl shadow-lg p-8 mb-8 border border-blue-200">
           <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">
-            İşitme Cihazı Türlerini Tanıyalım
+            {t("urunKatalogu.education.title")}
           </h2>
           <p className="text-blue-900 text-center mb-8 text-lg">
-            Hangi cihaz sizin için uygun? İşte basit bir rehber:
+            {t("urunKatalogu.education.subtitle")}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -385,9 +396,9 @@ export default function UrunKatalogu() {
               <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">RIC</span>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">RIC - Alıcı Kulakta</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">{t("urunKatalogu.education.types.ric.title")}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Küçük ve göze çarpmaz. Hoparlör kulak kanalında, cihaz kulak arkasında. Doğal ses kalitesi sağlar. Hafif ve orta kayıplar için ideal.
+                {t("urunKatalogu.education.types.ric.desc")}
               </p>
             </div>
 
@@ -395,9 +406,9 @@ export default function UrunKatalogu() {
               <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">BTE</span>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">BTE - Kulak Arkası</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">{t("urunKatalogu.education.types.bte.title")}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                En güçlü cihaz tipi. Kulak arkasına oturur, tüp ile kulağa ses iletir. Hafiften çok ağıra kadar tüm kayıp seviyeleri için uygundur. Kullanımı kolaydır.
+                {t("urunKatalogu.education.types.bte.desc")}
               </p>
             </div>
 
@@ -405,9 +416,9 @@ export default function UrunKatalogu() {
               <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">ITE</span>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">ITE - Kulak İçi</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">{t("urunKatalogu.education.types.ite.title")}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Kulak kepçesini tamamen doldurur. Gözle görülebilir ancak kullanımı kolaydır. Hafif-orta ve orta-ağır kayıplar için uygundur. Pil değiştirmek daha kolaydır.
+                {t("urunKatalogu.education.types.ite.desc")}
               </p>
             </div>
 
@@ -415,9 +426,9 @@ export default function UrunKatalogu() {
               <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">ITC</span>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">ITC - Kanal İçi</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">{t("urunKatalogu.education.types.itc.title")}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Kulak kanalına kısmen oturur. ITE'den daha küçük ve göze daha az çarpar. Hafif-orta kayıplar için uygundur. İyi beceri gerektirir.
+                {t("urunKatalogu.education.types.itc.desc")}
               </p>
             </div>
 
@@ -425,9 +436,9 @@ export default function UrunKatalogu() {
               <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">CIC</span>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">CIC - Tamamen Kanal İçi</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">{t("urunKatalogu.education.types.cic.title")}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Neredeyse görünmez! Kulak kanalının derininde oturur. Hafif-orta kayıplar için. Küçük boyut nedeniyle pil ömrü kısadır. İyi el becerisi gerekir.
+                {t("urunKatalogu.education.types.cic.desc")}
               </p>
             </div>
 
@@ -435,9 +446,9 @@ export default function UrunKatalogu() {
               <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-sm">AÇIK</span>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">Açık Kulak (Open-Fit)</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">{t("urunKatalogu.education.types.openFit.title")}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Kulak kanalını tıkamaz, doğal havalandırma sağlar. Kendi sesinizin garip gelmesini önler. Yüksek frekanslarda kayıp olanlar için mükemmel. Çok rahat.
+                {t("urunKatalogu.education.types.openFit.desc")}
               </p>
             </div>
 
@@ -445,9 +456,9 @@ export default function UrunKatalogu() {
               <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-sm">CROS</span>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">CROS/BiCROS</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">{t("urunKatalogu.education.types.cros.title")}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Tek taraflı işitme kaybı için özel. Kötü kulaktaki sesi iyi kulağa iletir. BiCROS her iki kulakta da kayıp varsa kullanılır. Etrafınızı daha iyi duyarsınız.
+                {t("urunKatalogu.education.types.cros.desc")}
               </p>
             </div>
 
@@ -455,11 +466,11 @@ export default function UrunKatalogu() {
               <div className="w-12 h-12 bg-linear-to-br from-blue-900 to-blue-700 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">💡</span>
               </div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">Hangi Seviye?</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">{t("urunKatalogu.education.levels.title")}</h3>
               <div className="space-y-2 text-sm text-gray-700">
-                <p><strong className="text-blue-900">Giriş:</strong> Temel özellikler, ekonomik</p>
-                <p><strong className="text-blue-900">Orta:</strong> Daha fazla özellik, Bluetooth</p>
-                <p><strong className="text-blue-900">Premium:</strong> En gelişmiş teknoloji, yapay zeka</p>
+                <p><strong className="text-blue-900">{t("urunKatalogu.education.levels.entry.label")}</strong> {t("urunKatalogu.education.levels.entry.desc")}</p>
+                <p><strong className="text-blue-900">{t("urunKatalogu.education.levels.mid.label")}</strong> {t("urunKatalogu.education.levels.mid.desc")}</p>
+                <p><strong className="text-blue-900">{t("urunKatalogu.education.levels.premium.label")}</strong> {t("urunKatalogu.education.levels.premium.desc")}</p>
               </div>
             </div>
           </div>
@@ -468,77 +479,75 @@ export default function UrunKatalogu() {
         {/* Technical Terms Guide */}
         <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-200 mb-8">
           <h2 className="text-2xl font-bold text-blue-900 mb-6 text-center">
-            Teknik Terimler Rehberi 
+            {t("urunKatalogu.technicalTerms.title")}
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Kanal Sayısı</h4>
-              <p className="text-sm text-gray-700">Sesin farklı frekanslarını ayrı ayrı ayarlamayı sağlar. Daha fazla kanal daha hassas ayar demektir. 16+ kanal çoğu kişi için yeterli.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.channels.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.channels.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Program Sayısı</h4>
-              <p className="text-sm text-gray-700">Farklı ortamlar için ayarlar. Örnek: sessiz oda, gürültülü restoran, müzik dinleme. 4-6 program çoğunlukla yeterlidir.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.programs.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.programs.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Gürültü Kesme</h4>
-              <p className="text-sm text-gray-700">Arka plan gürültüsünü azaltır, konuşmaları daha net duymanızı sağlar. Kalabalık yerlerde çok önemlidir.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.noiseReduction.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.noiseReduction.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Yönsel Mikrofon</h4>
-              <p className="text-sm text-gray-700">Önünüzdeki seslere odaklanır, arkadaki gürültüyü azaltır. Sohbet ederken çok faydalıdır.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.directionalMic.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.directionalMic.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Bluetooth</h4>
-              <p className="text-sm text-gray-700">Telefonunuzdan doğrudan cihazınıza ses gelir. Arama, müzik ve video içindir. iPhone ve Android'le çalışır.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.bluetooth.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.bluetooth.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Tinnitus Terapisi</h4>
-              <p className="text-sm text-gray-700">Kulak çınlaması için özel sesler üretir. Çınlamayı maskelemeye yardımcı olur ve rahatlama sağlar.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.tinnitus.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.tinnitus.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">IP68 Koruma</h4>
-              <p className="text-sm text-gray-700">Su ve toz geçirmez. Ter, yağmur ve neme dayanıklı. Günlük kullanım için güvenlidir.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.ip68.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.ip68.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Şarj Edilebilir</h4>
-              <p className="text-sm text-gray-700">Pil değiştirmeye gerek yoktur. Gece şarj edin, gün boyu kullanın. El becerileri zayıflamış olanlar için idealdir.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.rechargeable.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.rechargeable.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Feedback İptali</h4>
-              <p className="text-sm text-gray-700">Cihazın çıkardığı ıslık sesini önler. Telefonda konuşurken veya sarılırken önemli.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.feedback.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.feedback.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Binaural (İki Kulak)</h4>
-              <p className="text-sm text-gray-700">İki cihazınız birbirine bağlanır ve senkronize çalışır. Sesin nereden geldiğini daha iyi anlamanızı sağlar.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.binaural.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.binaural.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Otomatik Ortam Tanıma</h4>
-              <p className="text-sm text-gray-700">Cihaz bulunduğunuz ortamı algılar ve ayarları otomatik değiştirir. Elle program değiştirmeye gerek kalmaz.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.autoEnv.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.autoEnv.desc")}</p>
             </div>
 
             <div className="border-l-4 border-blue-900 pl-4">
-              <h4 className="font-semibold text-blue-900 mb-2">Yapay Zeka Destekli</h4>
-              <p className="text-sm text-gray-700">Cihaz kullandıkça öğrenir ve tercihlerinize uyum sağlar. Her gün biraz daha iyi olur.</p>
+              <h4 className="font-semibold text-blue-900 mb-2">{t("urunKatalogu.technicalTerms.terms.ai.title")}</h4>
+              <p className="text-sm text-gray-700">{t("urunKatalogu.technicalTerms.terms.ai.desc")}</p>
             </div>
           </div>
 
           <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-200">
-            <h3 className="font-semibold text-blue-900 mb-3 text-lg">💡 Önemli Not:</h3>
+            <h3 className="font-semibold text-blue-900 mb-3 text-lg">{t("urunKatalogu.technicalTerms.note.title")}</h3>
             <p className="text-gray-700">
-              Teknik özellikler önemli, ama en önemli şey <strong>sizin için doğru cihazı</strong> bulmak, doğru programlamak ve en yüksek verimi almanızı sağlamaktır.
-              Uzman ekibimiz, işitme durumunuzu, yaşam tarzınızı ve bütçenizi dikkate alarak size en uygun cihazı önerecektir. 
-              Danışmanlık için randevu alın!
+              {t("urunKatalogu.technicalTerms.note.text")}
             </p>
           </div>
         </div>
@@ -551,7 +560,7 @@ export default function UrunKatalogu() {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-blue-900" />
             <input
               type="text"
-              placeholder="Ürün ara..."
+              placeholder={t("urunKatalogu.search.placeholder")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent"
@@ -630,7 +639,7 @@ export default function UrunKatalogu() {
         {filteredProducts.length === 0 && (
           <div className="text-center py-20 text-blue-900">
             <Volume2 className="w-12 h-12 mx-auto mb-4 text-blue-300" />
-            Ürün bulunamadı.
+            {t("urunKatalogu.search.notFound")}
           </div>
         )}
       </div>

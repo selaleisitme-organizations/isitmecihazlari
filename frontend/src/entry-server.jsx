@@ -2,6 +2,7 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router";
 
 import AppRoutes from "./AppRoutes.jsx";
+import "./i18n";
 
 // Build-time only (scripts/prerender.mjs): the HTML one page shows before its JavaScript runs.
 export function render(url) {
