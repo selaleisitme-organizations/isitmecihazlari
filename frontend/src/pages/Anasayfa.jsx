@@ -22,7 +22,7 @@ export default function Anasayfa() {
   ];
   // Photos of the center's storefront; each one opens the location in Google Maps.
   const locationImages = [
-    '/images/Location1.webp',
+    '/images/LocationSign.webp',
     '/images/Location2.webp',
   ];
   const nextLocationImage = () => setCurrentLocationImage((i) => (i + 1) % locationImages.length);
