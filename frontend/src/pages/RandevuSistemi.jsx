@@ -203,7 +203,7 @@ export default function RandevuSistemi() {
       <SEO
   title="Sarıyer İşitme Testi ve Randevu | Şelale İşitme"
   description="Sarıyer Şelale İşitme Merkezi'nde işitme testi ve değerlendirme için online randevu talebinizi oluşturun."
-  canonical="https://selaleisitme.com/randevu"
+  canonical="https://www.selaleisitme.com/randevu"
 />
  {/*for navigation  */}
 
