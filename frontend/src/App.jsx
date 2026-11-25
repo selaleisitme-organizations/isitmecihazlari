@@ -9,12 +9,22 @@ import OnlineTest from "./pages/OnlineTest.jsx";
 import RandevuSistemi from "./pages/RandevuSistemi";
 import TerapiProgrami from "./pages/TerapiProgrami";
 import UrunKatalogu from "./pages/UrunKatalogu";
+import SpecialDayPopup from "./components/SpecialDayPopup";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 function App() {
   return (
     <>
       {/* KVKK popup (appears on all pages) */}
       <KvkkPopup />
+
+      {/* Special‑day popup (shows once per session on configured dates) */}
+      <SpecialDayPopup />
+
+      {/* Floating language switcher (top‑right corner, all pages) */}
+      <div style={{ position: "fixed", top: 16, right: 110, zIndex: 9999 }}>
+        <LanguageSwitcher />
+      </div>
 
       {/* Main Router */}
       <BrowserRouter>

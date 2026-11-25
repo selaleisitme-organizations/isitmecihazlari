@@ -1,0 +1,866 @@
+{
+  "navigation": {
+    "menu": "Menu",
+    "home": "Home",
+    "appointment": "Book an Appointment",
+    "rehabilitation": "Rehabilitation Program",
+    "productCatalog": "Product Catalog",
+    "sgk": "Social Security (SGK)",
+    "phoneApp": "Mobile App",
+    "about": "About Us",
+    "whyUs": "Why Choose Us",
+    "freeHearingTest": "Free Hearing Test",
+    "founderName": "Audiologist Şelale Alağaş",
+    "founderMessageTitle": "A Message from the Founder: Listen to Your Loved Ones",
+    "founderMessage": "Hearing is not merely the function of a sensory organ; it is also fundamental to our connection with life. When establishing Şelale Hearing Center, our goal was to combine technology with a people-centered approach, bringing clearer sound and renewed confidence into each patient's life. The meaning of life lies in its quality. Your smiles and the light we see in your eyes are our greatest sources of motivation.",
+    "missionTitle": "Our Mission",
+    "missionText": "To improve our patients' quality of life, we provide solutions that maximize hearing performance. Our expert team identifies the hearing aid best suited to each individual's hearing loss, programs the device according to their personal needs, and provides continuous support throughout the adaptation process and for as long as the device is used.",
+    "visionTitle": "Our Vision",
+    "visionText": "We aim to become a leader in hearing healthcare by providing innovative, reliable, and patient-centered services while adhering to ethical values, legal regulations, and professional standards. As we help shape the industry by integrating artificial intelligence technologies into healthcare, we continue to pass on more than 35 years of knowledge and experience to future healthcare professionals.",
+    "valuesTitle": "Our Core Values",
+    "technologyValue": "A Science- and Technology-Driven Approach",
+    "technologyDescription": "We aim to improve users' quality of life by personalizing their hearing experience.",
+    "trustValue": "Trust",
+    "trustDescription": "We help users feel confident and at ease throughout their hearing journey by building trust in the quality, accuracy, and reliability of their devices.",
+    "personalizedValue": "Personalized Solutions",
+    "personalizedDescription": "We aim to provide the most suitable hearing experience for each individual's degree of hearing loss, lifestyle, and needs.",
+    "phone": "0532 275 24 14",
+    "email": "selalealagas@hotmail.com",
+    "address": "Merkez Neighborhood, Sarıyer"
+  },
+  "anasayfa": {
+    "title": "Sarıyer Hearing Aid Center",
+    "heroSubtitle": "Discover technology that transforms your life.",
+    "heroQuestion": "Are you ready to hear better?",
+    "freeTestButton": "Free Hearing Test",
+    "stats": {
+      "satisfiedPatients": "Satisfied Patients",
+      "successRate": "Success Rate",
+      "yearsExperience": "Years of Experience",
+      "healthProfessional": "Healthcare Professional",
+      "healthProfessionalName": "Şelale Alağaş",
+      "patientsValue": "500+",
+      "successValue": "99%",
+      "experienceValue": "30+"
+    },
+    "about": {
+      "title": "Why Şelale?",
+      "paragraph1": "At Şelale Hearing Center in Sarıyer, we provide services in hearing aid selection, hearing tests and hearing health consultancy. Under the leadership of our founder and Chair of the Board, Audiologist Şelale Alağaş, we assess each person's hearing needs and help them find the solution that suits them. If you are looking for a hearing aid or a hearing center in Istanbul, we welcome you to our center in Sarıyer.",
+      "paragraph2": "By keeping up with the latest technological innovations, we bring high-performance hearing aids to you. Our aim is to help you protect your hearing health through accurate information, reliable assessments, and ongoing consultation.",
+      "servicesIntro": "Everyone's hearing needs are different. At Şelale, we offer the following services:",
+      "services": [
+        "Hearing tests",
+        "Speech and language therapy",
+        "SME and healthcare consultancy",
+        "Technical service and maintenance"
+      ],
+      "closing": "At Şelale Hearing Center, we offer guidance on hearing aid support under SGK (Turkish Social Security) and on the device supply process. For detailed information on eligibility for SGK support and current payment details, please contact our center in Sarıyer.",
+      "imageAlt": "Why Choose Şelale"
+    },
+    "diseases": {
+      "sectionTitle": "Hearing Problems",
+      "sectionSubtitle": "Learn about diagnoses, symptoms, and solutions",
+      "symptomsTitle": "Symptoms",
+      "items": [
+        {
+          "name": "Tinnitus",
+          "shortDesc": "Ringing in the Ears",
+          "description": "The perception of ringing, buzzing, or noise in the ears without an external sound source.",
+          "symptoms": [
+            "Persistent ringing or buzzing",
+            "Difficulty concentrating",
+            "Sleep problems",
+            "Anxiety"
+          ]
+        },
+        {
+          "name": "Age-Related Hearing Loss",
+          "shortDesc": "Presbycusis",
+          "description": "The natural decline in hearing ability with age. It is one of the most common hearing problems.",
+          "symptoms": [
+            "Difficulty understanding high-pitched speech",
+            "Difficulty hearing over the phone",
+            "Social isolation"
+          ]
+        },
+        {
+          "name": "Noise-Induced Hearing Loss",
+          "shortDesc": "NIHL",
+          "description": "Permanent hearing loss caused by prolonged exposure to high levels of noise.",
+          "symptoms": [
+            "Difficulty hearing certain frequencies",
+            "Difficulty understanding speech",
+            "Balance problems"
+          ]
+        },
+        {
+          "name": "Ménière's Disease",
+          "shortDesc": "",
+          "description": "An inner-ear fluid imbalance that can cause vertigo, tinnitus, and fluctuating hearing loss.",
+          "symptoms": [
+            "Episodes of dizziness (vertigo)",
+            "A feeling of fullness in the ear",
+            "Hearing loss"
+          ]
+        },
+        {
+          "name": "Otosclerosis",
+          "shortDesc": "",
+          "description": "Abnormal bone hardening in the middle ear that restricts the movement of the small bones and can lead to progressive hearing loss.",
+          "symptoms": [
+            "Hearing one's own voice unusually loudly",
+            "Family history of the condition",
+            "Pregnancy and hormonal changes"
+          ]
+        },
+        {
+          "name": "Congenital Hearing Loss",
+          "shortDesc": "",
+          "description": "Hearing loss that may occur in infants and children. Early intervention with hearing aids is essential for hearing and speech development.",
+          "symptoms": [
+            "No response to loud sounds between 0 and 3 months of age",
+            "No response when their name is called between 6 and 12 months of age",
+            "Delayed speech development after 1 year of age"
+          ]
+        }
+      ]
+    },
+    "hearingDevices": {
+      "title": "The Importance of Choosing and Using a Hearing Aid in Sarıyer",
+      "description": "Hearing loss is about more than simply being unable to hear sounds. It can have a profound impact on social life, mental health, and overall quality of life. Hearing aids help the brain process sounds again and can restore communication, confidence, and independence. Where you choose to obtain your hearing aid is more important than the brand or model, because your hearing care professional will support your rehabilitation over the years.",
+      "benefits": [
+        {
+          "title": "Brain Health",
+          "description": "When hearing loss goes untreated, the brain may gradually lose its ability to recognize sounds. Over time, this can increase the risk of cognitive decline and memory problems."
+        },
+        {
+          "title": "Social Life",
+          "description": "People who experience hearing difficulties often withdraw from social situations. Hearing aids make communication easier and may help reduce social isolation and the risk of depression."
+        },
+        {
+          "title": "Quality of Life",
+          "description": "With hearing aids, you can reconnect with the people around you, improve your safety, and enjoy a more active and fulfilling daily life."
+        }
+      ],
+      "closingTitle": "Do not neglect your hearing loss.",
+      "closingText": "Early diagnosis and choosing the right hearing aid are among the most effective ways to protect your mental and emotional well-being."
+    },
+    "hearingTest": {
+      "title": "Hearing Test and Assessment in Sarıyer",
+      "description": "A hearing test is a basic assessment used to evaluate your current hearing levels and ear health. It identifies the frequencies and sound levels at which you may have difficulty hearing. Based on the results, our specialists provide an individualized assessment and, when necessary, recommend a suitable hearing aid or therapy plan. This helps clarify the type of hearing loss and determine the most effective course of action.",
+      "appointmentButton": "Book a Hearing Test",
+      "startButton": "Start the Free Test",
+      "imageAlt": "Şelale Hearing Center hearing test image",
+      "previousImage": "Previous Image",
+      "nextImage": "Next Image"
+    },
+    "contact": {
+      "title": "Sarıyer Şelale Hearing Center: Contact and Directions",
+      "informationTitle": "Contact Information",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "hoursLabel": "Opening Hours",
+      "workingDays": "Monday – Saturday",
+      "workingHours": "9:00 AM – 6:00 PM",
+      "mapAlt": "Location of Şelale Hearing Center",
+      "mapButton": "View on Google Maps"
+    },
+    "bottomCta": {
+      "title": "Transform Your Life",
+      "description": "Get a hearing test today. Our specialists will prepare a personalized plan for you.",
+      "button": "Book an Appointment Now"
+    },
+    "whatsapp": {
+      "ariaLabel": "Contact us on WhatsApp",
+      "message": "Hello, I would like to get information about a hearing test."
+    },
+    "carousel": {
+      "imageAlt": "Şelale Hearing Center services and work areas image"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about the use and care of hearing aids",
+      "items": [
+        {
+          "question": "What is the average lifespan of a hearing aid?",
+          "answer": "With proper care and maintenance, hearing aids typically last 5 to 7 years. Factors such as moisture, dust, and earwax can affect device longevity."
+        },
+        {
+          "question": "Do hearing aids make your ears lazy?",
+          "answer": "No. Hearing aids do not make your ears lazy; they help you hear sounds you have difficulty perceiving and assist your brain in adapting back to those sounds."
+        },
+        {
+          "question": "How should I clean and protect my hearing aid?",
+          "answer": "Wipe your device daily with a soft, dry cloth. Keep it away from moisture and water, and follow your specialist's recommendations for cleaning and care."
+        },
+        {
+          "question": "Can I connect my hearing aid to my smartphone?",
+          "answer": "Yes. Compatible hearing aids with Bluetooth can be wirelessly paired with your smartphone. Compatibility may vary depending on device model and phone."
+        },
+        {
+          "question": "Is it difficult to get used to hearing aids for the first time?",
+          "answer": "Sounds may feel different in the beginning. The adjustment period varies from person to person; most users comfortably adapt within a few weeks."
+        }
+      ]
+    }
+  },
+  "audioServis": {
+    "seoTitle": "Hearing Aid Phone Apps | Mobile Control | Şelale Hearing Sarıyer",
+    "seoDescription": "Control your hearing aids from your phone. Explore iOS and Android apps, remote control, sound settings, and lost-device locating.",
+    "structuredName": "Hearing Aid Mobile Applications",
+    "structuredDescription": "Control your hearing aids using your smartphone. Adjust sound settings, change programs, locate lost devices, and more.",
+    "structuredFeatures": [
+      "Remote control",
+      "Volume adjustment",
+      "Program switching",
+      "Battery level display",
+      "Lost-device locating",
+      "Bluetooth connectivity",
+      "Music and phone audio streaming"
+    ],
+    "menuButton": "Open menu",
+    "closeMenu": "Close menu",
+    "logoAlt": "Şelale Hearing Center logo",
+    "title": "Phone Applications",
+    "intro": "Mobile solutions that help hearing aid users control their devices easily.",
+    "app1": {
+      "imageAlt": "Hearing aid mobile app control screen",
+      "title": "Application 1",
+      "description": "A user-friendly interface designed to make everyday use more comfortable.",
+      "featuresTitle": "Key Features",
+      "features": [
+        "Control hearing aid settings remotely",
+        "Personalize volume and balance settings",
+        "Switch between different listening programs",
+        "View battery levels",
+        "View usage statistics",
+        "Compatible with iOS and Android devices"
+      ]
+    },
+    "app2": {
+      "imageAlt": "Coselgi Effect application screen",
+      "title": "Application 2",
+      "description": "Personalize your hearing experience and stay seamlessly connected to the people around you.",
+      "featuresTitle": "Key Features",
+      "features": [
+        "Automatic sound optimization based on your surroundings",
+        "Advanced noise reduction to improve speech clarity",
+        "Direct phone calls and music streaming",
+        "Locate lost devices with the \"Find My Hearing Aid\" feature",
+        "Create personalized sound profiles"
+      ]
+    },
+    "app3": {
+      "imageAlt": "Bernafon application screen",
+      "title": "Application 3",
+      "description": "Provides everything you need to control your hearing aids easily in one application.",
+      "featuresTitle": "Key Features",
+      "features": [
+        "Adjust volume levels and programs in real time",
+        "Set daily usage goals",
+        "Personalize music and call audio with a streaming equalizer",
+        "Locate a lost hearing aid on a map",
+        "Monitor battery status and connection quality"
+      ]
+    }
+  },
+  "aboutPage": {
+    "title": "About Şelale Hearing",
+    "intro": "Provides hearing tests, hearing aid fitting, and after-sales support services across all 39 districts and 975 neighborhoods of Istanbul. Our goal is to restore ease and comfort to your daily communication through accurate measurements and precise adjustments.",
+    "founderName": "Audiologist Şelale Alağaş",
+    "founderMessageTitle": "Founder's Message: Listen to Your Loved Ones",
+    "founderMessage": "\"Hearing is not merely the function of a sensory organ; it is the foundation of our connection with life. When establishing Şelale Hearing Center, our goal was to combine technology with a human-centered approach to add clear sound and renewed confidence to the life of every patient. The meaning of life lies in the quality of living. Your smiles and the light we see in your eyes are our greatest source of motivation.\"",
+    "missionTitle": "Our Mission",
+    "missionText": "To enhance our patients' quality of life, we offer solutions that elevate hearing performance to the highest level. Our expert team determines the most suitable model for each individual's hearing loss, custom-programs the device, and provides uninterrupted support during the adaptation process and throughout its usage.",
+    "visionTitle": "Our Vision",
+    "visionText": "By adhering to ethical values, legal regulations, and professional standards, we aim to pioneer the field of hearing health with an innovative, reliable, and patient-centered service approach. As we shape the industry by integrating artificial intelligence technologies into healthcare services, we continue to pass on our 35+ years of knowledge and experience to future healthcare professionals.",
+    "valuesTitle": "Our Core Values",
+    "technologyValue": "Science and Technology-Driven Approach",
+    "technologyDescription": "Aims to enhance quality of life by personalizing users' hearing experiences.",
+    "trustValue": "Trust",
+    "trustDescription": "Ensures users feel peace of mind in their hearing journey through their belief in the quality, accuracy, and continuity of the device.",
+    "personalizedValue": "Personalized Solutions",
+    "personalizedDescription": "Aims to deliver the most optimal hearing experience tailored to each individual's level of hearing loss, lifestyle, and needs.",
+    "founderPhotoAlt": "Şelale Hearing founder, Audiologist Şelale Alağaş"
+  },
+  "nedenBiz": {
+    "title": "Why Should You Choose Us?",
+    "intro": "Committed to medical ethics and quality standards, we provide the most advanced technologies for your hearing health through personalized solutions.",
+    "technologyTitle": "Technology and Hearing Aid Types Tailored to You",
+    "inEarTitle": "In-the-Ear Hearing Aids",
+    "inEarDescription": "Ideal for users who value aesthetics. Custom-fitted to your ear, these devices offer comfortable use while remaining discreet and barely noticeable from the outside.",
+    "behindEarTitle": "Behind-the-Ear Hearing Aids (RIC / BTE)",
+    "behindEarDescription": "Known for their ergonomic designs and excellent sound performance, these devices offer durable solutions suitable for different types of hearing loss.",
+    "rechargeableTitle": "Rechargeable Systems",
+    "rechargeableDescription": "Lithium-ion battery technology eliminates the hassle of changing disposable batteries every day. Enjoy a continuous hearing experience throughout the day.",
+    "bluetoothTitle": "Bluetooth-Enabled Hearing Aids",
+    "bluetoothDescription": "Connect seamlessly with devices such as phones and televisions. Audio is streamed directly to your hearing aids for clearer listening.",
+    "investmentTitle": "We Continuously Invest in Technological Advancements",
+    "investmentDescription": "We closely follow the latest innovations in hearing healthcare. By investing in equipment that supports clinical practice, we continue to provide reliable and high-quality care.",
+    "satisfactionLabel": "PATIENT SATISFACTION",
+    "reviewsTitle": "What Do Our Patients Say?",
+    "reviewsDescription": "The experiences shared by our patients on Google reflect the quality of our services and the care we provide.",
+    "reviewDates": {
+      "nineMonths": "9 months ago",
+      "tenMonths": "10 months ago"
+    },
+    "fiveStars": "5 stars",
+    "reviews": {
+      "elif": "I took my mother there... The doctor was very attentive and understanding, bless her... My mother was afraid she would not be able to use a hearing aid, but she trusted her doctor. Now she has gotten used to the device and is very happy 😊... Our quality of life has improved...",
+      "ahmet": "I can truly describe Ms. Şelale as a communication genius. Alongside her professional management, she combines extraordinary intelligence with science to achieve excellent results. She is also a hidden talent who placed third in Turkish judo. Definitely the place to visit if you want a professional you can trust.",
+      "songul": "I took my aunt there. She has excellent communication skills and provided the most accurate information. She was so attentive. I had visited many other places before and realized I had wasted money. After meeting Ms. Şelale, I understood that you receive complete hearing healthcare from her, not just a product.",
+      "taner": "I had been researching for a long time, and finally felt that I had found the right place. The team is very experienced and genuinely focused on finding solutions. They patiently explained every step and recommended a device suited to my needs. The service quality is excellent. Thank you.",
+      "nata": "Şelale did more than just fit me with a hearing aid; she also developed a rehabilitation plan for me. An excellent specialist. Thank you very much.",
+      "timucin": "Ms. Şelale took very good care of me and continues to provide regular follow-up checks. I recommend this place if you are looking for quality service.",
+      "dina": "The best prices. Everything is transparent, and all invoices and documents were provided. I trust this specialist one hundred percent."
+    },
+    "ownerReplyTitle": "Şelale Hearing Aids (Owner)",
+    "ownerReply": "Thank you",
+    "ctaTitle": "We Are Here for You, Too",
+    "ctaDescription": "Take the next step toward better hearing and a more comfortable life.",
+    "ctaButton": "Book a Free Appointment"
+  },
+  "sgkPage": {
+    "title": "Social Security Institution (SGK)",
+    "intro": "Our hearing center operates under an agreement with the Turkish Social Security Institution (SGK).",
+    "informationCards": {
+      "deviceEligibility": "Hearing devices covered by SGK are provided subject to the patient's medical report and SGK approval.",
+      "contributionDetails": "For detailed information about SGK reimbursement amounts and which hearing devices are covered, please contact us or visit our center."
+    },
+    "contactButton": "Contact Us"
+  },
+  "onlineTest": {
+    "seo": {
+      "title": "Free Online Hearing Test | Şelale Hearing Center Sarıyer Istanbul",
+      "description": "Free online hearing test in Sarıyer, Istanbul. Hearing loss screening, audiogram, and hearing aid consultation. Take the test and book an appointment. ☎️ 0532 275 24 14",
+      "keywords": "hearing test, online hearing test, free hearing test, hearing loss test, audiogram, hearing aids, Sarıyer hearing center, Istanbul hearing test, hearing problems, ear test, hearing test Turkey"
+    },
+    "structuredData": {
+      "name": "Online Hearing Test",
+      "description": "Free online hearing screening. Measure your hearing threshold at 6 different frequencies.",
+      "condition": "Hearing Loss"
+    },
+    "headphoneCheck": {
+      "title": "Headphone Check",
+      "description": "You must use headphones for this test. Please put on your headphones and make sure each ear is connected to the correct audio channel.",
+      "checklistTitle": "Pre-Test Checklist:",
+      "checklist": {
+        "headphones": "Wear your headphones correctly (L = Left, R = Right)",
+        "quietEnvironment": "Make sure you are in a quiet environment",
+        "volume": "Keep your device volume at a moderate level",
+        "listenCarefully": "Listen carefully during the test"
+      },
+      "startButton": "My Headphones Are Ready, Let's Start"
+    },
+    "instructions": {
+      "leftEar": "Left",
+      "rightEar": "Right",
+      "earTestTitle": "{{ear}} Ear Test",
+      "description": "You will hear tones at {{count}} different frequencies. For each frequency, set the sound to the lowest level at which you can hear it.",
+      "startButton": "Start Test",
+      "frequencyLabel": "Frequency {{current}} of {{total}}",
+      "volumeInstruction": "Adjust the sound to the lowest level at which you can hear it (hearing threshold).",
+      "playButton": "PLAY TONE 🔊",
+      "playingButton": "Playing...",
+      "continueButton": "Continue",
+      "volumeUnit": "dB HL"
+    },
+    "results": {
+      "completedTitle": "Test Completed!",
+      "disclaimer": "This is a preliminary screening test. Please consult a hearing specialist for an accurate assessment.",
+      "possibleLossWarning": "Attention: Possible hearing loss was detected at one or more frequencies. A professional assessment is recommended.",
+      "asymmetryWarning": "Warning: Possible asymmetric hearing loss was detected between the ears (a difference of 16 dB or more). Please consult a specialist.",
+      "appointmentButton": "Click to Book an Appointment",
+      "professionalAppointmentButton": "Book an Appointment for a Professional Test",
+      "leftEar": "Left Ear",
+      "rightEar": "Right Ear",
+      "averageThreshold": "Average Threshold:",
+      "hearingLevelsTitle": "Hearing Levels Guide:",
+      "normal": "Normal",
+      "possibleHearingLoss": "Possible Hearing Loss",
+      "hearingLoss": "Hearing Loss",
+      "advancedHearingLoss": "Severe Hearing Loss",
+      "veryAdvancedHearingProblem": "Profound Hearing Problem",
+      "levels": {
+        "normal": "-10 to 25 dB: Normal",
+        "mild": "26 to 40 dB: Mild Hearing Loss",
+        "moderate": "41 to 55 dB: Moderate Hearing Loss",
+        "advanced": "56 to 90 dB: Severe Hearing Loss",
+        "veryAdvanced": "Above 90 dB: Profound Hearing Loss"
+      }
+    },
+    "pageTitle": "Free Online Hearing Test"
+  },
+  "appointmentPage": {
+    "seo": {
+      "title": "Book an Appointment | Şelale Hearing Center Sarıyer Istanbul",
+      "description": "Book an online appointment for a hearing test or consultation at Şelale Hearing Center."
+    },
+    "header": {
+      "title": "Hearing Test and Appointment in Sarıyer",
+      "description": "Schedule an appointment for your hearing test"
+    },
+    "steps": {
+      "date": "Select Date",
+      "time": "Select Time",
+      "contact": "Contact Information"
+    },
+    "calendar": {
+      "title": "Select a Date",
+      "selectedDate": "Selected Date:",
+      "selectDatePrompt": "Please select a date",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "weekdays": {
+        "monday": "Mon",
+        "tuesday": "Tue",
+        "wednesday": "Wed",
+        "thursday": "Thu",
+        "friday": "Fri",
+        "saturday": "Sat",
+        "sunday": "Sun"
+      }
+    },
+    "time": {
+      "title": "Select a Time",
+      "slotBooked": "This time is booked",
+      "noSlotsLeft": "There are no free times left on this day. Please choose another day."
+    },
+    "form": {
+      "title": "Enter Your Information",
+      "name": "Full Name",
+      "namePlaceholder": "Your full name",
+      "age": "Age",
+      "agePlaceholder": "Your age",
+      "phone": "Phone",
+      "phonePlaceholder": "Your phone number",
+      "email": "Email",
+      "emailPlaceholder": "example@email.com",
+      "issue": "Hearing Problem",
+      "issuePlaceholder": "Briefly describe your hearing problem...",
+      "required": "Required field",
+      "requiredFieldsError": "Please fill in all required fields.",
+      "invalidEmail": "Please enter a valid email address."
+    },
+    "buttons": {
+      "continue": "Continue",
+      "back": "Back",
+      "confirm": "Confirm Appointment",
+      "loading": "Loading...",
+      "home": "Return to Home"
+    },
+    "errors": {
+      "createFailed": "An error occurred while creating your appointment. Please try again.",
+      "serverConnection": "An error occurred while connecting to the server.",
+      "pastDate": "You cannot select a date in the past.",
+      "slotTaken": "This time was just taken. Please choose another time."
+    },
+    "success": {
+      "title": "Appointment Successfully Created!",
+      "thankYou": "thank you for your appointment.",
+      "date": "Date:",
+      "time": "Time:",
+      "requestReceived": "We have received your request. We will contact you soon."
+    }
+  },
+  "therapyPage": {
+    "seo": {
+      "title": "Auditory Rehabilitation and Therapy Program | Şelale Hearing Center Istanbul",
+      "description": "Personalized auditory rehabilitation programs for hearing aid users in Sarıyer, Istanbul. Improve your hearing, understanding, and communication skills. Call for an appointment: +90 532 275 24 14.",
+      "keywords": "auditory rehabilitation, hearing therapy, hearing aid training, speech therapy, hearing loss management, rehabilitation program, audiology, hearing aids, Şelale Hearing Center"
+    },
+    "menu": {
+      "title": "Menu",
+      "open": "Open menu",
+      "close": "Close menu",
+      "logoAlt": "Şelale Hearing Center Logo"
+    },
+    "title": "Auditory Rehabilitation in Sarıyer",
+    "paragraph1": "Addressing hearing difficulties involves more than simply fitting a hearing aid. Lasting success comes from supporting the process with appropriate rehabilitation methods. Hearing rehabilitation aims not only to improve hearing, but also to help individuals regain understanding and effective communication skills.",
+    "paragraph2": "During auditory rehabilitation, the person experiencing hearing loss remains at the center of the process. Active patient participation is essential when setting goals and choosing the most suitable solutions. After the assessment, a personalized hearing loss management plan is created. This plan helps the patient take an active role in protecting and improving their hearing.",
+    "paragraph3": "Rehabilitation does more than improve hearing; it can also support a person's quality of life. Regular device follow-ups, maintenance, and rehabilitation are carefully managed by the hearing center where the device was obtained.",
+    "paragraph4": "If you experience any problems with your hearing aid, we strongly recommend contacting the center where you obtained it.",
+    "warning": "Otherwise, the hearing center cannot be held responsible for device malfunctions that may result from external intervention.",
+    "imageAlt": "Child wearing a hearing aid"
+  },
+  "urunKatalogu": {
+    "seo": {
+      "title": "Hearing Aid Prices and Models 2024 | Şelale Hearing Sarıyer",
+      "description": "The latest technology hearing aid prices and models. Invisible in-canal, behind-the-ear, and rechargeable devices. Sarıyer hearing center catalog.",
+      "keywords": "hearing aid, hearing aids, hearing aid prices, earphone prices, invisible hearing aid, in-canal hearing aid, behind-the-ear hearing aid, sariyer hearing, istanbul hearing aid, phonak, signia, widex, ear device, hearing device, hearing test, bluetooth hearing aid, rechargeable hearing aid"
+    },
+    "structuredData": {
+      "name": "Hearing Aid Models and Prices",
+      "description": "The latest technology RIC, BTE, CIC, and invisible hearing aids at Sarıyer Şelale Hearing Center. Bluetooth and rechargeable models.",
+      "providerName": "Şelale Hearing Center",
+      "items": [
+        "Behind-The-Ear (BTE) Hearing Aids",
+        "Completely-in-Canal (CIC/IIC) Invisible Devices",
+        "Receiver-in-Canal (RIC) Devices",
+        "Rechargeable Hearing Aids"
+      ]
+    },
+    "header": {
+      "title": "Hearing Aid Models in Sarıyer",
+      "subtitle": "Discover the latest hearing aids"
+    },
+    "categories": {
+      "all": "All",
+      "ric": "RIC (Receiver-in-Canal)",
+      "bte": "BTE (Behind-The-Ear)",
+      "cic": "CIC (Completely-in-Canal)",
+      "ite": "ITE (In-The-Ear)",
+      "itc": "ITC (In-The-Canal)",
+      "cros": "CROS/BiCROS",
+      "acc": "Accessories"
+    },
+    "education": {
+      "title": "Let's Get to Know Hearing Aid Types",
+      "subtitle": "Which device is right for you? Here is a simple guide:",
+      "types": {
+        "ric": {
+          "title": "RIC - Receiver-in-Canal",
+          "desc": "Small and discreet. The speaker is in the ear canal, and the device is behind the ear. Provides natural sound quality. Ideal for mild to moderate hearing loss."
+        },
+        "bte": {
+          "title": "BTE - Behind-The-Ear",
+          "desc": "The most powerful device type. Sits behind the ear and transmits sound into the ear via a tube. Suitable for all levels of hearing loss, from mild to profound. Easy to handle."
+        },
+        "ite": {
+          "title": "ITE - In-The-Ear",
+          "desc": "Fills the outer part of the ear completely. Visible but easy to use. Suitable for mild-to-moderate and moderate-to-severe hearing loss. Changing batteries is easier."
+        },
+        "itc": {
+          "title": "ITC - In-The-Canal",
+          "desc": "Sits partially in the ear canal. Smaller and less conspicuous than ITE. Suitable for mild to moderate hearing loss. Requires some dexterity."
+        },
+        "cic": {
+          "title": "CIC - Completely-in-Canal",
+          "desc": "Almost invisible! Sits deep within the ear canal. For mild to moderate loss. Battery life is shorter due to its small size. Requires good manual dexterity."
+        },
+        "openFit": {
+          "title": "Open-Fit",
+          "desc": "Does not block the ear canal, allowing natural ventilation. Prevents your own voice from sounding muffled. Excellent for high-frequency hearing loss. Very comfortable."
+        },
+        "cros": {
+          "title": "CROS/BiCROS",
+          "desc": "Specially designed for single-sided deafness. Transmits sound from the poorer ear to the better ear. BiCROS is used if there is hearing loss in both ears. Helps you hear your surroundings better."
+        }
+      },
+      "levels": {
+        "title": "Which Level?",
+        "entry": {
+          "label": "Entry:",
+          "desc": "Basic features, economical"
+        },
+        "mid": {
+          "label": "Mid:",
+          "desc": "More features, Bluetooth"
+        },
+        "premium": {
+          "label": "Premium:",
+          "desc": "Advanced technology, artificial intelligence"
+        }
+      }
+    },
+    "technicalTerms": {
+      "title": "Technical Terms Guide",
+      "terms": {
+        "channels": {
+          "title": "Number of Channels",
+          "desc": "Allows adjusting different frequencies of sound separately. More channels mean more precise tuning. 16+ channels are sufficient for most people."
+        },
+        "programs": {
+          "title": "Number of Programs",
+          "desc": "Settings for different environments. Example: quiet room, noisy restaurant, listening to music. 4-6 programs are usually enough."
+        },
+        "noiseReduction": {
+          "title": "Noise Reduction",
+          "desc": "Reduces background noise, making conversations easier to hear. Very important in crowded places."
+        },
+        "directionalMic": {
+          "title": "Directional Microphone",
+          "desc": "Focuses on sounds in front of you while reducing noise from behind. Highly beneficial during conversations."
+        },
+        "bluetooth": {
+          "title": "Bluetooth",
+          "desc": "Streams audio directly from your phone to your device. Used for calls, music, and video. Compatible with iPhone and Android."
+        },
+        "tinnitus": {
+          "title": "Tinnitus Therapy",
+          "desc": "Generates specific sounds for ringing in the ears. Helps mask tinnitus and provides relief."
+        },
+        "ip68": {
+          "title": "IP68 Protection",
+          "desc": "Water and dust resistant. Withstands sweat, rain, and moisture. Safe for daily use."
+        },
+        "rechargeable": {
+          "title": "Rechargeable",
+          "desc": "No need to change batteries. Charge at night, use all day. Ideal for those with reduced dexterity."
+        },
+        "feedback": {
+          "title": "Feedback Cancellation",
+          "desc": "Prevents the whistling sound made by the device. Important when talking on the phone or hugging someone."
+        },
+        "binaural": {
+          "title": "Binaural (Two Ears)",
+          "desc": "Your two devices connect and work in sync. Helps you better determine where a sound is coming from."
+        },
+        "autoEnv": {
+          "title": "Automatic Environment Recognition",
+          "desc": "The device detects your environment and changes settings automatically. No need to manually switch programs."
+        },
+        "ai": {
+          "title": "AI-Powered",
+          "desc": "The device learns as you use it and adapts to your preferences. It gets a little better every day."
+        }
+      },
+      "note": {
+        "title": "💡 Important Note:",
+        "text": "Technical specifications are important, but the most crucial aspect is finding the right device for you, programming it correctly, and ensuring you get maximum efficiency. Our expert team will recommend the most suitable device by considering your hearing condition, lifestyle, and budget. Book an appointment for a consultation!"
+      }
+    },
+    "search": {
+      "placeholder": "Search products...",
+      "notFound": "No products found."
+    },
+    "products": {
+      "p1": {
+        "name": "Music and Speech-Focused Aesthetic Pro",
+        "priceTag": "Premium",
+        "description": "48 Channels, 6 programs, Automatic Directional Microphone, Noise Reduction, Frequency Compression, Acclimatic, Binaural Synchronization, Extended Dynamic Range, IP 68, Wind Noise Reduction, Tinnitus Therapy, Music Select, 2earPhone, AudioLink, Notch Therapy, Enhanced Sudden Sound Suppressor, Selectronic, Binaural Sound Localization, Auto Optimization, HiFi, Auto EchoClear, AudioFocus 360",
+        "features": [
+          "Bluetooth",
+          "Tinnitus Therapy",
+          "Notch Therapy",
+          "Rechargeable"
+        ]
+      },
+      "p2": {
+        "name": "Noise Suppressing Discreet Comfort Model",
+        "priceTag": "Mid",
+        "description": "32 Channels, 6 programs, Noise Reduction, Selectronic, Music Select.",
+        "features": [
+          "Rechargeable",
+          "Bluetooth",
+          "Tinnitus Therapy"
+        ]
+      },
+      "p3": {
+        "name": "In-Canal Digital Clear Hearing Series",
+        "priceTag": "Entry",
+        "description": "16 Channels, 4 programs, Noise Reduction, Binaural Synchronization, AudioLink, IP68.",
+        "features": [
+          "Rechargeable",
+          "Bluetooth",
+          "Noise Reduction"
+        ]
+      },
+      "p4": {
+        "name": "Motion Sensor 360° Pro Streaming Model",
+        "priceTag": "Premium",
+        "description": "48 Channels, 6 programs, Automatic Directional Microphone, Noise Reduction, Frequency Compression, Acclimatic, Binaural Synchronization, Extended Dynamic Range, IP 68, Direct Audio Streaming (iPhone and Android), Wind Noise Reduction, Tinnitus Therapy, Tinnitus Notch Therapy, Oculmatic 2.0, Spatial Spot, Motion Sensor, Enhanced Sudden Sound Suppressor, Selectronic, Auto Optimization, Headset mode (iOS & LE Audio), HiFi, Auto EchoClear, AudioFocus 360, Spatial Spot, Bluetooth LE Audio Multi-Track Processing 2.0 (Target Sound 5)",
+        "features": [
+          "Rechargeable",
+          "Bluetooth",
+          "Noise Reduction"
+        ]
+      },
+      "p5": {
+        "name": "Automatic Environment Sensing Smart RIC Series",
+        "priceTag": "Mid",
+        "description": "32 Channels, 6 programs, Automatic Directional Microphone, Noise Reduction, Frequency Compression, Acclimatic, Binaural Synchronization, Extended Dynamic Range, IP 68, Direct Audio Streaming (iPhone and Android), Wind Noise Reduction, Tinnitus Therapy, Notch Therapy, Integrated Motion Sensor, Enhanced Sudden Sound Suppressor, SpeechAudio, Selectronic, Auto Optimization, Tinnitus Notch Therapy, Oculmatic 2.0, Headset mode (iOS & LE Audio), Bluetooth LE Audio, Multi-Track Processing 2.0 (Target Sound 2)",
+        "features": [
+          "Rechargeable",
+          "Bluetooth",
+          "Noise Reduction"
+        ]
+      },
+      "p6": {
+        "name": "Noise Canceling Digital Model",
+        "priceTag": "Entry",
+        "description": "16 Channels, 4 programs, Automatic Directional Microphone, Noise Reduction, Frequency Compression, Acclimatic, Binaural Synchronization, Extended Dynamic Range, IP 68, Direct Audio Streaming (iPhone and Android), Wind Noise Reduction, 2earPhone, AudioLink, Enhanced Sudden Sound Suppressor, Speech360, Selectronic, Bluetooth LE Audio, Multi-Track Processing 2.0 (Target Sound 2), Auto Optimization",
+        "features": [
+          "Rechargeable",
+          "Bluetooth",
+          "Noise Reduction"
+        ]
+      },
+      "p7": {
+        "name": "64 Channel Ultra HD Rechargeable Pro",
+        "priceTag": "Premium",
+        "description": "64 Channels, Multi-Track Processing 2.0 (Target Sound 2), Speech360, 2earPhone, AudioLink, Enhanced Sudden Sound Suppressor, Bluetooth LE Audio, Binaural Synchronization, Wind Noise Reduction, Auto Optimization, Selectronic, Acclimatic, Extended Dynamic Range, IP 68, Direct Audio Streaming (iPhone and Android)",
+        "features": [
+          "Rechargeable",
+          "Bluetooth",
+          "Noise Reduction"
+        ]
+      },
+      "p8": {
+        "name": "All-Day Active Rechargeable Comfort Series",
+        "priceTag": "Mid",
+        "description": "32 Channels, Selectronic, Acclimatic, Automatic Directional Microphone, Wind Noise Reduction, Extended Dynamic Range, Binaural Synchronization, Frequency Compression, IP 68, Direct Audio Streaming (iPhone and Android), Noise Reduction",
+        "features": [
+          "Rechargeable",
+          "Bluetooth",
+          "Noise Reduction"
+        ]
+      },
+      "p9": {
+        "name": "Practical Rechargeable Model",
+        "priceTag": "Entry",
+        "description": "16 Channels, 4 programs, Automatic Directional Microphone, Noise Reduction, Frequency Compression, IP 68, Manual Volume Control, Standard Dynamic Range",
+        "features": [
+          "Rechargeable",
+          "Bluetooth",
+          "Noise Reduction"
+        ]
+      },
+      "p10": {
+        "name": "IP68 Protected Durable Series",
+        "priceTag": "Entry",
+        "description": "16 Channels, 4 Programs, Basic Noise Suppression, Feedback Cancellation, Speech Separation, Manual Volume Control, IP68 Moisture and Dust Protection, Standard Directional Microphone, Data Logging.",
+        "features": [
+          "Noise Cancellation",
+          "IP68 Protection",
+          "Feedback Cancellation"
+        ]
+      },
+      "p11": {
+        "name": "Powerful BTE with Tinnitus Therapy",
+        "priceTag": "Mid",
+        "description": "32 Channels, 6 Programs, Bluetooth Connectivity (iOS & Android), Automatic Environment Recognition, Wind Noise Reduction, Tinnitus Therapy, Dual-Microphone Directional Focus, Frequency Compression.",
+        "features": [
+          "Bluetooth",
+          "Tinnitus Therapy",
+          "Smartphone Control"
+        ]
+      },
+      "p12": {
+        "name": "AI-Powered 360° Spatial Series",
+        "priceTag": "Premium",
+        "description": "48 Channels, 12 Programs, Binaural Synchronization, 360° Spatial Sound Perception, AI-Powered Noise Cleaning, HiFi Music Mode, Echo Canceler, Sudden High Sound Suppression, Rechargeable.",
+        "features": [
+          "Artificial Intelligence",
+          "360° Sound",
+          "Rechargeable"
+        ]
+      },
+      "p15": {
+        "name": "Premium CROS Series",
+        "priceTag": "Premium",
+        "description": "Scans the environment millions of times per second and optimizes sound with its AI-powered processor. Flawlessly determines the direction of sound thanks to 48 Channels and 360° Spatial Sound Perception. Features 'Speech Focus' technology that makes even whispers audible in noisy restaurants, HiFi Music Mode, Echo Canceler, and direct audio streaming via Bluetooth (iOS & Android). Hassle-free Rechargeable Li-ion battery and IP68 durability certification.",
+        "features": [
+          "Artificial Intelligence",
+          "360° Sound",
+          "Rechargeable"
+        ]
+      },
+      "p16": {
+        "name": "360° Environmental Sensing Pro Streaming Model",
+        "priceTag": "Premium",
+        "description": "32 Channels, 6 Programs, Ready-to-wear Silicone Dome (Click Sleeve), No Impression Required (Instant Fit), Bluetooth App Control, Noise Suppression, Wind Shield, Tinnitus Masking, Instant Delivery, Natural Sound Perception, Comfortable Soft Tip, IP 68 Durability.",
+        "features": [
+          "Premium Comfort Series",
+          "Breathable Structure",
+          "Business/Active Life"
+        ]
+      },
+      "p17": {
+        "name": "Natural Sound-Focused Comfort Series",
+        "priceTag": "Mid",
+        "description": "32 Channels, 6 Programs, Ready-to-wear Silicone Dome (Click Sleeve), No Impression Required (Instant Fit), Bluetooth App Control, Noise Suppression, Wind Shield, Tinnitus Masking, Instant Delivery, Natural Sound Perception, Comfortable Soft Tip, IP 68 Durability.",
+        "features": [
+          "Easy-to-Use Series",
+          "Standard Comfort",
+          "Easy Right-Left Distinction"
+        ]
+      },
+      "p18": {
+        "name": "Instant-Fit Practical Model",
+        "priceTag": "Entry",
+        "description": "32 Channels, 6 Programs, Ready-to-wear Silicone Dome (Click Sleeve), No Impression Required (Instant Fit), Bluetooth App Control, Noise Suppression, Wind Shield, Tinnitus Masking, Instant Delivery, Natural Sound Perception, Comfortable Soft Tip, IP 68 Durability.",
+        "features": [
+          "Economical Series",
+          "Severe Loss (No Sound Leakage)"
+        ]
+      },
+      "p19": {
+        "name": "Shadow Effect Deep Canal Model",
+        "priceTag": "Invisible Series",
+        "description": "Completely disappears in the darkness of the ear canal thanks to special Shadow casing technology. Unnoticeable from the outside. Combines aesthetics and performance with 24 Channels, Environment Analysis, Whisper Mode, and Advanced Noise Suppression.",
+        "features": [
+          "Total Privacy",
+          "Nano Coating",
+          "Shadow Case"
+        ]
+      },
+      "p20": {
+        "name": "Comfort Series In-Canal Model",
+        "priceTag": "Custom Made",
+        "description": "An ergonomic design produced with 3D laser technology, perfectly fitted to your ear anatomy. Skin-friendly, anti-allergic UV acrylic body. Provides all-day comfort with 16 Channels, 4 Programs, Tinnitus Therapy, and Auto Focus features.",
+        "features": [
+          "3D Laser Production",
+          "Anti-allergic",
+          "Comfort-Focused"
+        ]
+      },
+      "p21": {
+        "name": "High-Performance Power Model",
+        "priceTag": "High Power",
+        "description": "Reinforced receiver structure for severe hearing loss. Provides high sound output without feedback (whistling). Features 32 Channels, Bluetooth App Control, Wind Shield, Dual-Microphone Direction Detection, and Crystal Clear Sound technology.",
+        "features": [
+          "Severe Loss",
+          "Clear Hearing",
+          "Power Receiver"
+        ]
+      },
+      "p22": {
+        "name": "Deep Canal CIC Model",
+        "priceTag": "",
+        "description": "24 Channels, 100% Invisible Design (IIC/CIC), Natural Pinna Effect, Size 10 Battery, Deep Canal Placement, Advanced Feedback Shield, Single Microphone Omni-Directional Hearing, Custom 3D Production, Sound Smoothing (Sudden Sound Suppression), Tinnitus Masking, Nano Coating, Vent Technology, In-Ear Comfort Software",
+        "features": [
+          "Tinnitus Therapy",
+          "Noise Reduction"
+        ]
+      },
+      "p23": {
+        "name": "High-Performance In-Ear CIC Model",
+        "priceTag": "",
+        "description": "24 Channels, 100% Invisible Design (IIC/CIC), Natural Pinna Effect, Size 10 Battery, Deep Canal Placement, Advanced Feedback Shield, Single Microphone Omni-Directional Hearing, Custom 3D Production, Sound Smoothing (Sudden Sound Suppression), Tinnitus Masking, Nano Coating, Vent Technology, In-Ear Comfort Software",
+        "features": [
+          "Tinnitus Therapy",
+          "Noise Reduction"
+        ]
+      },
+      "p24": {
+        "name": "CIC Model with Bluetooth",
+        "priceTag": "",
+        "description": "48 Channels, Dual Directional Microphone (Dual Mic), Bluetooth Audio Streaming (iOS and Android), OVP (Own Voice Processing Technology), Speech Focus in Noise, Binaural Synchronization, IP 68 Water and Dust Protection, Size 312 or 13 Battery, Custom 3D Laser Print, Wind Noise Reduction, Tinnitus Therapy, Extended Dynamic Range, Acclimatic, Auto Environment Analysis, Telecoil (Optional)",
+        "features": [
+          "Deep Canal CIC Model",
+          "Tinnitus Therapy",
+          "Noise Reduction"
+        ]
+      }
+    }
+  },
+  "specialDays": [
+    {
+      "month": 10,
+      "day": 29,
+      "msg": "Happy Republic Day of Turkey! 🇹🇷"
+    },
+    {
+      "month": 11,
+      "day": 10,
+      "msg": "We respectfully commemorate the great leader Mustafa Kemal Atatürk. 🖤"
+    },
+    {
+      "month": 1,
+      "day": 1,
+      "msg": "Happy New Year! 🎄"
+    }
+  ],
+  "specialDayClose": "Close"
+}
