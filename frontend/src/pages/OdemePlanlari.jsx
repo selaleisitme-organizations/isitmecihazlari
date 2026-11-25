@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import { seoFor } from '../seo/pages';
 import { X, Menu, Phone, MapPin } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -21,11 +22,7 @@ export default function OdemePlanlari() {
 
   return (
     <div className="min-h-screen bg-white relative">
-      <SEO
-        title="SGK İşitme Cihazı Desteği | Sarıyer Şelale İşitme"
-        description="Şelale İşitme Merkezi'nin SGK kapsamında işitme cihazı temin süreci hakkında bilgi alın. Detaylar için Sarıyer merkezimizle iletişime geçin."
-        canonical="https://www.selaleisitme.com/odeme-planlari"
-      />
+      <SEO {...seoFor("/odeme-planlari")} />
       <button
         onClick={() => setSidebarOpen(true)}
         aria-label={t("navigation.menu")}

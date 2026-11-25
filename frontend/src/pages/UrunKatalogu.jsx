@@ -5,6 +5,7 @@ import {
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SEO from '../components/SEO';
+import { seoFor } from '../seo/pages';
 
 export default function UrunKatalogu() {
   const { t } = useTranslation();
@@ -299,13 +300,7 @@ export default function UrunKatalogu() {
 
   return (
     <>
-    <SEO 
-      title="İşitme Cihazı Modelleri | Sarıyer Şelale İşitme"
-      description="Sarıyer Şelale İşitme Merkezi'nin işitme cihazı kataloğunu keşfedin. RIC, BTE, CIC ve kulak içi modellerin özelliklerini inceleyin."
-      keywords="işitme cihazı, isitme cihazi, işitme cihazı fiyatları, isitme cihazi fiyatlari, kulaklık fiyatları, görünmez işitme cihazı, gorunmez isitme cihazi, kanal içi işitme cihazı, kulak arkası işitme cihazı, sarıyer işitme, istanbul işitme cihazı, kulak cihazi, duyma cihazi, isitme testi, bluetooth işitme cihazı, şarj edilebilir işitme cihazı"
-      ogImage="/images/products/SR_Li_8.png"
-      structuredData={structuredData}
-    />
+    <SEO {...seoFor("/urun-katalogu")} structuredData={structuredData} />
 
     <div className="min-h-screen bg-white relative">
       <button

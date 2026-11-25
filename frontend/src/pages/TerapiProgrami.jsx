@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import { X, Menu, Phone, MapPin } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import SEO from '../components/SEO'; 
+import SEO from '../components/SEO';
+import { seoFor } from '../seo/pages'; 
 
 export default function TerapiProgrami() {
   const { t } = useTranslation();
@@ -31,13 +32,7 @@ export default function TerapiProgrami() {
 
   return (
     <>
-      <SEO 
-        title="İşitsel Rehabilitasyon | Sarıyer Şelale İşitme"
-        description="Sarıyer Şelale İşitme Merkezi'nde işitme cihazı kullanımını destekleyen işitsel rehabilitasyon ve kişiye özel takip süreci hakkında bilgi alın. Randevu için: 0532 275 24 14"
-        keywords="işitsel rehabilitasyon, işitme terapisi, işitme cihazı eğitimi, konuşma terapisi, işitme kaybı tedavisi, rehabilitasyon programı, odyoloji, isitme kaybi, isitme cihazi, seltes, seltes işitme, selale işitme, isitme terapisi istanbul, seltes işitme cihazı"
-        ogImage="/images/kid.png" // Sayfadaki ilgili görseli kullanın
-        structuredData={structuredData}
-      />
+      <SEO {...seoFor("/terapi-programi")} structuredData={structuredData} />
       <div className="min-h-screen bg-white relative">
         <button
           onClick={() => setSidebarOpen(true)}

@@ -11,7 +11,8 @@ i18n.use(initReactI18next).init({
     en: { translation: en },
     ar: { translation: ar },
   },
-  lng: localStorage.getItem('language') || 'tr',
+  // localStorage is missing while the build prerenders pages (scripts/prerender.mjs); that HTML is Turkish.
+  lng: (typeof localStorage !== 'undefined' && localStorage.getItem('language')) || 'tr',
   fallbackLng: 'tr',
   interpolation: {
     escapeValue: false,

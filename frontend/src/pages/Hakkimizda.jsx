@@ -1,6 +1,7 @@
 import { X, Menu, Phone, MapPin, Target, Zap, Heart } from 'lucide-react';
 import { useState } from 'react';
 import SEO from '../components/SEO';
+import { seoFor } from '../seo/pages';
 import { useTranslation } from 'react-i18next';
 
 export default function Hakkimizda() { 
@@ -20,11 +21,7 @@ export default function Hakkimizda() {
 
   return (
     <>
-    <SEO
-      title="Şelale İşitme Merkezi | İstanbul"
-      description="Şelale İşitme Merkezi; İstanbul'da işitme cihazı seçimi, işitme değerlendirmesi ve kişiye özel işitme çözümleri sunar. Merkezimiz Sarıyer'dedir."
-      canonical="https://www.selaleisitme.com/hakkimizda"
-    />
+    <SEO {...seoFor("/hakkimizda")} />
     <div className="min-h-screen bg-white relative">
       {/* Menü Açma Butonu */}
       <button

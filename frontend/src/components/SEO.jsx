@@ -6,9 +6,10 @@ const SEO = ({
   title, 
   description, 
   keywords, 
-  ogImage = '/images/default-og.jpg',
+  ogImage = '/images/anasayfaBigPic.jpeg',
   canonical,
-  structuredData
+  structuredData,
+  noindex = false
 }) => {
   const location = useLocation();
   // www is the canonical host: selaleisitme.com redirects there, and the sitemap lists www URLs.
@@ -39,6 +40,7 @@ const SEO = ({
     // Primary meta tags
     updateMetaTag('description', description);
     updateMetaTag('keywords', keywords);
+    updateMetaTag('robots', noindex ? 'noindex, follow' : 'index, follow');
     updateMetaTag('author', 'Şelale İşitme Merkezi');
 
     // Open Graph tags
@@ -68,16 +70,18 @@ const SEO = ({
 
     // Add structured data (JSON-LD) if provided
     if (structuredData) {
-      let script = document.querySelector('script[type="application/ld+json"]');
+      // Its own id, so the clinic record written into every page at build time stays next to it.
+      let script = document.getElementById('page-ld');
       if (!script) {
         script = document.createElement('script');
         script.type = 'application/ld+json';
+        script.id = 'page-ld';
         document.head.appendChild(script);
       }
       script.textContent = JSON.stringify(structuredData);
     }
 
-  }, [title, description, keywords, ogImage, fullUrl, siteUrl, structuredData]);
+  }, [title, description, keywords, ogImage, fullUrl, siteUrl, structuredData, noindex]);
 
   // This component doesn't render anything
   return null;

@@ -1,16 +1,9 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
+import AppRoutes from "./AppRoutes.jsx";
 import KvkkPopup from "./components/KvkkPopup.jsx";
-import Anasayfa from "./pages/Anasayfa";
-import AudioServis from "./pages/AudioServisiUygulamasi";
-import Hakkimizda from "./pages/Hakkimizda.jsx";
-import OdemePlanlari from "./pages/OdemePlanlari";
-import OnlineTest from "./pages/OnlineTest.jsx";
-import RandevuSistemi from "./pages/RandevuSistemi";
-import TerapiProgrami from "./pages/TerapiProgrami";
-import UrunKatalogu from "./pages/UrunKatalogu";
-import SpecialDayPopup from "./components/SpecialDayPopup";
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import SpecialDayPopup from "./components/SpecialDayPopup";
 
 function App() {
   return (
@@ -28,16 +21,7 @@ function App() {
 
       {/* Main Router */}
       <BrowserRouter>
-        <Routes basename="/">
-          <Route path="/" element={<Anasayfa />} />
-          <Route path="/randevu" element={<RandevuSistemi />} />
-          <Route path="/urun-katalogu" element={<UrunKatalogu />} />
-          <Route path="/terapi-programi" element={<TerapiProgrami />} />
-          <Route path="/odeme-planlari" element={<OdemePlanlari />} />
-          <Route path="/audio-servis" element={<AudioServis />} />
-          <Route path="/hakkimizda" element={<Hakkimizda />} />
-          <Route path="/online-test" element={<OnlineTest />} />
-        </Routes>
+        <AppRoutes />
       </BrowserRouter>
     </>
   );

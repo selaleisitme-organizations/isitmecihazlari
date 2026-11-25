@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import { BUSINESS, seoFor } from '../seo/pages';
 
 export default function Anasayfa() {
   const { t } = useTranslation();
@@ -83,48 +84,8 @@ export default function Anasayfa() {
     }
   };
 
-  const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Şelale İşitme Cihazı Merkezi",
-  "description": "İstanbul Sarıyer'de işitme cihazları, işitme testleri ve rehabilitasyon hizmetleri. SGK anlaşmalı, 30+ yıl deneyim.",
-  "url": "https://www.selaleisitme.com",
-  "telephone": "+905322752414",
-  "address": {
-  "@type": "PostalAddress",
-  "streetAddress": "Merkez Mahallesi, Şehit Mithat Yılmaz Caddesi No:47 D:7",
-  "addressLocality": "Sarıyer",
-  "postalCode": "34396",
-  "addressRegion": "İstanbul",
-  "addressCountry": "TR"
-},
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "41.1666",
-    "longitude": "29.0520"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }
-  ],
-  "priceRange": "$$",
-  "image": "https://www.selaleisitme.com/images/selaleLogo.jpeg",
-  "medicalSpecialty": "Audiology",
-  "availableService": [
-    {
-      "@type": "MedicalProcedure",
-      "name": "İşitme Testi"
-    },
-    {
-      "@type": "MedicalTherapy",
-      "name": "İşitme Rehabilitasyonu"
-    }
-  ]
-};
+  // The clinic record lives in seo/pages.js, shared with the build-time HTML of every page.
+  const structuredData = BUSINESS;
 
   const diseasesData = t("anasayfa.diseases.items", { returnObjects: true });
   const diseases = Array.isArray(diseasesData) ? diseasesData : [];
@@ -140,13 +101,7 @@ export default function Anasayfa() {
 
   return (
     <>
-  <SEO 
-    title="İşitme Cihazı Merkezi Sarıyer İstanbul | SGK Anlaşmalı | Şelale İşitme"
-    description="İstanbul Sarıyer'de işitme cihazı, ücretsiz işitme testi, rehabilitasyon programı. SGK anlaşmalı, 30+ yıl deneyim. ☎️ 0532 275 24 14"
-    keywords="işitme cihazı, işitme cihazı fiyatları, işitme merkezi, işitme testi, işitme kaybı tedavisi, işitme cihazı Sarıyer, işitme cihazı İstanbul, SGK işitme cihazı, işitme cihazı SGK, kulak cihazı, kulak cihazı fiyatları, odyolog, odyoloji merkezi, işitme problemi, işitme kaybı, presbiakuzi, tinnitus tedavisi, kulak çınlaması, işitme cihazı modelleri, dijital işitme cihazı, şarjlı işitme cihazı, bluetooth işitme cihazı, görünmez işitme cihazı, kulak içi işitme cihazı, kulak arkası işitme cihazı, çocuk işitme cihazı, bebek işitme cihazı, yaşlı işitme cihazı, işitme cihazı bakımı, işitme cihazı servisi, işitme cihazı teknik servis, işitme cihazı pili, işitme cihazı aksesuarları, ücretsiz işitme testi, odyogram, odyometri, işitme testi ücretsiz, online işitme testi, işitme ölçümü, işitme kontrolü, işitme taraması, işitme değerlendirmesi, konuşma odyometrisi, timpanometri, refleks testi, OAE testi, ABR testi, BERA testi, işitme rehabilitasyonu, konuşma terapisi, dil terapisi, işitme cihazı uyum süreci, işitme cihazı alıştırma, işitme eğitimi, odyolojik rehabilitasyon, SGK işitme cihazı, SGK anlaşmalı işitme merkezi, işitme cihazı SGK ödemesi, işitme cihazı devlet desteği, işitme cihazı sigorta, işitme cihazı raporu, işitme engelli raporu, özürlü raporu işitme, SGK işitme cihazı başvurusu, sosyal güvenlik işitme cihazı, emekli sandığı işitme cihazı, bağkur işitme cihazı, yeşil kart işitme cihazı, Sarıyer işitme merkezi, Sarıyer işitme cihazı, İstanbul işitme merkezi, İstanbul işitme cihazı, Maslak işitme cihazı, Levent işitme cihazı, Etiler işitme cihazı, Beşiktaş işitme cihazı, Şişli işitme cihazı, Mecidiyeköy işitme cihazı, Beyoğlu işitme cihazı, Kadıköy işitme cihazı, Avrupa yakası işitme cihazı, işitme sağlığı, kulak sağlığı, KBB işitme cihazı, odyoloji uzmanı, işitme uzmanı, işitme protezi, kulak protezi, işitme implantı, koklear implant, kemik ankrajlı işitme cihazı, BAHA, işitme amplifikatörü, kulak amplifikatörü, TV dinleme cihazı, telefon dinleme cihazı, FM sistem, Roger sistem, işitme cihazı aksesuarı, işitme cihazı kulaklığı, işitme cihazı şarj cihazı, işitme cihazı kurutucu, işitme cihazı temizlik seti, cerumen koruyucu, wax guard, dome, kulak kalıbı, kulak küpü, özel kalıp, işitme cihazı garantisi, işitme cihazı iadesi, işitme cihazı taksit, işitme cihazı kredi, işitme cihazı kampanya, işitme cihazı indirim, ikinci el işitme cihazı, işitme cihazı kiralama, işitme cihazı deneme, işitme cihazı karşılaştırma, en iyi işitme cihazı, işitme cihazı yorumları, işitme cihazı tavsiye, işitme cihazı önerisi, işitme cihazı seçimi, hangi işitme cihazı, işitme cihazı nasıl alınır, işitme cihazı fiyat listesi, işitme cihazı 2024, işitme cihazı 2025, hearing aid Turkey, hearing aid Istanbul, hearing center Istanbul, audiology Istanbul, hearing test Istanbul, hearing loss treatment, hearing aid prices Turkey, hearing device, ear device, hearing amplifier, digital hearing aid, rechargeable hearing aid, bluetooth hearing aid, invisible hearing aid, behind the ear hearing aid, in the ear hearing aid, hearing aid for elderly, hearing aid for children, hearing aid battery, hearing aid accessories, free hearing test Istanbul, audiogram, audiometry, speech therapy, hearing rehabilitation, tinnitus treatment, ear ringing treatment, Meniere's disease, presbycusis, noise induced hearing loss, congenital hearing loss, sensorineural hearing loss, conductive hearing loss, mixed hearing loss, sudden hearing loss, age related hearing loss, hearing aid fitting, hearing aid adjustment, hearing aid maintenance, hearing aid repair, hearing aid technical service, insurance hearing aid, state support hearing aid, hearing disability report, SGK hearing aid Turkey, social security hearing aid, isitme cihazi, isitme merkezi, isitme testi, isitme kaybi, kulak cihazi, odyoloji, odyolog, SGK isitme cihazi, Sariyer isitme merkezi, Istanbul isitme merkezi, ucretsiz isitme testi, isitme rehabilitasyonu, konusma terapisi, tinnitus, kulak cinlamasi, presbiakuzi, isitme sorunu, isitme problemi, kulak problemi, duyma sorunu, sesiitme problemi, işitme ciazı, işitme cihası, isitme cihazı fiyatlari, isitme cihazi fiyatlari, isitme cihazı fiyatı, kulak cihazı fiyatı, işitme cihaz fiyatları, isitme cihaz, kulak cihaz, işitme aleti, kulak aleti, isitme aparatı, kulak aparati"
-    ogImage="/images/anasayfaBigPic.jpeg"
-    structuredData={structuredData}
-  />
+  <SEO {...seoFor("/")} structuredData={structuredData} />
       <div className="min-h-screen bg-white relative">
         {/* Navigation Button */}
         <button
