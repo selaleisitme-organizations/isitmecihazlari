@@ -1,0 +1,57 @@
+/* Full‑screen overlay behind the modal */
+.special-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+/* The popup card itself */
+.special-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 36px 32px;
+  max-width: 460px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 0.35s ease-out;
+}
+
+.special-modal p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin: 0 0 24px;
+}
+
+.special-modal button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 32px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.special-modal button:hover {
+  background: #1d4ed8;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

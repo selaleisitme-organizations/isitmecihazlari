@@ -1,11 +1,24 @@
 import { Link } from 'react-router-dom';
-import { X, Menu, Phone, MapPin, ExternalLink } from 'lucide-react';
+import { X, Menu, Phone, MapPin } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 
 export default function AudioServis() {
+  const { t } = useTranslation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   
+  const navLinks = [
+    { to: "/", label: t("navigation.home"), active: false },
+    { to: "/randevu", label: t("navigation.appointment"), active: false },
+    { to: "/terapi-programi", label: t("navigation.rehabilitation"), active: false },
+    { to: "/urun-katalogu", label: t("navigation.productCatalog"), active: false },
+    { to: "/odeme-planlari", label: t("navigation.sgk"), active: false },
+    { to: "/audio-servis", label: t("navigation.phoneApp"), active: true },
+    { to: "/hakkimizda", label: t("navigation.about"), active: false },
+    { to: "/online-test", label: t("navigation.freeHearingTest"), active: false },
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -33,6 +46,10 @@ export default function AudioServis() {
     }
   };
 
+  const app1Features = t("audioServis.app1.features", { returnObjects: true }) || [];
+  const app2Features = t("audioServis.app2.features", { returnObjects: true }) || [];
+  const app3Features = t("audioServis.app3.features", { returnObjects: true }) || [];
+
   return (
     <>
       <SEO 
@@ -45,10 +62,9 @@ export default function AudioServis() {
       />
 
       <div className="min-h-screen bg-white relative">
-        {/* --- Navigation --- */}
         <button
           onClick={() => setSidebarOpen(true)}
-          aria-label="Menü"
+          aria-label={t("navigation.menu")}
           className={`fixed top-6 left-6 z-50 bg-blue-900 hover:bg-blue-800 text-white p-3 rounded-lg shadow-lg focus:outline-none transition-opacity duration-300 ${
             sidebarOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
@@ -69,7 +85,7 @@ export default function AudioServis() {
           }}
         >
           <div className="flex items-center justify-between p-5 border-b border-gray-200">
-            <h3 className="text-lg font-bold text-blue-900">Menü</h3>
+            <h3 className="text-lg font-bold text-blue-900">{t("navigation.menu")}</h3>
             <button
               onClick={() => setSidebarOpen(false)}
               className="p-1 text-gray-600 hover:text-gray-900 focus:outline-none"
@@ -78,7 +94,6 @@ export default function AudioServis() {
             </button>
           </div>
 
-          {/* Sidebar Logo */}
           <div className="flex justify-center py-6">
             <img
               src="/images/selaleLogo.jpeg"
@@ -88,130 +103,112 @@ export default function AudioServis() {
           </div>
 
           <nav className="p-5 space-y-3">
-            <Link to="/" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-              Anasayfa
-            </Link>
-            <Link to="/randevu" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-              Randevu Alın
-            </Link>
-            <Link to="/terapi-programi" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-              Rehabilitasyon Programı
-            </Link>
-            <Link to="/urun-katalogu" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-              Ürün Kataloğu
-            </Link>
-            <Link to="/odeme-planlari" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-              SGK
-            </Link>
-            <Link to="/audio-servis" onClick={() => setSidebarOpen(false)} className="block text-blue-900 font-semibold">
-              Telefon Uygulaması
-            </Link>
-            <Link to="/hakkimizda" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-              Hakkımızda
-            </Link>
-            <Link to="/online-test" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-              Ücretsiz İşitme Testi
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setSidebarOpen(false)}
+                className={`block font-medium ${link.active ? 'text-blue-900 font-semibold' : 'text-gray-800 hover:text-blue-900'}`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
           <div style={{ marginTop: "auto" }} className="p-5 border-t border-gray-200">
             <div className="flex items-center gap-3 mb-2">
               <Phone className="w-5 h-5 text-blue-900" />
-              <span className="text-gray-800 font-medium">0532 275 24 14</span>
+              <span className="text-gray-800 font-medium">{t("navigation.phone")}</span>
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-blue-900" />
-              <span className="text-gray-800 font-medium">Merkez Mah., Sarıyer</span>
+              <span className="text-gray-800 font-medium">{t("navigation.address")}</span>
             </div>
           </div>
         </aside>
 
-        {/* --- Main Content --- */}
+        {/* Main Content */}
         <div className="py-16 px-4 md:px-12 text-gray-800 max-w-7xl mx-auto">
-          <h1 className="text-5xl font-bold text-center mb-8 text-blue-900">Telefon Uygulamaları</h1>
+          <h1 className="text-5xl font-bold text-center mb-8 text-blue-900">{t("audioServis.title")}</h1>
           <p className="text-lg text-center mb-16 max-w-3xl mx-auto">
-            İşitme cihazı kullanıcılarının cihazlarını kolaylıkla kontrol etmesini sağlayan mobil çözümler.
+            {t("audioServis.intro")}
           </p>
 
+          {/* App 1 */}
           <div className="grid md:grid-cols-2 gap-10 items-center mb-24 border-b border-gray-100 pb-12">
             <div>
               <img
                 src="/images/products/hearing-aid-app.jpg"
-                alt="İşitme cihazı mobil uygulaması kontrol ekranı"
+                alt={t("audioServis.app1.imageAlt")}
                 className="rounded-lg shadow-lg mx-auto w-full max-w-md object-cover"
               />
             </div>
 
             <div className="space-y-5">
-              <h2 className="text-3xl font-bold text-blue-900">Uygulama 1</h2>
+              <h2 className="text-3xl font-bold text-blue-900">{t("audioServis.app1.title")}</h2>
               <p className="text-gray-600 text-lg">
-                Günlük kullanımı daha konforlu hale getiren, kullanıcı dostu arayüz.
+                {t("audioServis.app1.description")}
               </p>
-              <h3 className="text-xl font-semibold">Temel Özellikler</h3>
+              <h3 className="text-xl font-semibold">{t("audioServis.app1.featuresTitle")}</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Uzaktan kumanda ile işitme cihazı ayarlarını kontrol etme</li>
-                <li>Ses düzeyi ve denge ayarlarını kişiselleştirme</li>
-                <li>Farklı dinleme programları arasında geçiş yapma</li>
-                <li>Batarya seviyesini görüntüleme</li>
-                <li>Kullanım istatistiklerini görüntüleme</li>
-                <li>iOS ve Android cihazlarla uyumlu</li>
+                {Array.isArray(app1Features) && app1Features.map((feat, i) => (
+                  <li key={i}>{feat}</li>
+                ))}
               </ul>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-center mb-24">
+          {/* App 2 */}
+          <div className="grid md:grid-cols-2 gap-10 items-center mb-24 border-b border-gray-100 pb-12">
             <div className="md:order-2">
               <img
                 src="/images/products/wp2.jpg"
-                alt="Coselgi Effect Uygulama Ekranı"
+                alt={t("audioServis.app2.imageAlt")}
                 className="rounded-lg shadow-lg mx-auto w-full max-w-md object-cover"
               />
             </div>
 
             <div className="space-y-6 md:order-1">
-              <h2 className="text-3xl font-bold text-blue-900">Uygulama 2</h2>
+              <h2 className="text-3xl font-bold text-blue-900">{t("audioServis.app2.title")}</h2>
               <p className="text-gray-600 text-lg">
-                Bu uygulama ile işitme deneyiminizi tamamen kişiselleştirin ve çevrenizle kesintisiz bağlantıda kalın.
+                {t("audioServis.app2.description")}
               </p>
               
-              <h3 className="text-xl font-semibold">Öne Çıkan Özellikler</h3>
+              <h3 className="text-xl font-semibold">{t("audioServis.app2.featuresTitle")}</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Ortama göre otomatik ses optimizasyonu</li>
-                <li>Konuşma netliğini artıran gelişmiş gürültü azaltma</li>
-                <li>Doğrudan telefon görüşmeleri ve müzik aktarımı (Streaming)</li>
-                <li>"İşitme cihazımı bul" özelliği ile kayıp cihaz takibi</li>
-                <li>Kişiselleştirilmiş ses profilleri oluşturma</li>
+                {Array.isArray(app2Features) && app2Features.map((feat, i) => (
+                  <li key={i}>{feat}</li>
+                ))}
               </ul>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-center border-t border-gray-100 pt-12">
+          {/* App 3 */}
+          <div className="grid md:grid-cols-2 gap-10 items-center mb-24">
             <div>
               <img
-                src="/images/products/wp.jpg"
-                alt="Bernafon Uygulama Ekranı"
+                src="/images/products/wp3.png"
+                alt={t("audioServis.app3.imageAlt")}
                 className="rounded-lg shadow-lg mx-auto w-full max-w-md object-cover"
               />
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-blue-900">Uygulama 3</h2>
+              <h2 className="text-3xl font-bold text-blue-900">{t("audioServis.app3.title")}</h2>
               <p className="text-gray-600 text-lg">
-                İşitme cihazlarınızı gizlice ve kolayca kontrol etmeniz için ihtiyacınız olan her şeyi tek bir uygulamada sunar.
+                {t("audioServis.app3.description")}
               </p>
               
-              <h3 className="text-xl font-semibold">Öne Çıkan Özellikler</h3>
+              <h3 className="text-xl font-semibold">{t("audioServis.app3.featuresTitle")}</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Ses seviyesini ve programları anlık olarak değiştirme</li>
-                <li>Özelliği ile günlük kullanım hedefleri belirleme</li>
-                <li>Akış ekolayzırı ile müzik ve arama seslerini kişiselleştirme</li>
-                <li>Kayıp işitme cihazının yerini harita üzerinde tespit etme</li>
-                <li>Pil durumunu ve bağlantı kalitesini izleme</li>
+                {Array.isArray(app3Features) && app3Features.map((feat, i) => (
+                  <li key={i}>{feat}</li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </>
   );
 }

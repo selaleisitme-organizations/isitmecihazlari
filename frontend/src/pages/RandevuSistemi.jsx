@@ -3,9 +3,11 @@ import SEO from '../components/SEO';
 import { ChevronLeft, ChevronRight, Check, Calendar, Clock, User, X, Menu, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import API_BASE_URL from '../config';
+import { useTranslation } from 'react-i18next';
 
 
 export default function RandevuSistemi() {
+  const { t, i18n } = useTranslation();
   const [step, setStep] = useState(1);
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
@@ -24,6 +26,19 @@ export default function RandevuSistemi() {
   const [error, setError] = useState('');
   const [bookedTimes, setBookedTimes] = useState([]);
   const [slotsLoading, setSlotsLoading] = useState(false);
+
+  const navLinks = [
+    { to: "/", label: t("navigation.home"), active: false },
+    { to: "/randevu", label: t("navigation.appointment"), active: true },
+    { to: "/terapi-programi", label: t("navigation.rehabilitation"), active: false },
+    { to: "/urun-katalogu", label: t("navigation.productCatalog"), active: false },
+    { to: "/odeme-planlari", label: t("navigation.sgk"), active: false },
+    { to: "/audio-servis", label: t("navigation.phoneApp"), active: false },
+    { to: "/hakkimizda", label: t("navigation.about"), active: false },
+    { to: "/online-test", label: t("navigation.freeHearingTest"), active: false },
+  ];
+
+  const localeCode = i18n.language === 'ar' ? 'ar-EG' : i18n.language === 'en' ? 'en-US' : 'tr-TR';
 
   const timeSlots = [
     '09:00', '09:30', '10:00', '10:30', '11:00', '11:30',
@@ -58,7 +73,7 @@ export default function RandevuSistemi() {
   };
 
   const calendarDays = generateCalendar();
-  const monthName = currentMonth.toLocaleDateString('tr-TR', { month: 'long', year: 'numeric' });
+  const monthName = currentMonth.toLocaleDateString(localeCode, { month: 'long', year: 'numeric' });
 
   const handlePrevMonth = () => {
     setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1));
@@ -119,7 +134,13 @@ export default function RandevuSistemi() {
 
   const handleSubmit = async () => {
     if (!formData.name || !formData.phone || !formData.email) {
-      setError('Lütfen tüm zorunlu alanları doldurunuz.');
+      setError(t("appointmentPage.form.requiredFieldsError"));
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError(t("appointmentPage.form.invalidEmail"));
       return;
     }
 
@@ -150,16 +171,15 @@ export default function RandevuSistemi() {
         setSubmitted(true);
       } else if (response.status === 409) {
         // Someone took the slot first: send the user back to pick another one.
-        const data = await response.json().catch(() => ({}));
         setSelectedTime(null);
         setStep(2);
-        setError(data.error || 'Bu saat az önce doldu. Lütfen başka bir saat seçin.');
+        setError(t("appointmentPage.errors.slotTaken"));
       } else {
-        setError('Randevu oluşturulurken hata oluştu. Lütfen tekrar deneyiniz.');
+        setError(t("appointmentPage.errors.createFailed"));
       }
     } catch (err) {
       console.error('Error:', err);
-      setError('Sunucuya bağlanırken hata oluştu.');
+      setError(t("appointmentPage.errors.serverConnection"));
     } finally {
       setLoading(false);
     }
@@ -172,26 +192,26 @@ export default function RandevuSistemi() {
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <Check className="w-8 h-8 text-green-600" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Randevu Başarıyla Oluşturuldu!</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("appointmentPage.success.title")}</h2>
           <p className="text-gray-600 mb-2">
-            <strong>{formData.name}</strong>, randevunuz için teşekkürler.
+            <strong>{formData.name}</strong>, {t("appointmentPage.success.thankYou")}
           </p>
           <p className="text-gray-600 mb-6">
-            Talebiniz bize ulaştı. Yakında sizinle iletişime geçilecektir.
+            {t("appointmentPage.success.requestReceived")}
           </p>
           <div className="bg-blue-50 p-4 rounded-xl mb-6">
             <p className="text-sm text-gray-700">
-              <strong>Tarih:</strong> {new Date(currentMonth.getFullYear(), currentMonth.getMonth(), selectedDate).toLocaleDateString('tr-TR')}
+              <strong>{t("appointmentPage.success.date")}</strong> {new Date(currentMonth.getFullYear(), currentMonth.getMonth(), selectedDate).toLocaleDateString(localeCode)}
             </p>
             <p className="text-sm text-gray-700">
-              <strong>Saat:</strong> {selectedTime}
+              <strong>{t("appointmentPage.success.time")}</strong> {selectedTime}
             </p>
           </div>
           <button
             onClick={() => window.location.href = '/'}
             className="bg-linear-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-8 rounded-lg w-full hover:from-blue-700 hover:to-purple-700 transition"
           >
-            Anasayfaya Dön
+            {t("appointmentPage.buttons.home")}
           </button>
         </div>
       </div>
@@ -209,7 +229,7 @@ export default function RandevuSistemi() {
 
 <button
   onClick={() => setSidebarOpen(true)}
-  aria-label="Menü"
+  aria-label={t("navigation.menu")}
   className={`fixed top-6 left-6 z-50 bg-blue-900 hover:bg-blue-800 text-white p-3 rounded-lg shadow-lg focus:outline-none transition-opacity duration-300 ${
     sidebarOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
   }`}
@@ -230,7 +250,7 @@ export default function RandevuSistemi() {
         }}
       >
         <div className="flex items-center justify-between p-5 border-b border-gray-200">
-          <h3 className="text-lg font-bold text-blue-900">Menü</h3>
+          <h3 className="text-lg font-bold text-blue-900">{t("navigation.menu")}</h3>
           <button
             onClick={() => setSidebarOpen(false)}
             className="p-1 text-gray-600 hover:text-gray-900 focus:outline-none"
@@ -249,40 +269,26 @@ export default function RandevuSistemi() {
         </div>
 
         <nav className="p-5 space-y-3">
-          <Link to="/" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Anasayfa
-          </Link>
-          <Link to="/randevu" onClick={() => setSidebarOpen(false)} className="block text-blue-900 font-semibold">
-            Randevu Alın
-          </Link>
-          <Link to="/terapi-programi" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Rehabilitasyon Programı
-          </Link>
-          <Link to="/urun-katalogu" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Ürün Kataloğu
-          </Link>
-          <Link to="/odeme-planlari" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            SGK
-          </Link>
-          <Link to="/audio-servis" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Telefon Uygulaması
-          </Link>
-          <Link to="/hakkimizda" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Hakkımızda
-          </Link>
-          <Link to="/online-test" onClick={() => setSidebarOpen(false)} className="block text-gray-800 font-medium hover:text-blue-900">
-            Ücretsiz İşitme Testi
-          </Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              onClick={() => setSidebarOpen(false)}
+              className={`block font-medium ${link.active ? 'text-blue-900 font-semibold' : 'text-gray-800 hover:text-blue-900'}`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav> 
 
         <div style={{ marginTop: "auto" }} className="p-5 border-t border-gray-200">
           <div className="flex items-center gap-3 mb-2">
             <Phone className="w-5 h-5 text-blue-900" />
-            <span className="text-gray-800 font-medium">0532 275 24 14</span>
+            <span className="text-gray-800 font-medium">{t("navigation.phone")}</span>
           </div>
           <div className="flex items-center gap-3">
             <MapPin className="w-5 h-5 text-blue-900" />
-            <span className="text-gray-800 font-medium">Merkez Mah., Sarıyer</span>
+            <span className="text-gray-800 font-medium">{t("navigation.address")}</span>
           </div>
         </div>
       </aside>
@@ -292,8 +298,8 @@ export default function RandevuSistemi() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Sarıyer İşitme Testi ve Randevu</h1>
-          <p className="text-gray-600 text-lg">İşitme testiniz için bir randevu oluşturun</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">{t("appointmentPage.header.title")}</h1>
+          <p className="text-gray-600 text-lg">{t("appointmentPage.header.description")}</p>
         </div>
 
         {/* Progress Steps */}
@@ -318,7 +324,7 @@ export default function RandevuSistemi() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                 <Calendar className="w-6 h-6 text-blue-900" />
-                Tarih Seçiniz
+                {t("appointmentPage.calendar.title")}
               </h2>
 
               <div className="grid md:grid-cols-2 gap-12">
@@ -343,7 +349,7 @@ export default function RandevuSistemi() {
                   </div>
 
                   <div className="grid grid-cols-7 gap-2 mb-4">
-                    {['Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct', 'Pz'].map((day) => (
+                    {['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'].map((d) => t(`appointmentPage.calendar.weekdays.${d}`)).map((day) => (
                       <div key={day} className="text-center font-bold text-gray-600 text-sm py-2">
                         {day}
                       </div>
@@ -376,9 +382,9 @@ export default function RandevuSistemi() {
                 <div>
                   {selectedDate ? (
                     <div className="bg-linear-to-br from-blue-50 to-purple-50 p-6 rounded-2xl border border-blue-200">
-                      <p className="text-gray-600 mb-2">Seçili Tarih:</p>
+                      <p className="text-gray-600 mb-2">{t("appointmentPage.calendar.selectedDate")}</p>
                       <p className="text-3xl font-bold text-gray-900 mb-8">
-                        {new Date(currentMonth.getFullYear(), currentMonth.getMonth(), selectedDate).toLocaleDateString('tr-TR', {
+                        {new Date(currentMonth.getFullYear(), currentMonth.getMonth(), selectedDate).toLocaleDateString(localeCode, {
                           weekday: 'long',
                           year: 'numeric',
                           month: 'long',
@@ -390,12 +396,12 @@ export default function RandevuSistemi() {
                         onClick={() => setStep(2)}
                         className="w-full bg-linear-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition"
                       >
-                        Devam Et
+                        {t("appointmentPage.buttons.continue")}
                       </button>
                     </div>
                   ) : (
                     <div className="bg-gray-100 p-6 rounded-2xl text-center">
-                      <p className="text-gray-600">Lütfen bir tarih seçiniz</p>
+                      <p className="text-gray-600">{t("appointmentPage.calendar.selectDatePrompt")}</p>
                     </div>
                   )}
                 </div>
@@ -408,12 +414,12 @@ export default function RandevuSistemi() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                 <Clock className="w-6 h-6 text-blue-900" />
-                Saat Seçiniz
+                {t("appointmentPage.time.title")}
               </h2>
 
               <div className="mb-6">
                 <p className="text-gray-600 mb-4">
-                  Seçili Tarih: <strong>{new Date(currentMonth.getFullYear(), currentMonth.getMonth(), selectedDate).toLocaleDateString('tr-TR')}</strong>
+                  {t("appointmentPage.calendar.selectedDate")} <strong>{new Date(currentMonth.getFullYear(), currentMonth.getMonth(), selectedDate).toLocaleDateString(localeCode)}</strong>
                 </p>
               </div>
 
@@ -432,7 +438,7 @@ export default function RandevuSistemi() {
                       key={time}
                       onClick={() => { setSelectedTime(time); setError(''); }}
                       disabled={unavailable}
-                      title={booked ? 'Bu saat dolu' : undefined}
+                      title={booked ? t("appointmentPage.time.slotBooked") : undefined}
                       className={`py-3 px-4 rounded-lg font-semibold transition ${
                         selectedTime === time
                           ? 'bg-linear-to-r from-blue-600 to-purple-600 text-white' // Düzeltme: bg-gradient-to-r -> bg-linear-to-r
@@ -449,7 +455,7 @@ export default function RandevuSistemi() {
                 })}
               </div>
               {!slotsLoading && timeSlots.every(isSlotUnavailable) && (
-                <p className="mb-6 text-gray-600">Bu gün için boş saat kalmadı. Lütfen başka bir gün seçin.</p>
+                <p className="mb-6 text-gray-600">{t("appointmentPage.time.noSlotsLeft")}</p>
               )}
 
               <div className="flex gap-4">
@@ -457,7 +463,7 @@ export default function RandevuSistemi() {
                   onClick={() => setStep(1)}
                   className="flex-1 border-2 border-gray-300 text-gray-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-50 transition"
                 >
-                  Geri
+                  {t("appointmentPage.buttons.back")}
                 </button>
                 {/* Düzeltme: Yinelenen ve çakışan sınıflar kaldırıldı */}
                 <button
@@ -465,7 +471,7 @@ export default function RandevuSistemi() {
                   disabled={!selectedTime}
                   className="flex-1 bg-linear-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
                 >
-                  Devam Et
+                  {t("appointmentPage.buttons.continue")}
                 </button>
               </div>
             </div>
@@ -476,7 +482,7 @@ export default function RandevuSistemi() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                 <User className="w-6 h-6 text-blue-900" />
-                Bilgilerinizi Girin
+                {t("appointmentPage.form.title")}
               </h2>
 
               <div className="space-y-6 mb-8">
@@ -497,63 +503,63 @@ export default function RandevuSistemi() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Ad Soyad *</label>
+                    <label className="block text-gray-700 font-semibold mb-2">{t("appointmentPage.form.name")} *</label>
                     <input
                       type="text"
                       name="name"
                       value={formData.name}
                       onChange={handleFormChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
-                      placeholder="Adınız"
+                      placeholder={t("appointmentPage.form.namePlaceholder")}
                     />
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 font-semibold mb-2">Yaş</label>
+                    <label className="block text-gray-700 font-semibold mb-2">{t("appointmentPage.form.age")}</label>
                     <input
                       type="number"
                       name="age"
                       value={formData.age}
                       onChange={handleFormChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
-                      placeholder="Yaşınız"
+                      placeholder={t("appointmentPage.form.agePlaceholder")}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Telefon *</label>
+                  <label className="block text-gray-700 font-semibold mb-2">{t("appointmentPage.form.phone")} *</label>
                   <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleFormChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
-                    placeholder="05XX XXX XXXX"
+                    placeholder={t("appointmentPage.form.phonePlaceholder")}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">E-posta *</label>
+                  <label className="block text-gray-700 font-semibold mb-2">{t("appointmentPage.form.email")} *</label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleFormChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
-                    placeholder="example@email.com"
+                    placeholder={t("appointmentPage.form.emailPlaceholder")}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">İşitme Problemi</label>
+                  <label className="block text-gray-700 font-semibold mb-2">{t("appointmentPage.form.issue")}</label>
                   <textarea
                     name="issue"
                     value={formData.issue}
                     onChange={handleFormChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-200 transition"
                     rows="4"
-                    placeholder="İşitme probleminiz hakkında kısaca bilgi verin..."
+                    placeholder={t("appointmentPage.form.issuePlaceholder")}
                   ></textarea>
                 </div>
 
@@ -569,7 +575,7 @@ export default function RandevuSistemi() {
                   onClick={() => setStep(2)}
                   className="flex-1 border-2 border-gray-300 text-gray-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-50 transition"
                 >
-                  Geri
+                  {t("appointmentPage.buttons.back")}
                 </button>
                 {/* Düzeltme: Yinelenen ve çakışan sınıflar kaldırıldı */}
                 <button
@@ -577,7 +583,7 @@ export default function RandevuSistemi() {
                   disabled={loading}
                   className="flex-1 bg-linear-to-r from-blue-600 to-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
                 >
-                  {loading ? 'Yükleniyor...' : 'Randevuyu Onayla'}
+                  {loading ? t("appointmentPage.buttons.loading") : t("appointmentPage.buttons.confirm")}
                 </button>
               </div>
             </div>

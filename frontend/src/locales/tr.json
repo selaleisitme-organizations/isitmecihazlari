@@ -1,0 +1,866 @@
+{
+  "navigation": {
+    "menu": "Menü",
+    "home": "Anasayfa",
+    "appointment": "Randevu Alın",
+    "rehabilitation": "Rehabilitasyon Programı",
+    "productCatalog": "Ürün Kataloğu",
+    "sgk": "SGK",
+    "phoneApp": "Telefon Uygulaması",
+    "about": "Hakkımızda",
+    "whyUs": "Neden Biz",
+    "freeHearingTest": "Ücretsiz İşitme Testi",
+    "founderName": "Ody. Şelale Alağaş",
+    "founderMessageTitle": "Kurucu Mesajı: Sevdiklerinize Kulak Verin",
+    "founderMessage": "İşitme, sadece bir duyu organının işlevi değil, aynı zamanda yaşamla kurduğumuz bağın temelidir. Şelale İşitme Merkezi'ni kurarken hedefimiz, teknolojiyi insan odaklı bir yaklaşımla birleştirerek her hastamızın hayatına berrak bir ses ve yeni bir güven katmaktı. Hayatın anlamı yaşam kalitesinde gizlidir. Sizlerin gülümsemesi ve gözlerinizde gördüğümüz ışık bizim en büyük motivasyon kaynağımızdır.",
+    "missionTitle": "Kurumsal Misyonumuz",
+    "missionText": "Hastalarımızın yaşam kalitesini artırmak için, işitme performansını en üst seviyeye taşıyacak çözümler sunuyoruz. Uzman ekibimiz, bireyin işitme kaybına en uygun modeli belirleyerek cihazı kişiye özel olarak programlar, adaptasyon süreci ve kullanıldığı süre boyunca kesintisiz destek sağlar.",
+    "visionTitle": "Kurumsal Vizyonumuz",
+    "visionText": "Etik değerlere, yasal düzenlemelere ve profesyonel standartlara bağlı kalarak; yenilikçi, güvenilir ve hasta odaklı bir hizmet anlayışıyla işitme sağlığı alanında öncü olmayı hedefliyoruz. Yapay zeka teknolojilerini sağlık hizmetlerine entegre ederek sektöre yön verirken 35 yılı aşkın bilgi birikimimizi geleceğin sağlık personellerine aktarmayı sürdürüyoruz.",
+    "valuesTitle": "Temel Değerlerimiz",
+    "technologyValue": "Bilim ve Teknoloji Odaklı Yaklaşım",
+    "technologyDescription": "Kullanıcıların işitme deneyimini kişiselleştirerek yaşam kalitesini artırmayı hedefler.",
+    "trustValue": "Güven",
+    "trustDescription": "Kullanıcıların cihazın kalitesine, doğruluğuna ve sürekliliğine olan inancıyla işitme yolculuklarında huzur duymalarını sağlar.",
+    "personalizedValue": "Kişiye Özel Çözümler",
+    "personalizedDescription": "Her bireyin işitme kayıp düzeyi, yaşam tarzı ve ihtiyaçlarına en uygun işitme deneyimini sunmayı amaçlar.",
+    "phone": "0532 275 24 14",
+    "email": "selalealagas@hotmail.com",
+    "address": "Merkez Mah., Sarıyer"
+  },
+  "anasayfa": {
+    "title": "Sarıyer İşitme Cihazı Merkezi",
+    "heroSubtitle": "Hayatınızı değiştiren teknoloji ile tanışın.",
+    "heroQuestion": "Daha iyi duymaya hazır mısınız?",
+    "freeTestButton": "Ücretsiz İşitme Testi",
+    "stats": {
+      "satisfiedPatients": "Memnun Hasta",
+      "successRate": "Başarı Oranı",
+      "yearsExperience": "Yıl Deneyim",
+      "healthProfessional": "Sağlık Profesyoneli",
+      "healthProfessionalName": "Şelale Alağaş",
+      "patientsValue": "500+",
+      "successValue": "%99",
+      "experienceValue": "30+"
+    },
+    "about": {
+      "title": "Neden Şelale?",
+      "paragraph1": "Şelale İşitme Merkezi olarak Sarıyer'de işitme cihazı seçimi, işitme testleri ve işitme sağlığı danışmanlığı alanlarında hizmet sunuyoruz. Kurucumuz ve Yönetim Kurulu Başkanımız Ody. Şelale Alağaş önderliğinde, bireylerin işitme ihtiyaçlarını değerlendirerek kendilerine uygun çözümleri belirlemelerine yardımcı oluyoruz. İstanbul'da işitme cihazı ve işitme merkezi arayanları Sarıyer'deki merkezimize bekliyoruz.",
+      "paragraph2": "Teknolojinin sunduğu en son yenilikleri takip ederek, yüksek performanslı işitme cihazlarını sizlerle buluşturuyoruz. Amacımız doğru bilgilendirme, güvenilir testler ve sürekli danışmanlık ile kulak sağlığınızı korumanıza yardımcı olmaktır.",
+      "servicesIntro": "Her bireyin işitme durumu farklıdır. Şelale'de verdiğimiz hizmetler:",
+      "services": [
+        "İşitme testleri",
+        "Konuşma ve dil terapisi",
+        "KOBİ ve sağlık danışmanlığı",
+        "Teknik servis ve bakım hizmetleri"
+      ],
+      "closing": "Şelale İşitme Merkezi olarak SGK kapsamında işitme cihazı desteği ve cihaz temin süreci hakkında danışmanlık sunuyoruz. SGK desteğinden yararlanma koşulları ve güncel ödeme bilgileri hakkında detaylı bilgi almak için Sarıyer merkezimizle iletişime geçebilirsiniz.",
+      "imageAlt": "Neden Şelale"
+    },
+    "diseases": {
+      "sectionTitle": "İşitme Problemleri",
+      "sectionSubtitle": "Tanı, belirtiler ve çözümler hakkında bilgi edinin",
+      "symptomsTitle": "Belirtiler",
+      "items": [
+        {
+          "name": "Tinnitus",
+          "shortDesc": "Kulak Çınlaması",
+          "description": "Dışarıdan ses kaynağı olmaksızın kulakta çınlama, uğultu veya gürültü hissi.",
+          "symptoms": [
+            "Sürekli çınlama veya vızıltı",
+            "Konsantrasyonda sorun",
+            "Uyku problemleri",
+            "Anksiyete"
+          ]
+        },
+        {
+          "name": "Yaşlanmaya Bağlı İşitme Kaybı",
+          "shortDesc": "Presbiakuzi",
+          "description": "Yaşla birlikte işitme yetisinin doğal olarak zayıflaması. En yaygın işitme problemidir.",
+          "symptoms": [
+            "Yüksek sesli konuşmaları anlamakta zorluk",
+            "Telefonda ses duyamama",
+            "Sosyal izolasyon"
+          ]
+        },
+        {
+          "name": "Gürültüye Bağlı İşitme Kaybı",
+          "shortDesc": "NIHL",
+          "description": "Yüksek seviyelerdeki gürültüye uzun süreli maruziyetten kaynaklanan kalıcı işitme kaybı.",
+          "symptoms": [
+            "Belirli frekansları duyamama",
+            "Konuşmaları anlamakta zorluk",
+            "Denge sorunları"
+          ]
+        },
+        {
+          "name": "Meniere Hastalığı",
+          "shortDesc": "",
+          "description": "İç kulaktaki sıvı dengesizliği sonucu baş dönmesi, çınlama ve dalgalı işitme kaybı görülür.",
+          "symptoms": [
+            "Baş dönmesi (Vertigo) atakları",
+            "Kulakta dolgunluk hissi",
+            "İşitme kaybı"
+          ]
+        },
+        {
+          "name": "Otoskleroz",
+          "shortDesc": "",
+          "description": "Orta kulakta kemiklerin hareketini kısıtlayan kemik sertleşmesi; genellikle ilerleyici işitme kaybına yol açar.",
+          "symptoms": [
+            "Kendi sesini yüksek duyma",
+            "Aile öyküsü",
+            "Gebelik ve hormonal değişiklikler"
+          ]
+        },
+        {
+          "name": "Doğumsal (Konjenital) İşitme Kaybı",
+          "shortDesc": "",
+          "description": "Bebeklerde ve çocuklarda görülebilir. İşitme gelişimi için erken dönemde işitme cihazı şarttır.",
+          "symptoms": [
+            "0-3 ay arası yüksek seslere tepki vermeme",
+            "6-12 ay ismi söylendiğinde tepki vermeme",
+            "1 yaş sonrasında konuşma gelişiminin gecikmesi"
+          ]
+        }
+      ]
+    },
+    "hearingDevices": {
+      "title": "Sarıyer'de İşitme Cihazı Seçimi ve Kullanımının Önemi",
+      "description": "İşitme kaybı sadece sesleri duymakla ilgili değildir. Sosyal yaşam, zihinsel sağlık ve genel yaşam kalitesi üzerinde derin etkiler bırakabilir. İşitme cihazları, beynin sesleri yeniden işlemesine yardımcı olur ve iletişimi, özgüveni ve bağımsızlığı geri kazandırır. İşitme cihazını almayı tercih ettiğiniz yer markadan ve modelden daha önemlidir. Çünkü uzun yıllar rehabilitasyonunuzu sağlayacak işitme sağlığı uzmanınızdır.",
+      "benefits": [
+        {
+          "title": "Beyin Sağlığı",
+          "description": "İşitme kaybı tedavi edilmediğinde, beyin sesleri tanıma yetisini yavaşça kaybeder. Bu da zamanla bilişsel gerileme ve unutkanlık riskini artırabilir."
+        },
+        {
+          "title": "Sosyal Yaşam",
+          "description": "İşitme güçlüğü yaşayan bireyler genellikle sosyal ortamlardan uzaklaşır. İşitme cihazları, iletişimi kolaylaştırarak sosyal izolasyonu ve depresyon riskini azaltır."
+        },
+        {
+          "title": "Yaşam Kalitesi",
+          "description": "İşitme cihazlarıyla birlikte çevrenizle yeniden güçlü bir bağ kurabilir, güvenliğinizi artırabilir ve günlük aktivitelerinizde daha aktif ve mutlu olabilirsiniz."
+        }
+      ],
+      "closingTitle": "İşitme kaybınızı ihmal etmeyin.",
+      "closingText": "Erken tanı ve doğru işitme cihazı seçimi, hem zihinsel hem duygusal sağlığınızı korumanın en etkili yoludur."
+    },
+    "hearingTest": {
+      "title": "Sarıyer'de İşitme Testi ve Değerlendirme",
+      "description": "İşitme testi, mevcut işitme seviyenizi ve kulak sağlığınızı değerlendirmek için yapılan temel bir ölçümdür. Bu test sayesinde hangi frekanslarda ve ses düzeylerinde zorlandığınız belirlenir. Sonuçlara göre uzmanlarımız size özel bir değerlendirme sunar ve gerekirse uygun işitme cihazı veya terapi planı önerilir. Böylece hem işitme kaybınızın türü netleşir hem de en verimli çözüm yolu belirlenir.",
+      "appointmentButton": "Test İçin Randevu Al",
+      "startButton": "Ücretsiz Testi Başla",
+      "imageAlt": "Şelale İşitme Merkezi işitme testi görseli",
+      "previousImage": "Önceki Görsel",
+      "nextImage": "Sonraki Görsel"
+    },
+    "contact": {
+      "title": "Sarıyer Şelale İşitme Merkezi İletişim ve Ulaşım",
+      "informationTitle": "İletişim Bilgileri",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-posta",
+      "hoursLabel": "Çalışma Saatleri",
+      "workingDays": "Pazartesi - Cumartesi",
+      "workingHours": "09:00 - 18:00",
+      "mapAlt": "Şelale İşitme Merkezi Konumu",
+      "mapButton": "Google Haritalarda Gör"
+    },
+    "bottomCta": {
+      "title": "Hayatınızı Değiştirin",
+      "description": "Bugün işitme testi yaptırın. Uzmanlarımız size özel bir plan hazırlayacak.",
+      "button": "Hemen Randevu Al"
+    },
+    "whatsapp": {
+      "ariaLabel": "WhatsApp ile iletişime geç",
+      "message": "Merhaba, işitme testi için bilgi almak istiyorum."
+    },
+    "carousel": {
+      "imageAlt": "Şelale İşitme Merkezi hizmet ve çalışma alanları görseli"
+    },
+    "faqs": {
+      "title": "Sıkça Sorulan Sorular",
+      "subtitle": "İşitme cihazlarının kullanımı ve bakımı hakkında merak edilenler",
+      "items": [
+        {
+          "question": "İşitme cihazlarının ortalama ömrü ne kadardır?",
+          "answer": "Düzenli bakım ve doğru kullanımla işitme cihazları genellikle 5 ila 7 yıl kullanılabilir. Nem, toz ve kulak kiri gibi etkenler cihazın ömrünü kısaltabilir."
+        },
+        {
+          "question": "İşitme cihazı kulağımı tembelleştirir mi?",
+          "answer": "Hayır. İşitme cihazı kulağı tembelleştirmez; işitme kaybı nedeniyle duymakta zorlandığınız sesleri daha iyi algılamanıza ve beyninizin bu seslere yeniden uyum sağlamasına yardımcı olur."
+        },
+        {
+          "question": "İşitme cihazımı nasıl temizleyip korumalıyım?",
+          "answer": "Cihazınızı her gün kuru ve yumuşak bir bezle silin. Cihazı sudan ve nemden uzak tutun; temizlik ve bakım için uzmanınızın önerilerini izleyin."
+        },
+        {
+          "question": "İşitme cihazımı akıllı telefonuma bağlayabilir miyim?",
+          "answer": "Evet. Bluetooth özelliği bulunan uyumlu işitme cihazlarını akıllı telefonunuza kablosuz olarak bağlayabilirsiniz. Bağlantı uyumluluğu cihaz modeline ve telefonunuza göre değişebilir."
+        },
+        {
+          "question": "İlk kez işitme cihazı kullanırken alışmak zor olur mu?",
+          "answer": "İlk günlerde sesler farklı gelebilir. Alışma süreci kişiden kişiye değişir; çoğu kullanıcı birkaç hafta içinde cihazına ve seslere giderek daha rahat uyum sağlar."
+        }
+      ]
+    }
+  },
+  "audioServis": {
+    "seoTitle": "İşitme Cihazı Telefon Uygulamaları | Mobil Kontrol | Şelale İşitme Sarıyer",
+    "seoDescription": "İşitme cihazınızı telefonunuzdan kontrol edin. iOS ve Android uygulamaları, uzaktan kumanda, ses ayarları, kayıp cihaz bulma.",
+    "structuredName": "İşitme Cihazı Mobil Uygulamaları",
+    "structuredDescription": "İşitme cihazlarınızı akıllı telefonunuzdan kontrol edin. Ses ayarları, program değiştirme, kayıp cihaz bulma ve daha fazlası.",
+    "structuredFeatures": [
+      "Uzaktan kumanda",
+      "Ses düzeyi ayarı",
+      "Program değiştirme",
+      "Batarya seviyesi görüntüleme",
+      "Kayıp cihaz bulma",
+      "Bluetooth bağlantısı",
+      "Müzik ve telefon aktarımı"
+    ],
+    "menuButton": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "logoAlt": "Şelale İşitme Merkezi logosu",
+    "title": "Telefon Uygulamaları",
+    "intro": "İşitme cihazı kullanıcılarının cihazlarını kolaylıkla kontrol etmesini sağlayan mobil çözümler.",
+    "app1": {
+      "imageAlt": "İşitme cihazı mobil uygulaması kontrol ekranı",
+      "title": "Uygulama 1",
+      "description": "Günlük kullanımı daha konforlu hale getiren, kullanıcı dostu arayüz.",
+      "featuresTitle": "Temel Özellikler",
+      "features": [
+        "Uzaktan kumanda ile işitme cihazı ayarlarını kontrol etme",
+        "Ses düzeyi ve denge ayarlarını kişiselleştirme",
+        "Farklı dinleme programları arasında geçiş yapma",
+        "Batarya seviyesini görüntüleme",
+        "Kullanım istatistiklerini görüntüleme",
+        "iOS ve Android cihazlarla uyumlu"
+      ]
+    },
+    "app2": {
+      "imageAlt": "Coselgi Effect uygulama ekranı",
+      "title": "Uygulama 2",
+      "description": "Bu uygulama ile işitme deneyiminizi tamamen kişiselleştirin ve çevrenizle kesintisiz bağlantıda kalın.",
+      "featuresTitle": "Öne Çıkan Özellikler",
+      "features": [
+        "Ortama göre otomatik ses optimizasyonu",
+        "Konuşma netliğini artıran gelişmiş gürültü azaltma",
+        "Doğrudan telefon görüşmeleri ve müzik aktarımı (Streaming)",
+        "\"İşitme cihazımı bul\" özelliği ile kayıp cihaz takibi",
+        "Kişiselleştirilmiş ses profilleri oluşturma"
+      ]
+    },
+    "app3": {
+      "imageAlt": "Bernafon uygulama ekranı",
+      "title": "Uygulama 3",
+      "description": "İşitme cihazlarınızı kolayca kontrol etmeniz için ihtiyacınız olan her şeyi tek bir uygulamada sunar.",
+      "featuresTitle": "Öne Çıkan Özellikler",
+      "features": [
+        "Ses seviyesini ve programları anlık olarak değiştirme",
+        "Günlük kullanım hedefleri belirleme",
+        "Akış ekolayzırı ile müzik ve arama seslerini kişiselleştirme",
+        "Kayıp işitme cihazının yerini harita üzerinde tespit etme",
+        "Pil durumunu ve bağlantı kalitesini izleme"
+      ]
+    }
+  },
+  "aboutPage": {
+    "title": "Şelale İşitme Hakkında",
+    "intro": "İstanbul'un 39 ilçesinde ve 975 mahallesinde işitme testi, işitme cihazı uygulaması ve satış sonrası destek hizmeti sunar. Amacımız, doğru ölçüm ve doğru uyumlandırmayla günlük iletişiminizi yeniden rahat hale getirmektir.",
+    "founderName": "Ody. Şelale Alağaş",
+    "founderMessageTitle": "Kurucu Mesajı: Sevdiklerinize Kulak Verin",
+    "founderMessage": "\"İşitme, sadece bir duyu organının işlevi değil, aynı zamanda yaşamla kurduğumuz bağın temelidir. Şelale İşitme Merkezi'ni kurarken hedefimiz, teknolojiyi insan odaklı bir yaklaşımla birleştirerek her hastamızın hayatına berrak bir ses ve yeni bir güven katmaktı. Hayatın anlamı yaşam kalitesinde gizlidir. Sizlerin gülümsemesi ve gözlerinizde gördüğümüz ışık bizim en büyük motivasyon kaynağımızdır.\"",
+    "missionTitle": "Kurumsal Misyonumuz",
+    "missionText": "Hastalarımızın yaşam kalitesini artırmak için, işitme performansını en üst seviyeye taşıyacak çözümler sunuyoruz. Uzman ekibimiz, bireyin işitme kaybına en uygun modeli belirleyerek cihazı kişiye özel olarak programlar, adaptasyon süreci ve kullanıldığı süre boyunca kesintisiz destek sağlar.",
+    "visionTitle": "Kurumsal Vizyonumuz",
+    "visionText": "Etik değerlere, yasal düzenlemelere ve profesyonel standartlara bağlı kalarak; yenilikçi, güvenilir ve hasta odaklı bir hizmet anlayışıyla işitme sağlığı alanında öncü olmayı hedefliyoruz. Yapay zeka teknolojilerini sağlık hizmetlerine entegre ederek sektöre yön verirken 35 yılı aşkın bilgi birikimimizi geleceğin sağlık personellerine aktarmayı sürdürüyoruz.",
+    "valuesTitle": "Temel Değerlerimiz",
+    "technologyValue": "Bilim ve Teknoloji Odaklı Yaklaşım",
+    "technologyDescription": "Kullanıcıların işitme deneyimini kişiselleştirerek yaşam kalitesini artırmayı hedefler.",
+    "trustValue": "Güven",
+    "trustDescription": "Kullanıcıların cihazın kalitesine, doğruluğuna ve sürekliliğine olan inancıyla işitme yolculuklarında huzur duymalarını sağlar.",
+    "personalizedValue": "Kişiye Özel Çözümler",
+    "personalizedDescription": "Her bireyin işitme kayıp düzeyi, yaşam tarzı ve ihtiyaçlarına en uygun işitme deneyimini sunmayı amaçlar.",
+    "founderPhotoAlt": "Şelale İşitme kurucusu Ody. Şelale Alağaş"
+  },
+  "nedenBiz": {
+    "title": "Neden Bizi Seçmelisiniz?",
+    "intro": "Tıbbi etiğe ve kalite standartlarına bağlı kalarak, işitme sağlığınız için en gelişmiş teknolojileri kişiye özel çözümlerle sunuyoruz.",
+    "technologyTitle": "Size Özel Teknoloji ve Cihaz Tipleri",
+    "inEarTitle": "Kulak İçi Cihazlar",
+    "inEarDescription": "Estetik beklentisi yüksek olan kullanıcılar için idealdir. Özel ölçü ile dışarıdan fark edilmesi zor ve konforlu bir kullanım sunar.",
+    "behindEarTitle": "Kulak Arkası (RIC / BTE)",
+    "behindEarDescription": "Ergonomik tasarımları ve yüksek ses performansları ile öne çıkar. Her tür işitme kaybına uygun, dayanıklı çözümler sunar.",
+    "rechargeableTitle": "Şarj Edilebilir Sistemler",
+    "rechargeableDescription": "Lityum-iyon pil teknolojisi ile günlük pil değişimi zahmetinden kurtulursunuz. Gün boyu kesintisiz işitme deneyimi yaşarsınız.",
+    "bluetoothTitle": "Bluetooth Bağlantılı",
+    "bluetoothDescription": "Telefon ve televizyon gibi cihazlarla entegre çalışır. Sesleri doğrudan işitme cihazınıza aktararak netlik sağlar.",
+    "investmentTitle": "Teknolojik Gelişmelere Sürekli Yatırım Yapıyoruz",
+    "investmentDescription": "İşitme sağlığı alanındaki en son yenilikleri yakından takip ediyoruz. Tıbbi uygulamaları destekleyen donanımlara yatırım yaparak, güvenilir bir klinik olmaya devam ediyoruz.",
+    "satisfactionLabel": "HASTA MEMNUNİYETİ",
+    "reviewsTitle": "Hastalarımız Ne Diyor?",
+    "reviewsDescription": "Google üzerinde bizi değerlendiren hastalarımızın deneyimleri, sunduğumuz hizmetin kalitesini ve samimiyetini yansıtıyor.",
+    "reviewDates": {
+      "nineMonths": "9 ay önce",
+      "tenMonths": "10 ay önce"
+    },
+    "fiveStars": "5 yıldız",
+    "reviews": {
+      "elif": "Annemi goturdum...Dr hanım cok ilgili, cok anlayışlı davrandı sagolsun... Annem işitme cihazı kullanamayacagından korkuyordu ama doktoruna guvendi.. Şimdi cihaza alıştı cok memnun😊... Yaşam konforumuz arttı...",
+      "ahmet": "ŞELALE hanım tam olarak iletişim dahisi diyebilirim. Profesyonel işletmeciliği yanında olağanüstü zekasını bilimle birleştirerek mükemmel işler başarmış. Aynı zamanda Türkiye judo 3. Olmuş gizli yetenek. Kesinlikle güvenerek gidebileceğiniz tek adres.",
+      "songul": "Teyzemi goturdum. Harika bir iletisimi var En dogru bilgileri verdi o kadar ilgiliydi ki daha once bir cok yere gittim bosa paralar doktugumu anladim selale hanim ile tanisarak selale hanimdan sadece urun degil tam sağlık hizmeti aliyorsunuz",
+      "taner": "Uzun süredir araştırma yapıyordum, sonunda doğru yeri bulduğumu hissettim. Hem ekip çok deneyimli hem de gerçekten çözüm odaklı çalışıyorlar. Tüm işlemlerimi sabırla anlattılar ve ihtiyaçlarıma uygun bir cihaz önerdiler. Hizmet kalitesi harika, teşekkür ederim",
+      "nata": "Shelale bana sadece işitme cihazı takmakla kalmadı, aynı zamanda bir rehabilitasyon planı da geliştirdi. Mükemmel bir uzman, çok teşekkür ederim",
+      "timucin": "Şelale hanım çok iyi şekilde ilgilendi, devamlı olarak kontrol de sağlıyor. Eğer kaliteli hizmet istiyorsanız burayı öneririm.",
+      "dina": "En güzel fiyatlar. Her şey şeffaf, tüm faturalar ve belgeler sunuldu. Bu uzmana yüzde yüz güveniyorum"
+    },
+    "ownerReplyTitle": "Şelale İşitme Cihazları (Sahibi)",
+    "ownerReply": "Teşekkür ederiz",
+    "ctaTitle": "Sizin İçin de Buradayız",
+    "ctaDescription": "Kaliteli duyum ve yaşam konforunuz için adım atın.",
+    "ctaButton": "Ücretsiz Randevu Alın"
+  },
+  "sgkPage": {
+    "title": "SGK Bilgisi",
+    "intro": "Merkezimiz, SGK ile sözleşmeli olarak çalışmaktadır.",
+    "informationCards": {
+      "deviceEligibility": "SGK kapsamındaki cihazlar, hastanın raporu ve SGK onayına bağlı olarak temin edilmektedir.",
+      "contributionDetails": "SGK katkı oranları ve hangi cihazların kapsandığı hakkında ayrıntılı bilgi için lütfen bizimle iletişime geçin veya merkezimizi ziyaret edin."
+    },
+    "contactButton": "Bize Ulaşın"
+  },
+  "onlineTest": {
+    "seo": {
+      "title": "Ücretsiz Online İşitme Testi | Şelale İşitme Merkezi Sarıyer İstanbul",
+      "description": "İstanbul Sarıyer'de ücretsiz online işitme testi. İşitme kaybı testi, odyogram ve işitme cihazı danışmanlığı. Hemen test olun, randevu alın. ☎️ 0532 275 24 14",
+      "keywords": "işitme testi, çevrimiçi işitme testi, online işitme testi, ücretsiz işitme testi, işitme kaybı testi, odyogram, işitme cihazı, Sarıyer işitme merkezi, İstanbul işitme testi, işitme problemi, kulak testi, hearing test turkey, hearing test"
+    },
+    "structuredData": {
+      "name": "Online İşitme Testi",
+      "description": "Ücretsiz online işitme kaybı testi. 6 farklı frekansta işitme eşiğinizi ölçün.",
+      "condition": "İşitme Kaybı"
+    },
+    "headphoneCheck": {
+      "title": "Kulaklık Kontrolü",
+      "description": "Bu test için kulaklık kullanmanız gerekmektedir. Lütfen kulaklığınızı takın ve her bir kulağın doğru kanala ayarlandığından emin olun.",
+      "checklistTitle": "Test Öncesi Kontrol Listesi:",
+      "checklist": {
+        "headphones": "Kulaklığınızı doğru şekilde takın (L = Sol, R = Sağ)",
+        "quietEnvironment": "Sessiz bir ortamda olun",
+        "volume": "Cihazınızın ses seviyesini orta seviyede tutun",
+        "listenCarefully": "Test sırasında dikkatlice dinleyin"
+      },
+      "startButton": "Kulaklığım Hazır, Başlayalım"
+    },
+    "instructions": {
+      "leftEar": "Sol",
+      "rightEar": "Sağ",
+      "earTestTitle": "{{ear}} Kulak Testi",
+      "description": "{{count}} farklı frekansta tonlar duyacaksınız. Her frekans için sesi duyabileceğiniz en düşük seviyeye ayarlayın.",
+      "startButton": "Teste Başla",
+      "frequencyLabel": "{{current}} / {{total}}. Frekans",
+      "volumeInstruction": "Sesi duyabileceğiniz en düşük seviyeye ayarlayın (eşik seviyesi)",
+      "playButton": "SESİ OYNAT 🔊",
+      "playingButton": "Çalıyor...",
+      "continueButton": "Devam Et",
+      "volumeUnit": "dB HL"
+    },
+    "results": {
+      "completedTitle": "Test Tamamlandı!",
+      "disclaimer": "Bu bir ön tarama testidir — kesin sonuçlar için mutlaka bir işitme uzmanına başvurun.",
+      "possibleLossWarning": "Dikkat: Bir veya daha fazla frekansta olası işitme kaybı tespit edildi. Profesyonel değerlendirme önerilir.",
+      "asymmetryWarning": "Uyarı: İki kulak arasında asimetrik işitme kaybı olasılığı tespit edildi (16 dB ve üzeri fark). Mutlaka bir uzman ile görüşün.",
+      "appointmentButton": "Randevu Almak İçin Tıklayın",
+      "professionalAppointmentButton": "Profesyonel Test İçin Randevu Alın",
+      "leftEar": "Sol Kulak",
+      "rightEar": "Sağ Kulak",
+      "averageThreshold": "Ortalama Eşik:",
+      "hearingLevelsTitle": "İşitme Seviyeleri Rehberi:",
+      "normal": "Normal",
+      "possibleHearingLoss": "Olası İşitme Kaybı",
+      "hearingLoss": "İşitme Kaybı",
+      "advancedHearingLoss": "İleri Derecede İşitme Kaybı",
+      "veryAdvancedHearingProblem": "Çok İleri Derecede İşitme Problemi",
+      "levels": {
+        "normal": "-10 ile 25 dB: Normal",
+        "mild": "26 ile 40 dB: Hafif İşitme Kaybı",
+        "moderate": "41 ile 55 dB: Orta İşitme Kaybı",
+        "advanced": "56 ile 90 dB: İleri Derecede İşitme Kaybı",
+        "veryAdvanced": "90 dB üzeri: Çok İleri Derecede İşitme Kaybı"
+      }
+    },
+    "pageTitle": "Ücretsiz Online İşitme Testi"
+  },
+  "appointmentPage": {
+    "seo": {
+      "title": "Randevu Alın | Şelale İşitme Merkezi Sarıyer İstanbul",
+      "description": "Şelale İşitme Merkezi'nde işitme testi ve danışmanlık için online randevu oluşturun."
+    },
+    "header": {
+      "title": "Sarıyer İşitme Testi ve Randevu",
+      "description": "İşitme testiniz için bir randevu oluşturun"
+    },
+    "steps": {
+      "date": "Tarih Seçimi",
+      "time": "Saat Seçimi",
+      "contact": "İletişim Bilgileri"
+    },
+    "calendar": {
+      "title": "Tarih Seçiniz",
+      "selectedDate": "Seçili Tarih:",
+      "selectDatePrompt": "Lütfen bir tarih seçiniz",
+      "previousMonth": "Önceki ay",
+      "nextMonth": "Sonraki ay",
+      "weekdays": {
+        "monday": "Pt",
+        "tuesday": "Sa",
+        "wednesday": "Ça",
+        "thursday": "Pe",
+        "friday": "Cu",
+        "saturday": "Ct",
+        "sunday": "Pz"
+      }
+    },
+    "time": {
+      "title": "Saat Seçiniz",
+      "slotBooked": "Bu saat dolu",
+      "noSlotsLeft": "Bu gün için boş saat kalmadı. Lütfen başka bir gün seçin."
+    },
+    "form": {
+      "title": "Bilgilerinizi Girin",
+      "name": "Ad Soyad",
+      "namePlaceholder": "Adınız ve soyadınız",
+      "age": "Yaş",
+      "agePlaceholder": "Yaşınız",
+      "phone": "Telefon",
+      "phonePlaceholder": "05XX XXX XXXX",
+      "email": "E-posta",
+      "emailPlaceholder": "example@email.com",
+      "issue": "İşitme Problemi",
+      "issuePlaceholder": "İşitme probleminiz hakkında kısaca bilgi verin...",
+      "required": "Zorunlu alan",
+      "requiredFieldsError": "Lütfen tüm zorunlu alanları doldurunuz.",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi giriniz."
+    },
+    "buttons": {
+      "continue": "Devam Et",
+      "back": "Geri",
+      "confirm": "Randevuyu Onayla",
+      "loading": "Yükleniyor...",
+      "home": "Anasayfaya Dön"
+    },
+    "errors": {
+      "createFailed": "Randevu oluşturulurken hata oluştu. Lütfen tekrar deneyiniz.",
+      "serverConnection": "Sunucuya bağlanırken hata oluştu.",
+      "pastDate": "Geçmiş bir tarih seçemezsiniz.",
+      "slotTaken": "Bu saat az önce doldu. Lütfen başka bir saat seçin."
+    },
+    "success": {
+      "title": "Randevu Başarıyla Oluşturuldu!",
+      "thankYou": "randevunuz için teşekkürler.",
+      "date": "Tarih:",
+      "time": "Saat:",
+      "requestReceived": "Talebiniz bize ulaştı. Yakında sizinle iletişime geçilecektir."
+    }
+  },
+  "therapyPage": {
+    "seo": {
+      "title": "İşitsel Rehabilitasyon ve Terapi Programı | Şelale İşitme Merkezi İstanbul",
+      "description": "İstanbul Sarıyer'de işitme cihazı kullananlar için özel işitsel rehabilitasyon programları. Duyma, anlama ve iletişim becerilerinizi geliştirin. Randevu için arayın: 0532 275 24 14.",
+      "keywords": "işitsel rehabilitasyon, işitme terapisi, işitme cihazı eğitimi, konuşma terapisi, işitme kaybı tedavisi, rehabilitasyon programı, odyoloji, işitme cihazı, Şelale İşitme Merkezi"
+    },
+    "menu": {
+      "title": "Menü",
+      "open": "Menüyü aç",
+      "close": "Menüyü kapat",
+      "logoAlt": "Şelale İşitme Merkezi Logosu"
+    },
+    "title": "Sarıyer'de İşitsel Rehabilitasyon",
+    "paragraph1": "İşitme sorunlarının çözümü yalnızca bir işitme cihazı uygulamakla sınırlı değildir. Gerçek başarı, bu sürecin doğru rehabilitasyon yöntemleri ile desteklenmesiyle elde edilir. İşitme rehabilitasyonu, yalnızca duymayı değil; anlamayı ve etkili iletişim kurma becerilerini de yeniden kazandırmayı hedefler.",
+    "paragraph2": "İşitsel rehabilitasyon sürecinde, işitme kaybı yaşayan birey sürecin merkezindedir. Hedeflerin belirlenmesi ve en uygun çözümlerin seçilmesi aşamalarında hastanın aktif katılımı büyük önem taşır. Değerlendirme tamamlandıktan sonra kişiye özel bir işitme kaybı yönetim planı oluşturulur. Bu plan sayesinde hasta, işitmesini koruma ve geliştirme sürecinde aktif bir rol üstlenir.",
+    "paragraph3": "Rehabilitasyon, yalnızca işitmeyi iyileştirmekle kalmaz; bireyin yaşam kalitesi algısını da güçlendirir. Cihazın düzenli takibi, bakımı ve rehabilitasyon süreci, cihazın temin edildiği işitme merkezi tarafından titizlikle yürütülür.",
+    "paragraph4": "Cihazınızla ilgili herhangi bir sorun yaşamanız durumunda, mutlaka cihazı aldığınız merkeze başvurmanız önemle tavsiye edilir.",
+    "warning": "Aksi halde, dış müdahaleler sonucunda cihazda oluşabilecek arızalardan işitme merkezi sorumlu tutulamaz.",
+    "imageAlt": "İşitme cihazı kullanan çocuk"
+  },
+  "urunKatalogu": {
+    "seo": {
+      "title": "İşitme Cihazı Fiyatları ve Modelleri 2024 | Şelale İşitme Sarıyer",
+      "description": "En yeni teknoloji işitme cihazı fiyatları ve modelleri. Görünmez kanal içi, kulak arkası ve şarj edilebilir cihazlar. Sarıyer işitme merkezi kataloğu.",
+      "keywords": "işitme cihazı, isitme cihazi, işitme cihazı fiyatları, isitme cihazi fiyatlari, kulaklık fiyatları, görünmez işitme cihazı, gorunmez isitme cihazi, kanal içi işitme cihazı, kulak arkası işitme cihazı, sarıyer işitme, istanbul işitme cihazı, phonak, signia, widex, kulak cihazi, duyma cihazi, isitme testi, bluetooth işitme cihazı, şarj edilebilir işitme cihazı"
+    },
+    "structuredData": {
+      "name": "İşitme Cihazı Modelleri ve Fiyatları",
+      "description": "Sarıyer Şelale İşitme Merkezi'nde en yeni teknoloji RIC, BTE, CIC ve görünmez işitme cihazları. Bluetooth'lu ve şarj edilebilir modeller.",
+      "providerName": "Şelale İşitme Merkezi",
+      "items": [
+        "Kulak Arkası (BTE) İşitme Cihazları",
+        "Kanal İçi (CIC/IIC) Görünmez Cihazlar",
+        "Alıcı Kulakta (RIC) Cihazlar",
+        "Şarj Edilebilir İşitme Cihazları"
+      ]
+    },
+    "header": {
+      "title": "Sarıyer İşitme Cihazı Modelleri",
+      "subtitle": "En yeni işitme cihazlarını keşfedin"
+    },
+    "categories": {
+      "all": "Tümü",
+      "ric": "RIC (Kanal İçi Hoparlörlü Kulak Arkası)",
+      "bte": "BTE (Kulak Arkası)",
+      "cic": "CIC (Tamamen Kanal İçi)",
+      "ite": "ITE (Hazır Kulak İçi)",
+      "itc": "ITC (Kanal İçi)",
+      "cros": "CROS/BICROS",
+      "acc": "Aksesuarlar"
+    },
+    "education": {
+      "title": "İşitme Cihazı Türlerini Tanıyalım",
+      "subtitle": "Hangi cihaz sizin için uygun? İşte basit bir rehber:",
+      "types": {
+        "ric": {
+          "title": "RIC - Alıcı Kulakta",
+          "desc": "Küçük ve göze çarpmaz. Hoparlör kulak kanalında, cihaz kulak arkasında. Doğal ses kalitesi sağlar. Hafif ve orta kayıplar için ideal."
+        },
+        "bte": {
+          "title": "BTE - Kulak Arkası",
+          "desc": "En güçlü cihaz tipi. Kulak arkasına oturur, tüp ile kulağa ses iletir. Hafiften çok ağıra kadar tüm kayıp seviyeleri için uygundur. Kullanımı kolaydır."
+        },
+        "ite": {
+          "title": "ITE - Kulak İçi",
+          "desc": "Kulak kepçesini tamamen doldurur. Gözle görülebilir ancak kullanımı kolaydır. Hafif-orta ve orta-ağır kayıplar için uygundur. Pil değiştirmek daha kolaydır."
+        },
+        "itc": {
+          "title": "ITC - Kanal İçi",
+          "desc": "Kulak kanalına kısmen oturur. ITE'den daha küçük ve göze daha az çarpar. Hafif-orta kayıplar için uygundur. İyi beceri gerektirir."
+        },
+        "cic": {
+          "title": "CIC - Tamamen Kanal İçi",
+          "desc": "Neredeyse görünmez! Kulak kanalının derininde oturur. Hafif-orta kayıplar için. Küçük boyut nedeniyle pil ömrü kısadır. İyi el becerisi gerekir."
+        },
+        "openFit": {
+          "title": "Açık Kulak (Open-Fit)",
+          "desc": "Kulak kanalını tıkamaz, doğal havalandırma sağlar. Kendi sesinizin garip gelmesini önler. Yüksek frekanslarda kayıp olanlar için mükemmel. Çok rahat."
+        },
+        "cros": {
+          "title": "CROS/BiCROS",
+          "desc": "Tek taraflı işitme kaybı için özel. Kötü kulaktaki sesi iyi kulağa iletir. BiCROS her iki kulakta da kayıp varsa kullanılır. Etrafınızı daha iyi duyarsınız."
+        }
+      },
+      "levels": {
+        "title": "Hangi Seviye?",
+        "entry": {
+          "label": "Giriş:",
+          "desc": "Temel özellikler, ekonomik"
+        },
+        "mid": {
+          "label": "Orta:",
+          "desc": "Daha fazla özellik, Bluetooth"
+        },
+        "premium": {
+          "label": "Premium:",
+          "desc": "En gelişmiş teknoloji, yapay zeka"
+        }
+      }
+    },
+    "technicalTerms": {
+      "title": "Teknik Terimler Rehberi",
+      "terms": {
+        "channels": {
+          "title": "Kanal Sayısı",
+          "desc": "Sesin farklı frekanslarını ayrı ayrı ayarlamayı sağlar. Daha fazla kanal daha hassas ayar demektir. 16+ kanal çoğu kişi için yeterli."
+        },
+        "programs": {
+          "title": "Program Sayısı",
+          "desc": "Farklı ortamlar için ayarlar. Örnek: sessiz oda, gürültülü restoran, müzik dinleme. 4-6 program çoğunlukla yeterlidir."
+        },
+        "noiseReduction": {
+          "title": "Gürültü Kesme",
+          "desc": "Arka plan gürültüsünü azaltır, konuşmaları daha net duymanızı sağlar. Kalabalık yerlerde çok önemlidir."
+        },
+        "directionalMic": {
+          "title": "Yönsel Mikrofon",
+          "desc": "Önünüzdeki seslere odaklanır, arkadaki gürültüyü azaltır. Sohbet ederken çok faydalıdır."
+        },
+        "bluetooth": {
+          "title": "Bluetooth",
+          "desc": "Telefonunuzdan doğrudan cihazınıza ses gelir. Arama, müzik ve video içindir. iPhone ve Android'le çalışır."
+        },
+        "tinnitus": {
+          "title": "Tinnitus Terapisi",
+          "desc": "Kulak çınlaması için özel sesler üretir. Çınlamayı maskelemeye yardımcı olur ve rahatlama sağlar."
+        },
+        "ip68": {
+          "title": "IP68 Koruma",
+          "desc": "Su ve toz geçirmez. Ter, yağmur ve neme dayanıklı. Günlük kullanım için güvenlidir."
+        },
+        "rechargeable": {
+          "title": "Şarj Edilebilir",
+          "desc": "Pil değiştirmeye gerek yoktur. Gece şarj edin, gün boyu kullanın. El becerileri zayıflamış olanlar için idealdir."
+        },
+        "feedback": {
+          "title": "Feedback İptali",
+          "desc": "Cihazın çıkardığı ıslık sesini önler. Telefonda konuşurken veya sarılırken önemli."
+        },
+        "binaural": {
+          "title": "Binaural (İki Kulak)",
+          "desc": "İki cihazınız birbirine bağlanır ve senkronize çalışır. Sesin nereden geldiğini daha iyi anlamanızı sağlar."
+        },
+        "autoEnv": {
+          "title": "Otomatik Ortam Tanıma",
+          "desc": "Cihaz bulunduğunuz ortamı algılar ve ayarları otomatik değiştirir. Elle program değiştirmeye gerek kalmaz."
+        },
+        "ai": {
+          "title": "Yapay Zeka Destekli",
+          "desc": "Cihaz kullandıkça öğrenir ve tercihlerinize uyum sağlar. Her gün biraz daha iyi olur."
+        }
+      },
+      "note": {
+        "title": "💡 Önemli Not:",
+        "text": "Teknik özellikler önemli, ama en önemli şey sizin için doğru cihazı bulmak, doğru programlamak ve en yüksek verimi almanızı sağlamaktır. Uzman ekibimiz, işitme durumunuzu, yaşam tarzınızı ve bütçenizi dikkate alarak size en uygun cihazı önerecektir. Danışmanlık için randevu alın!"
+      }
+    },
+    "search": {
+      "placeholder": "Ürün ara...",
+      "notFound": "Ürün bulunamadı."
+    },
+    "products": {
+      "p1": {
+        "name": "Müzik ve Konuşma Odaklı Estetik Pro",
+        "priceTag": "Premium",
+        "description": "48 Kanal, 6 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, Acclimatic, Binaural Senkronizasyon, Genişletilmiş Dinamik Aralık, IP 68, Rüzgar Gürültüsü Kesme, Tinnitus Terapisi, Music Select, 2earPhone, AudioLink, Notch Terapi, Güçlendirilmiş Ani Ses Baskılayıcı, Selectronic, Binaural Ses Lokalizasyonu, Oto Optimizasyon, HiFi, Oto EchoClear, AudioFocus 360",
+        "features": [
+          "Bluetooth",
+          "Tinnitus Terapisi",
+          "Notch terapi",
+          "Şarj Edilebilir"
+        ]
+      },
+      "p2": {
+        "name": "Gürültü Baskılayan Gizli Konfor Modeli",
+        "priceTag": "Orta",
+        "description": "32 Kanal, 6 program, Gürültü Kesme, Selectronic, Music Select.",
+        "features": [
+          "Şarj edilebilir",
+          "Bluetooth",
+          "Tinnitus Terapisi"
+        ]
+      },
+      "p3": {
+        "name": "Kanal İçi Dijital Net Duyum Serisi",
+        "priceTag": "Giriş",
+        "description": "16 Kanal, 4 program, Gürültü Kesme, Binaural Senkronizasyon, AudioLink, IP68.",
+        "features": [
+          "Şarj edilebilir",
+          "Bluetooth",
+          "Gürültü Kesme"
+        ]
+      },
+      "p4": {
+        "name": "Hareket Sensörlü 360° Pro Akış Modeli",
+        "priceTag": "Premium",
+        "description": "48 Kanal, 6 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, Acclimatic, Binaural Senkronizasyon, Genişletilmiş Dinamik Aralık, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android), Rüzgar Gürültüsü Kesme, Tinnitus Terapi, Tinnitus Notch Terapi, Oculmatic 2.0, Spatial Spot, Hareket Sensörü, Güçlendirilmiş Ani Ses Baskılayıcı, Selectronic, Oto Optimizasyon, Headset mod (iOS & LE Audio), HiFi, Oto EchoClear, AudioFocus 360, Spatial Spot, Bluetooth LE Audio Multi-Track Processing 2.0 (Hedef Ses 5)",
+        "features": [
+          "Şarj edilebilir",
+          "Bluetooth",
+          "Gürültü Kesme"
+        ]
+      },
+      "p5": {
+        "name": "Otomatik Ortam Tanıyan Akıllı RIC Serisi",
+        "priceTag": "Orta",
+        "description": "32 Kanal, 6 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, Acclimatic, Binaural Senkronizasyon, Genişletilmiş Dinamik Aralık, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android), Rüzgar Gürültüsü Kesme, Tinnitus Terapi, Notch Terapi, Entegre Hareket Sensörü, Güçlendirilmiş Ani Ses Baskılayıcı, SpeechAudio, Selectronic, Oto Optimizasyon, Tinnitus Notch Terapi, Oculmatic 2.0, Headset mod (iOS & LE Audio), Bluetooth LE Audio, Multi-Track Processing 2.0 (Hedef Ses 2)",
+        "features": [
+          "Şarj edilebilir",
+          "Bluetooth",
+          "Gürültü Kesme"
+        ]
+      },
+      "p6": {
+        "name": "Gürültü Önleyici Dijital Modeli",
+        "priceTag": "Giriş",
+        "description": "16 Kanal, 4 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, Acclimatic, Binaural Senkronizasyon, Genişletilmiş Dinamik Aralık, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android), Rüzgar Gürültüsü Kesme, 2earPhone, AudioLink, Güçlendirilmiş Ani Ses Baskılayıcı, Speech360, Selectronic, Bluetooth LE Audio, Multi-Track Processing 2.0 (Hedef Ses 2), Oto Optimizasyon",
+        "features": [
+          "Şarj edilebilir",
+          "Bluetooth",
+          "Gürültü Kesme"
+        ]
+      },
+      "p7": {
+        "name": "64 Kanal Ultra HD Şarj Edilebilir Pro",
+        "priceTag": "Premium",
+        "description": "64 Kanal, Multi-Track Processing 2.0 (Hedef Ses 2), Speech360, 2earPhone, AudioLink, Güçlendirilmiş Ani Ses Baskılayıcı, Bluetooth LE Audio, Binaural Senkronizasyon, Rüzgar Gürültüsü Kesme, Oto Optimizasyon, Selectronic, Acclimatic, Genişletilmiş Dinamik Aralık, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android)",
+        "features": [
+          "Şarj edilebilir",
+          "Bluetooth",
+          "Gürültü Kesme"
+        ]
+      },
+      "p8": {
+        "name": "Gün Boyu Aktif Şarjlı Konfor Serisi",
+        "priceTag": "Orta",
+        "description": "32 Kanal, Selectronic, Acclimatic, Otomatik Yönsel Mikrofon, Rüzgar Gürültüsü Kesme, Genişletilmiş Dinamik Aralık, Binaural Senkronizasyon, Frekans Sıkıştırma, IP 68, Cep Telefonunda Ses Aktarımı (iPhone ve Android), Gürültü Kesme",
+        "features": [
+          "Şarj edilebilir",
+          "Bluetooth",
+          "Gürültü Kesme"
+        ]
+      },
+      "p9": {
+        "name": "Pratik Kullanımlı Şarj Edilebilir Model",
+        "priceTag": "Giriş",
+        "description": "16 Kanal, 4 program, Otomatik Yönsel Mikrofon, Gürültü Kesme, Frekans Sıkıştırma, IP 68, Manuel Ses Kontrolü, Standart Dinamik Aralık",
+        "features": [
+          "Şarj edilebilir",
+          "Bluetooth",
+          "Gürültü Kesme"
+        ]
+      },
+      "p10": {
+        "name": "IP68 Korumalı Dayanıklı Seri",
+        "priceTag": "Giriş",
+        "description": "16 Kanal, 4 Program, Temel Gürültü Baskılama, Feedback (Ötme) İptali, Konuşma Ayrıştırma, Manuel Ses Kontrolü, IP68 Nem ve Toz Koruması, Standart Yönsel Mikrofon, Veri Kaydı.",
+        "features": [
+          "Gürültü Önleme",
+          "IP68 Koruma",
+          "Feedback İptali"
+        ]
+      },
+      "p11": {
+        "name": "Tinnitus (Çınlama) Terapili Güçlü BTE",
+        "priceTag": "Orta",
+        "description": "32 Kanal, 6 Program, Bluetooth Bağlantısı (iOS & Android), Otomatik Ortam Tanıma, Rüzgar Gürültüsü Kesme, Tinnitus Terapisi, Çift Mikrofonlu Yönsel Odaklanma, Frekans Sıkıştırma.",
+        "features": [
+          "Bluetooth",
+          "Tinnitus Terapisi",
+          "Akıllı Telefon Kontrolü"
+        ]
+      },
+      "p12": {
+        "name": "Yapay Zeka Destekli 360° Uzamsal Seri",
+        "priceTag": "Premium",
+        "description": "48 Kanal, 12 Program, Binaural Senkronizasyon, 360° Uzamsal Ses Algısı, Yapay Zeka Destekli Gürültü Temizleme, HiFi Müzik Modu, Yankı Giderici, Ani Yüksek Ses Baskılama, Şarj Edilebilir.",
+        "features": [
+          "Yapay Zeka",
+          "360° Ses",
+          "Şarj Edilebilir"
+        ]
+      },
+      "p15": {
+        "name": "Premium Cros Serisi",
+        "priceTag": "Premium",
+        "description": "Yapay Zeka (AI) destekli işlemcisi ile saniyede milyonlarca kez ortamı tarar ve sesi optimize eder. 48 Kanal, 360° Uzamsal Ses Algısı sayesinde sesin yönünü kusursuz tayin eder. Gürültülü restoranlarda bile fısıltıyı duyuran 'Speech Focus' teknolojisi, HiFi Müzik Modu, Yankı Giderici ve Bluetooth ile telefondan direkt ses aktarımı (iOS & Android). Pil derdi olmayan Şarj Edilebilir Li-ion batarya ve IP68 dayanıklılık sertifikası.",
+        "features": [
+          "Yapay Zeka",
+          "360° Ses",
+          "Şarj Edilebilir"
+        ]
+      },
+      "p16": {
+        "name": "360° Çevresel Algılamalı Pro Akış Modeli",
+        "priceTag": "Premium",
+        "description": "32 Kanal, 6 Program, Hazır Silikon Başlık (Click Sleeve), Kalıp Alma Gerektirmez (Instant Fit), Bluetooth Uygulama Kontrolü, Gürültü Baskılama, Rüzgar Kalkanı, Tinnitus (Çınlama) Maskeleme, Anında Teslim, Doğal Ses Algısı, Konforlu Yumuşak Uç, IP 68 Dayanıklılık.",
+        "features": [
+          "Premium Konfor Serisi",
+          "Hava Alan Yapı",
+          "İş hayatı/Aktif Yaşam"
+        ]
+      },
+      "p17": {
+        "name": "Doğal Ses Odaklı Konfor Serisi",
+        "priceTag": "Orta",
+        "description": "32 Kanal, 6 Program, Hazır Silikon Başlık (Click Sleeve), Kalıp Alma Gerektirmez (Instant Fit), Bluetooth Uygulama Kontrolü, Gürültü Baskılama, Rüzgar Kalkanı, Tinnitus (Çınlama) Maskeleme, Anında Teslim, Doğal Ses Algısı, Konforlu Yumuşak Uç, IP 68 Dayanıklılık.",
+        "features": [
+          "Kullanımı Kolay Serisi",
+          "Standart Konfor",
+          "Kolay Sağ-Sol Ayrımı"
+        ]
+      },
+      "p18": {
+        "name": "Anında Uyumlu (Instant-Fit) Pratik Model",
+        "priceTag": "Giriş",
+        "description": "32 Kanal, 6 Program, Hazır Silikon Başlık (Click Sleeve), Kalıp Alma Gerektirmez (Instant Fit), Bluetooth Uygulama Kontrolü, Gürültü Baskılama, Rüzgar Kalkanı, Tinnitus (Çınlama) Maskeleme, Anında Teslim, Doğal Ses Algısı, Konforlu Yumuşak Uç, IP 68 Dayanıklılık.",
+        "features": [
+          "Ekonomik Seri",
+          "İleri derece Kayıp(Ses Kaçırmaz)"
+        ]
+      },
+      "p19": {
+        "name": "Gölge Etkili Dip Kanal Modeli",
+        "priceTag": "Görünmez Seri",
+        "description": "Özel Shadow (Gölge) kasa teknolojisi sayesinde kulak kanalının karanlığında tamamen kaybolur. Dışarıdan bakıldığında fark edilmez. 24 Kanal, Ortam Analizi, Fısıltı Modu ve Gelişmiş Gürültü Baskılama özellikleri ile estetik ve performansı birleştirir.",
+        "features": [
+          "Tam Gizlilik",
+          "Nano Kaplama",
+          "Gölge Kasa"
+        ]
+      },
+      "p20": {
+        "name": "Konfor Serisi Kanal İçi Modeli",
+        "priceTag": "Kişiye Özel",
+        "description": "Kendi kulak yapınıza birebir uygun, 3D lazer teknolojisi ile üretilmiş ergonomik tasarım. Cilde dost, antialerjik UV akrilik gövde. 16 Kanal, 4 Program, Tinnitus (Çınlama) Terapisi ve Otomatik Odaklanma özellikleri ile gün boyu konforlu kullanım sağlar.",
+        "features": [
+          "3D lazer üretim",
+          "Antialerjik",
+          "Konfor odaklı"
+        ]
+      },
+      "p21": {
+        "name": "Yüksek Performanslı Power Modeli",
+        "priceTag": "Yüksek Güç",
+        "description": "İleri derece işitme kayıpları için güçlendirilmiş hoparlör (receiver) yapısı. Ötme (Feedback) yapmadan yüksek ses çıkışı sağlar. 32 Kanal, Bluetooth Uygulama Kontrolü, Rüzgar Kalkanı, Çift Mikrofonlu Yön Algılama ve Kristal Netliğinde Ses teknolojisi.",
+        "features": [
+          "İleri Kayıp",
+          "Net Duyum",
+          "Power Receiver"
+        ]
+      },
+      "p22": {
+        "name": "Dip Kanal CIC Modeli",
+        "priceTag": "",
+        "description": "24 Kanal, %100 Görünmez Tasarım (IIC/CIC), Doğal Kulak Kepçesi Efekti (Pinna Effect), 10 Numara Pil, Dip Kanal Yerleşimi, Gelişmiş Feedback (Ötme) Kalkanı, Tek Mikrofonlu Omni-Directional Duyum, Kişiye Özel 3D Üretim, Sound Smoothing (Ani Ses Baskılama), Tinnitus Maskeleme, Nano Kaplama, Vent (Havalandırma) Teknolojisi, Kulak İçi Konfor Yazılımı",
+        "features": [
+          "Tinnitus Terapisi",
+          "Gürültü Kesme"
+        ]
+      },
+      "p23": {
+        "name": "Yüksek Performanslı Kulak İçi CIC Modeli",
+        "priceTag": "",
+        "description": "24 Kanal, %100 Görünmez Tasarım (IIC/CIC), Doğal Kulak Kepçesi Efekti (Pinna Effect), 10 Numara Pil, Dip Kanal Yerleşimi, Gelişmiş Feedback (Ötme) Kalkanı, Tek Mikrofonlu Omni-Directional Duyum, Kişiye Özel 3D Üretim, Sound Smoothing (Ani Ses Baskılama), Tinnitus Maskeleme, Nano Kaplama, Vent (Havalandırma) Teknolojisi, Kulak İçi Konfor Yazılımı",
+        "features": [
+          "Tinnitus Terapisi",
+          "Gürültü Kesme"
+        ]
+      },
+      "p24": {
+        "name": "Bluetoothlu CIC Modeli",
+        "priceTag": "",
+        "description": "48 Kanal, Çift Yönsel Mikrofon (Dual Mic), Bluetooth Ses Aktarımı (iOS ve Android), OVP (Kendi Sesini Doğal Duyma Teknolojisi), Gürültü İçinde Konuşma Odaklanma, Binaural Senkronizasyon, IP 68 Su ve Toz Koruması, 312 veya 13 Numara Pil, Kişiye Özel 3D Lazer Baskı, Rüzgar Gürültüsü Kesme, Tinnitus (Çınlama) Terapisi, Genişletilmiş Dinamik Aralık, Acclimatic, Otomatik Ortam Analizi, Telecoil (Opsiyonel)",
+        "features": [
+          "Dip Kanal CIC Modeli",
+          "Tinnitus Terapisi",
+          "Gürültü Kesme"
+        ]
+      }
+    }
+  },
+  "specialDays": [
+    {
+      "month": 10,
+      "day": 29,
+      "msg": "29 Ekim Cumhuriyet Bayramımız Kutlu Olsun! 🇹🇷"
+    },
+    {
+      "month": 11,
+      "day": 10,
+      "msg": "Ulu Önder Mustafa Kemal Atatürk'ü saygı ve özlemle anıyoruz. 🖤"
+    },
+    {
+      "month": 1,
+      "day": 1,
+      "msg": "Mutlu Yıllar! Yeni yılınız kutlu olsun. 🎄"
+    }
+  ],
+  "specialDayClose": "Kapat"
+}
