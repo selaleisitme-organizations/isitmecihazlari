@@ -330,6 +330,7 @@ export default function UrunKatalogu() {
           <button
             onClick={() => setSidebarOpen(false)}
             className="p-1 text-gray-600 hover:text-gray-900 focus:outline-none"
+            aria-label="Menüyü kapat"
           >
             <X className="w-5 h-5" />
           </button>
