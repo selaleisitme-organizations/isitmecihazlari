@@ -140,6 +140,7 @@ export default function Anasayfa() {
             <h3 className="text-lg font-bold text-blue-900">{t("navigation.menu")}</h3>
             <button
               onClick={() => setSidebarOpen(false)}
+              aria-label="Menüyü kapat"
               className="p-1 text-gray-600 hover:text-gray-900 focus:outline-none"
             >
               <X className="w-5 h-5" />
