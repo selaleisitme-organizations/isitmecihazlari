@@ -510,7 +510,7 @@ export default function Anasayfa() {
                       <button
                         key={index}
                         onClick={() => setCurrentTestImage(index)}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        className={`w-6 h-6 rounded-full transition-all duration-300 ${
                           currentTestImage === index ? 'bg-white scale-110' : 'bg-gray-400 opacity-60'
                         }`}
                         aria-label={`${t("anasayfa.hearingTest.imageAlt")} ${index + 1}`}
