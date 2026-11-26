@@ -426,16 +426,20 @@ export default function Anasayfa() {
               {/* Carousel indicators */}
               <div className="flex justify-center gap-2 mt-8">
                 {carouselImages.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentCarouselIndex(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      currentCarouselIndex === index 
-                        ? 'bg-blue-900 w-8' 
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                    aria-label={`${t("anasayfa.carousel.imageAlt")} ${index + 1}`}
-                  />
+      <button
+  key={index}
+  onClick={() => setCurrentCarouselIndex(index)}
+  className="w-11 h-11 inline-flex items-center justify-center"
+  aria-label={`${t("anasayfa.carousel.imageAlt")} ${index + 1}`}
+>
+  <span
+    className={`h-3 rounded-full transition-all duration-300 ${
+      currentCarouselIndex === index
+        ? 'bg-blue-900 w-8'
+        : 'bg-gray-300 w-3 hover:bg-gray-400'
+    }`}
+  />
+</button>
                 ))}
               </div>
             </div>
