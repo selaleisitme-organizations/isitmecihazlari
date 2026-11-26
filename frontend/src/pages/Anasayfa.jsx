@@ -150,7 +150,7 @@ export default function Anasayfa() {
           {/* Sidebar Logo */}
           <div className="flex justify-center py-6">
             <img
-              src="/images/selaleLogo.jpeg"
+              src="/images/selaleLogo-optimized.webp"
               alt="Şelale İşitme Merkezi Logosu"
               className="w-32 h-auto rounded-lg shadow-sm"
             />
