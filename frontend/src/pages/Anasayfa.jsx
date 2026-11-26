@@ -94,13 +94,42 @@ export default function Anasayfa() {
   };
 
   // The clinic record lives in seo/pages.js, shared with the build-time HTML of every page.
-  const structuredData = BUSINESS;
 
-  const diseasesData = t("anasayfa.diseases.items", { returnObjects: true });
-  const diseases = Array.isArray(diseasesData) ? diseasesData : [];
+const diseasesData = t("anasayfa.diseases.items", { returnObjects: true });
+const diseases = Array.isArray(diseasesData) ? diseasesData : [];
 
-  const faqsData = t("anasayfa.faqs.items", { returnObjects: true });
-  const faqs = Array.isArray(faqsData) ? faqsData : [];
+const faqsData = t("anasayfa.faqs.items", { returnObjects: true });
+const faqs = Array.isArray(faqsData) ? faqsData : [];
+
+// Business and FAQ structured data for search engines and AI systems.
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    BUSINESS,
+    ...(faqs.length > 0
+      ? [{
+          "@type": "FAQPage",
+          "mainEntity": faqs
+            .filter(
+              (faq) =>
+                typeof faq.question === "string" &&
+                typeof faq.answer === "string" &&
+                faq.question.trim() &&
+                faq.answer.trim()
+            )
+            .map((faq) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+        }]
+      : [])
+  ]
+};
+
 
   const servicesData = t("anasayfa.about.services", { returnObjects: true });
   const services = Array.isArray(servicesData) ? servicesData : [];
