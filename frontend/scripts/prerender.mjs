@@ -31,7 +31,10 @@ const REPLACED = [
 
 function headFor(urlPath, page, noindex) {
   const url = urlPath ? `${SITE_URL}${urlPath === "/" ? "/" : urlPath}` : null;
-  const image = `${SITE_URL}${page.ogImage ?? DEFAULT_OG_IMAGE}`;
+  const imagePath = page.ogImage ?? DEFAULT_OG_IMAGE;
+const image = imagePath.startsWith("http")
+  ? imagePath
+  : `${SITE_URL}${imagePath.startsWith("/") ? "" : "/"}${imagePath}`;
   const tags = [
     `<title>${escapeAttr(page.title)}</title>`,
     `<meta name="description" content="${escapeAttr(page.description)}" />`,
@@ -45,7 +48,7 @@ function headFor(urlPath, page, noindex) {
     `<meta name="twitter:title" content="${escapeAttr(page.title)}" />`,
     `<meta name="twitter:description" content="${escapeAttr(page.description)}" />`,
     `<meta name="twitter:image" content="${image}" />`,
-    `<script type="application/ld+json">${JSON.stringify(BUSINESS).replace(/</g, "\u003c")}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(BUSINESS).replace(/</g, "\\u003c")}</script>`,
   ];
   return tags.filter(Boolean).join("\n    ");
 }
