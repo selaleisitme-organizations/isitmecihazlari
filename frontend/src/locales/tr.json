@@ -379,8 +379,8 @@
         "a": "Hayır. Raporunuzla merkezimize geldiğinizde SGK sistemindeki işlemleri biz yapıyoruz."
       },
       {
-        "q": "Taksitle ödeme yapabilir miyim?",
-        "a": "SGK katkısının dışında kalan tutar için ödeme seçeneklerini merkezimizde sizinle birlikte planlıyoruz. Ayrıntılar için bizi arayabilirsiniz."
+        "q": "SGK'nın karşılamadığı tutarı nasıl ödeyebilirim?",
+        "a": "SGK katkısının dışında kalan tutarı kredi kartıyla ödeyebilirsiniz. Kartınızın limiti yetmezse kalan tutarı merkezimizde elden taksitlerle ödeyebilirsiniz. Ayrıntılar için bizi arayabilirsiniz."
       }
     ]
   },
