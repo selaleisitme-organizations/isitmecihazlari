@@ -26,7 +26,9 @@
     "personalizedDescription": "We aim to provide the most suitable hearing experience for each individual's degree of hearing loss, lifestyle, and needs.",
     "phone": "0532 275 24 14",
     "email": "selalealagas@hotmail.com",
-    "address": "Merkez Neighborhood, Sarıyer"
+    "address": "Merkez Neighborhood, Sarıyer",
+    "earMould": "Custom Ear Moulds",
+    "hearingTest": "Hearing Test at Our Centre"
   },
   "anasayfa": {
     "title": "Sarıyer Hearing Aid Center",
@@ -327,7 +329,61 @@
       "deviceEligibility": "Hearing devices covered by SGK are provided subject to the patient's medical report and SGK approval.",
       "contributionDetails": "For detailed information about SGK reimbursement amounts and which hearing devices are covered, please contact us or visit our center."
     },
-    "contactButton": "Contact Us"
+    "contactButton": "Contact Us",
+    "stepsTitle": "How do you get a hearing aid with SGK?",
+    "steps": [
+      {
+        "title": "Hospital examination and report",
+        "text": "An ear, nose and throat (ENT) specialist examines you and a hearing test is done. If you need a hearing aid, a medical report is issued."
+      },
+      {
+        "title": "Coming to our centre",
+        "text": "You bring your report to our SGK-contracted centre. We assess your hearing again and decide together which type of hearing aid suits you."
+      },
+      {
+        "title": "SGK procedures",
+        "text": "Our centre records your report in the SGK system and handles the approval; you do not need to go to SGK yourself."
+      },
+      {
+        "title": "Ear mould and fitting",
+        "text": "We take an impression of your ear, have your custom mould made, and fit your hearing aid adjusted to your hearing."
+      },
+      {
+        "title": "Adaptation and care",
+        "text": "We follow your adaptation and service your hearing aid at regular check-ups."
+      }
+    ],
+    "bringTitle": "What to bring",
+    "bring": [
+      "Your identity card",
+      "The hearing aid report from the hospital",
+      "Your previous hearing aid and earlier test results, if you have them"
+    ],
+    "notesTitle": "Good to know",
+    "notes": [
+      "SGK pays the amount set according to your report. If the chosen hearing aid costs more, the patient pays the difference.",
+      "To receive SGK support for a new hearing aid, the period set by SGK must have passed since the previous one. Ask us for the current period and support amount.",
+      "A report is valid for a limited time, so we recommend coming to our centre soon after you receive it."
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Does SGK pay for the whole hearing aid?",
+        "a": "SGK pays the amount set according to your report. If the hearing aid you choose costs more, you pay the difference. We go through the options and prices with you at our centre."
+      },
+      {
+        "q": "Where do I get the SGK report?",
+        "a": "An ear, nose and throat (ENT) specialist at a hospital issues the report after an examination and a hearing test. You can then come to our SGK-contracted centre with it."
+      },
+      {
+        "q": "Do I need to go anywhere else for the SGK procedures?",
+        "a": "No. When you come to our centre with your report, we handle the procedures in the SGK system."
+      },
+      {
+        "q": "How can I pay the amount SGK does not cover?",
+        "a": "You can pay the amount not covered by SGK by credit card. If your card limit is not enough, you can pay the rest in instalments in person at our centre. Call us for details."
+      }
+    ]
   },
   "onlineTest": {
     "seo": {
@@ -862,5 +918,146 @@
       "msg": "Happy New Year! 🎄"
     }
   ],
-  "specialDayClose": "Close"
+  "specialDayClose": "Close",
+  "earMouldPage": {
+    "eyebrow": "Şelale Hearing · Sarıyer",
+    "title": "An Ear Mould Made for Your Ear",
+    "intro": "Many hearing aids are fitted with ready-made, numbered silicone domes: the closest of a few sizes is chosen. We take an impression of your ear instead and fit your hearing aid with a mould made only for the shape of your ear canal. After the purchase, we keep looking after your mould and hearing aid and follow your adaptation together with you.",
+    "whatTitle": "What is an ear mould?",
+    "whatText": "An ear mould is a small piece made to the shape of your ear canal and outer ear. It holds the part of the hearing aid that delivers sound into the ear. Because every ear is different, the mould is yours alone.",
+    "compareTitle": "Ready-made dome or custom mould",
+    "readyTitle": "Ready-made dome",
+    "readyPoints": [
+      "Chosen from a few standard sizes.",
+      "Can be fitted at once, without an impression.",
+      "Chosen by size, not by the shape of your ear canal."
+    ],
+    "customTitle": "Custom ear mould",
+    "customPoints": [
+      "Made for you from an impression of your ear.",
+      "Aims to sit more securely in the ear, which can make all-day wear more comfortable.",
+      "Can help reduce the gaps that cause whistling (feedback)."
+    ],
+    "stepsTitle": "How does it work?",
+    "steps": [
+      {
+        "title": "Hearing test and assessment",
+        "text": "We first test your hearing and decide together which type of hearing aid suits you."
+      },
+      {
+        "title": "Taking an impression",
+        "text": "We place a soft impression material in your ear canal. It sets within a few minutes and is then removed."
+      },
+      {
+        "title": "Making the mould",
+        "text": "Your mould is made to the impression taken."
+      },
+      {
+        "title": "Fitting and adjustment",
+        "text": "The mould is attached to your hearing aid, we check how it sits in your ear, and the hearing aid is adjusted for you."
+      },
+      {
+        "title": "Adaptation and care",
+        "text": "We follow your first weeks of getting used to it and service your mould and hearing aid at regular check-ups."
+      }
+    ],
+    "devicesTitle": "Which hearing aids use a mould?",
+    "devicesText": "Behind-the-ear (BTE) and receiver-in-canal (RIC) hearing aids can be used with a custom mould. In-the-canal (ITC, CIC) hearing aids are themselves made to an impression of your ear. We decide together which suits you after your hearing test.",
+    "careTitle": "Caring for your mould",
+    "carePoints": [
+      "Wipe the mould every day with a dry, soft cloth.",
+      "If the sound opening gets blocked, do not try to clear it yourself; we will clean it at our centre.",
+      "The shape of the ear can change over time. If the mould feels loose or uncomfortable, come in for a check; we will make a new one if needed."
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "What does taking an ear impression feel like?",
+        "a": "A soft material is placed in your ear canal and left for a few minutes. You may feel slight fullness in the ear; it takes only a short time."
+      },
+      {
+        "q": "Why do you use a mould instead of a ready-made dome?",
+        "a": "Every ear canal is different. A mould made from an impression of your ear is prepared so that the hearing aid sits more securely and suits your ear."
+      },
+      {
+        "q": "When should my mould be replaced?",
+        "a": "Come in for a check when the mould feels loose, becomes uncomfortable or whistling increases. We also check your mould at regular maintenance visits."
+      }
+    ],
+    "ctaTitle": "Let us find the right solution for your ear together",
+    "ctaText": "Book an appointment for a hearing test and an ear mould, or give us a call.",
+    "ctaButton": "Book an appointment",
+    "ctaPhone": "0532 275 24 14"
+  },
+  "hearingTestPage": {
+    "eyebrow": "Şelale Hearing · Sarıyer",
+    "title": "Hearing Test at Our Centre",
+    "intro": "A hearing test shows which sounds you struggle with and how much. Based on the result, we decide together whether you need a hearing aid and, if so, which type suits you. We do the test in a quiet test room at our centre in Sarıyer.",
+    "signsTitle": "When should you have a hearing test?",
+    "signs": [
+      "You turn the TV or phone up louder than before",
+      "You find it hard to follow conversations in busy places",
+      "You often ask people to repeat themselves",
+      "You notice ringing or buzzing in your ear",
+      "People close to you say your hearing has got worse"
+    ],
+    "stepsTitle": "How is the test done?",
+    "steps": [
+      {
+        "title": "Initial talk",
+        "text": "We talk about the difficulties you have, your hearing history and your daily life."
+      },
+      {
+        "title": "Ear check",
+        "text": "We check your ear canal and eardrum."
+      },
+      {
+        "title": "Tone test",
+        "text": "You listen to sounds of different pitches through headphones and signal as soon as you hear one."
+      },
+      {
+        "title": "Speech understanding test",
+        "text": "We measure how clearly you understand words, which shows how you hear everyday conversation."
+      },
+      {
+        "title": "Going through the results together",
+        "text": "We explain the results on an audiogram and, if needed, talk through hearing aid options."
+      }
+    ],
+    "resultTitle": "What is an audiogram?",
+    "resultText": "An audiogram is the chart that shows your test result. For each ear it shows how loud a sound of each pitch has to be for you to hear it. The lower the line on the chart, the louder a sound of that pitch has to be.",
+    "bringTitle": "When you come for the test",
+    "bring": [
+      "Bring any earlier hearing test results and hospital reports you have.",
+      "If you use a hearing aid, bring it with you.",
+      "Coming with a family member makes it easier to describe the difficulties you have day to day."
+    ],
+    "priceNote": "Detailed tests are paid. Call us for prices and details.",
+    "onlineTitle": "Would you like a first idea from home?",
+    "onlineText": "Our free online test on this site gives you a first idea in a few minutes. It does not replace the test at our centre.",
+    "onlineButton": "Start the online test",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Does a hearing test hurt?",
+        "a": "No. You listen to sounds through headphones and signal when you hear them; nothing is done inside your ear."
+      },
+      {
+        "q": "When do I get the result?",
+        "a": "After the test we go through the results with you on an audiogram."
+      },
+      {
+        "q": "Is the online test enough?",
+        "a": "The online test gives a first idea; a full assessment needs the test in a quiet room at our centre."
+      },
+      {
+        "q": "Is the hearing test paid?",
+        "a": "Detailed tests are paid. Call us for prices and details."
+      }
+    ],
+    "ctaTitle": "Book a hearing test",
+    "ctaText": "Book a day and time that suits you online, or give us a call.",
+    "ctaButton": "Book an appointment",
+    "ctaPhone": "0532 275 24 14"
+  }
 }

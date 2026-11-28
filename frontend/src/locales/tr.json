@@ -26,7 +26,9 @@
     "personalizedDescription": "Her bireyin işitme kayıp düzeyi, yaşam tarzı ve ihtiyaçlarına en uygun işitme deneyimini sunmayı amaçlar.",
     "phone": "0532 275 24 14",
     "email": "selalealagas@hotmail.com",
-    "address": "Merkez Mah., Sarıyer"
+    "address": "Merkez Mah., Sarıyer",
+    "earMould": "Kulağa Özel Kalıp",
+    "hearingTest": "Merkezde İşitme Testi"
   },
   "anasayfa": {
     "title": "Sarıyer İşitme Cihazı Merkezi",
@@ -327,7 +329,61 @@
       "deviceEligibility": "SGK kapsamındaki cihazlar, hastanın raporu ve SGK onayına bağlı olarak temin edilmektedir.",
       "contributionDetails": "SGK katkı oranları ve hangi cihazların kapsandığı hakkında ayrıntılı bilgi için lütfen bizimle iletişime geçin veya merkezimizi ziyaret edin."
     },
-    "contactButton": "Bize Ulaşın"
+    "contactButton": "Bize Ulaşın",
+    "stepsTitle": "SGK ile işitme cihazı nasıl alınır?",
+    "steps": [
+      {
+        "title": "Hastanede muayene ve rapor",
+        "text": "Kulak burun boğaz (KBB) uzmanı muayene eder, işitme testi yapılır. İşitme cihazı gerekiyorsa sağlık raporu düzenlenir."
+      },
+      {
+        "title": "Merkezimize başvuru",
+        "text": "Raporunuzla SGK anlaşmalı merkezimize gelirsiniz. İşitmenizi yeniden değerlendirir, size uygun cihaz tipini birlikte belirleriz."
+      },
+      {
+        "title": "SGK işlemleri",
+        "text": "Raporunuzun SGK sistemindeki kaydını ve provizyon işlemlerini merkezimiz yapar; sizin ayrıca SGK'ya gitmeniz gerekmez."
+      },
+      {
+        "title": "Kulak kalıbı ve cihaz uygulaması",
+        "text": "Kulağınızdan ölçü alınır, size özel kalıp hazırlanır ve cihazınız işitmenize göre ayarlanarak teslim edilir."
+      },
+      {
+        "title": "Adaptasyon ve bakım",
+        "text": "Cihaza alışma sürecinizi takip eder, düzenli kontrollerde cihazınızın bakımını yaparız."
+      }
+    ],
+    "bringTitle": "Yanınızda getirmeniz gerekenler",
+    "bring": [
+      "Kimlik kartınız",
+      "Hastaneden aldığınız işitme cihazı raporu",
+      "Varsa daha önce kullandığınız işitme cihazı ve eski test sonuçlarınız"
+    ],
+    "notesTitle": "Bilmeniz gerekenler",
+    "notes": [
+      "SGK, rapora göre belirlenen tutarı öder. Seçilen cihazın fiyatı bu tutarın üzerindeyse aradaki farkı hasta öder.",
+      "SGK katkısıyla yeni cihaz alabilmek için önceki cihazın üzerinden SGK'nın belirlediği sürenin geçmiş olması gerekir. Güncel süreyi ve katkı tutarını bize sorabilirsiniz.",
+      "Raporun geçerlilik süresi sınırlıdır; raporunuzu aldıktan sonra merkezimize gecikmeden başvurmanızı öneririz."
+    ],
+    "faqTitle": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "SGK işitme cihazının tamamını öder mi?",
+        "a": "SGK, rapora göre belirlenen tutarı öder. Seçtiğiniz cihazın fiyatı bu tutarı aşarsa aradaki farkı siz ödersiniz. Size uygun seçenekleri ve fiyatları merkezimizde birlikte değerlendiriyoruz."
+      },
+      {
+        "q": "SGK raporunu nereden alırım?",
+        "a": "Raporu hastanede kulak burun boğaz (KBB) uzmanı, muayene ve işitme testinden sonra düzenler. Raporunuzla SGK anlaşmalı merkezimize başvurabilirsiniz."
+      },
+      {
+        "q": "SGK işlemleri için ayrıca bir yere gitmem gerekiyor mu?",
+        "a": "Hayır. Raporunuzla merkezimize geldiğinizde SGK sistemindeki işlemleri biz yapıyoruz."
+      },
+      {
+        "q": "SGK'nın karşılamadığı tutarı nasıl ödeyebilirim?",
+        "a": "SGK katkısının dışında kalan tutarı kredi kartıyla ödeyebilirsiniz. Kartınızın limiti yetmezse kalan tutarı merkezimizde elden taksitlerle ödeyebilirsiniz. Ayrıntılar için bizi arayabilirsiniz."
+      }
+    ]
   },
   "onlineTest": {
     "seo": {
@@ -862,5 +918,146 @@
       "msg": "Mutlu Yıllar! Yeni yılınız kutlu olsun. 🎄"
     }
   ],
-  "specialDayClose": "Kapat"
+  "specialDayClose": "Kapat",
+  "earMouldPage": {
+    "eyebrow": "Şelale İşitme · Sarıyer",
+    "title": "Kulağınıza Özel Kalıp",
+    "intro": "Birçok işitme cihazı, hazır ve numaralı silikon başlıklarla takılır: birkaç boy arasından kulağa en yakın olan seçilir. Biz ise kulağınızdan ölçü alıyor, cihazınızı yalnızca sizin kulak kanalınızın şekline göre hazırlanan bir kalıpla uyguluyoruz. Satıştan sonra da kalıbınızın ve cihazınızın bakımını, adaptasyon sürecinizi birlikte takip ediyoruz.",
+    "whatTitle": "Kulak kalıbı nedir?",
+    "whatText": "Kulak kalıbı, kulak kanalınızın ve kulak kepçenizin şekline göre üretilen küçük bir parçadır. Cihazın sesi kulağa ileten ucunu yerinde tutar. Her kulak birbirinden farklı olduğu için kalıp da yalnızca size aittir.",
+    "compareTitle": "Hazır başlık ile özel kalıp arasındaki fark",
+    "readyTitle": "Hazır başlık",
+    "readyPoints": [
+      "Birkaç standart boy arasından seçilir.",
+      "Hemen takılabilir, ölçü almayı gerektirmez.",
+      "Kulak kanalının şekline göre değil, boyuna göre seçilir."
+    ],
+    "customTitle": "Kulağa özel kalıp",
+    "customPoints": [
+      "Kulağınızdan alınan ölçüyle, size göre üretilir.",
+      "Kulakta daha sabit oturması hedeflenir; gün boyu takarken rahatlığı artırabilir.",
+      "Cihazın ıslık sesine (geri besleme) yol açan boşlukları azaltmaya yardımcı olabilir."
+    ],
+    "stepsTitle": "Süreç nasıl ilerliyor?",
+    "steps": [
+      {
+        "title": "İşitme testi ve değerlendirme",
+        "text": "Önce işitmenizi test ediyor, size uygun cihaz tipini birlikte belirliyoruz."
+      },
+      {
+        "title": "Kulaktan ölçü alma",
+        "text": "Kulak kanalınıza yumuşak bir ölçü malzemesi yerleştiriyoruz. Malzeme birkaç dakika içinde şekil alıyor ve çıkarılıyor."
+      },
+      {
+        "title": "Kalıbın hazırlanması",
+        "text": "Alınan ölçüye göre size özel kalıp üretiliyor."
+      },
+      {
+        "title": "Takma ve ayar",
+        "text": "Kalıp cihazınıza takılıyor, kulağınızda nasıl oturduğu kontrol ediliyor ve cihaz size göre ayarlanıyor."
+      },
+      {
+        "title": "Adaptasyon ve bakım",
+        "text": "İlk haftalarda alışma sürecinizi takip ediyor, düzenli kontrollerde kalıbınızı ve cihazınızı bakımdan geçiriyoruz."
+      }
+    ],
+    "devicesTitle": "Hangi cihazlarla kullanılır?",
+    "devicesText": "Kulak arkası (BTE) ve kanal içi hoparlörlü (RIC) cihazlar özel kalıpla kullanılabilir. Kanal içi (ITC, CIC) cihazlarda ise cihazın gövdesi zaten kulağınızdan alınan ölçüye göre üretilir. Hangisinin size uygun olduğunu işitme testinden sonra birlikte değerlendiriyoruz.",
+    "careTitle": "Kalıbın bakımı",
+    "carePoints": [
+      "Kalıbı her gün kuru ve yumuşak bir bezle silin.",
+      "Ses çıkışı tıkanırsa kendiniz kurcalamayın; merkezimizde temizleyelim.",
+      "Kulak şekli zamanla değişebilir. Kalıp gevşerse ya da rahatsız ederse kontrol için gelin; gerekirse yenisini hazırlarız."
+    ],
+    "faqTitle": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "Kulaktan ölçü alınırken ne hissederim?",
+        "a": "Kulak kanalınıza yumuşak bir malzeme yerleştirilir ve birkaç dakika beklenir. Bu sırada kulakta hafif bir dolgunluk hissedilebilir; işlem kısa sürer."
+      },
+      {
+        "q": "Neden hazır başlık yerine kalıp kullanıyorsunuz?",
+        "a": "Her kulak kanalı farklıdır. Kulağınızdan ölçü alınarak üretilen kalıp, cihazın kulağınızda daha sabit ve size uygun şekilde oturması için hazırlanır."
+      },
+      {
+        "q": "Kalıbım ne zaman yenilenmeli?",
+        "a": "Kalıp gevşediğinde, kulakta rahatsızlık verdiğinde ya da ıslık sesi artmaya başladığında kontrol için gelin. Düzenli bakım ziyaretlerinde kalıbınızı biz de kontrol ediyoruz."
+      }
+    ],
+    "ctaTitle": "Kulağınıza uygun çözümü birlikte belirleyelim",
+    "ctaText": "İşitme testi ve kalıp için randevu alabilir ya da bizi arayabilirsiniz.",
+    "ctaButton": "Randevu alın",
+    "ctaPhone": "0532 275 24 14"
+  },
+  "hearingTestPage": {
+    "eyebrow": "Şelale İşitme · Sarıyer",
+    "title": "Merkezimizde İşitme Testi",
+    "intro": "İşitme testi, hangi seslerde ve ne düzeyde zorlandığınızı gösterir. Sonuca göre işitme cihazı gerekip gerekmediğini, gerekiyorsa size hangi tipin uygun olduğunu birlikte değerlendiriyoruz. Testi Sarıyer'deki merkezimizde, sessiz bir test odasında yapıyoruz.",
+    "signsTitle": "Ne zaman işitme testi yaptırmalı?",
+    "signs": [
+      "Televizyonun ya da telefonun sesini eskisinden daha çok açıyorsanız",
+      "Kalabalık ortamlarda konuşmaları anlamakta zorlanıyorsanız",
+      "Karşınızdakinden sık sık tekrar etmesini istiyorsanız",
+      "Kulağınızda çınlama ya da uğultu hissediyorsanız",
+      "Yakınlarınız işitmenizin azaldığını söylüyorsa"
+    ],
+    "stepsTitle": "Test nasıl yapılıyor?",
+    "steps": [
+      {
+        "title": "Ön görüşme",
+        "text": "Yaşadığınız güçlükleri, işitmenizle ilgili geçmişinizi ve günlük yaşamınızı konuşuyoruz."
+      },
+      {
+        "title": "Kulak kontrolü",
+        "text": "Kulak kanalınızın ve kulak zarınızın görünümünü kontrol ediyoruz."
+      },
+      {
+        "title": "Ses tonlarıyla test",
+        "text": "Kulaklıkla farklı perdelerde sesler dinletiyoruz; sesi duyduğunuz anda işaret veriyorsunuz."
+      },
+      {
+        "title": "Konuşmayı anlama testi",
+        "text": "Kelimeleri ne kadar net anladığınızı ölçüyoruz; bu, günlük konuşmalarda nasıl duyduğunuzu gösterir."
+      },
+      {
+        "title": "Sonucu birlikte değerlendirme",
+        "text": "Sonuçları odyogram üzerinde size anlatıyor, gerekirse işitme cihazı seçeneklerini konuşuyoruz."
+      }
+    ],
+    "resultTitle": "Odyogram nedir?",
+    "resultText": "Odyogram, test sonucunu gösteren grafiktir. Her kulak için hangi perdedeki sesleri ne kadar yüksek duyduğunuzu gösterir. Grafikteki çizgi aşağı indikçe o perdedeki sesleri duymak için daha yüksek ses gerekir.",
+    "bringTitle": "Teste gelirken",
+    "bring": [
+      "Varsa daha önceki işitme testi sonuçlarınızı ve hastane raporlarınızı getirin.",
+      "İşitme cihazı kullanıyorsanız cihazınızı yanınızda getirin.",
+      "Yakınınızla gelmeniz, günlük yaşamda yaşadığınız güçlükleri anlatmanızı kolaylaştırır."
+    ],
+    "priceNote": "Ayrıntılı testler ücretlidir. Ücret ve ayrıntılar için bizi arayabilirsiniz.",
+    "onlineTitle": "Önce evden bir fikir edinmek ister misiniz?",
+    "onlineText": "Sitemizdeki ücretsiz online testle birkaç dakikada ön bir fikir edinebilirsiniz. Online test, merkezde yapılan testin yerini tutmaz.",
+    "onlineButton": "Online teste başla",
+    "faqTitle": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "İşitme testi acıtır mı?",
+        "a": "Hayır. Kulaklıkla sesler dinler ve duyduğunuzda işaret verirsiniz; kulağınıza herhangi bir müdahale yapılmaz."
+      },
+      {
+        "q": "Sonucu ne zaman öğrenirim?",
+        "a": "Test bittikten sonra sonuçları odyogram üzerinde sizinle birlikte değerlendiriyoruz."
+      },
+      {
+        "q": "Online test yeterli mi?",
+        "a": "Online test ön bir fikir verir; kesin değerlendirme için merkezimizde sessiz bir odada yapılan test gerekir."
+      },
+      {
+        "q": "İşitme testi ücretli mi?",
+        "a": "Ayrıntılı testler ücretlidir. Ücret ve ayrıntılar için bizi arayabilirsiniz."
+      }
+    ],
+    "ctaTitle": "İşitme testi için randevu alın",
+    "ctaText": "Size uygun bir gün ve saat için online randevu oluşturabilir ya da bizi arayabilirsiniz.",
+    "ctaButton": "Randevu alın",
+    "ctaPhone": "0532 275 24 14"
+  }
 }

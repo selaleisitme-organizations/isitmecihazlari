@@ -49,6 +49,10 @@ const image = imagePath.startsWith("http")
     `<meta name="twitter:description" content="${escapeAttr(page.description)}" />`,
     `<meta name="twitter:image" content="${image}" />`,
     `<script type="application/ld+json">${JSON.stringify(BUSINESS).replace(/</g, "\\u003c")}</script>`,
+    // A page's own structured data (the FAQ on /kulak-kalibi) next to the clinic record. id="page-ld" is the element
+    // the SEO component updates in the browser, so the page keeps one copy instead of adding a second.
+    page.structuredData &&
+      `<script type="application/ld+json" id="page-ld">${JSON.stringify(page.structuredData).replace(/</g, "\\u003c")}</script>`,
   ];
   return tags.filter(Boolean).join("\n    ");
 }

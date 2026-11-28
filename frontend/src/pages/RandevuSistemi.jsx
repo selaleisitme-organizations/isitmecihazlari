@@ -33,9 +33,11 @@ export default function RandevuSistemi() {
     { to: "/randevu", label: t("navigation.appointment"), active: true },
     { to: "/terapi-programi", label: t("navigation.rehabilitation"), active: false },
     { to: "/urun-katalogu", label: t("navigation.productCatalog"), active: false },
+    { to: "/kulak-kalibi", label: t("navigation.earMould"), active: false },
     { to: "/odeme-planlari", label: t("navigation.sgk"), active: false },
     { to: "/audio-servis", label: t("navigation.phoneApp"), active: false },
     { to: "/hakkimizda", label: t("navigation.about"), active: false },
+    { to: "/isitme-testi", label: t("navigation.hearingTest"), active: false },
     { to: "/online-test", label: t("navigation.freeHearingTest"), active: false },
   ];
 
