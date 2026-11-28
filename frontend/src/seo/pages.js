@@ -85,47 +85,6 @@ export const BUSINESS = {
   ]
 };
 
-
-// The clinic as Google's local results know it. Read by the home page and written into every page's HTML.
-export const BUSINESS = {
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "@id": `${SITE_URL}/#business`,
-  name: "Şelale İşitme Cihazları",
-  description:
-    "SGK anlaşmalı işitme merkezi. Sarıyer'de işitme testi, kulağa özel kalıpla işitme cihazı uygulaması, cihaz bakım ve onarımı, adaptasyon takibi ve işitsel rehabilitasyon.",
-  url: `${SITE_URL}/`,
-  telephone: "+905322752414",
-  image: `${SITE_URL}/images/selaleLogo.jpeg`,
-  logo: `${SITE_URL}/images/selaleLogo.jpeg`,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Merkez Mahallesi, Şehit Mithat Yılmaz Caddesi No:47 D:7",
-    addressLocality: "Sarıyer",
-    postalCode: "34396",
-    addressRegion: "İstanbul",
-    addressCountry: "TR",
-  },
-  // From the Google Business Profile listing, so the map pin and this page agree.
-  geo: { "@type": "GeoCoordinates", latitude: 41.1691916, longitude: 29.0552123 },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "09:00",
-      closes: "18:00",
-    },
-  ],
-  areaServed: ["Sarıyer", "İstanbul"],
-  medicalSpecialty: "Audiology",
-  availableService: [
-    { "@type": "MedicalProcedure", name: "İşitme testi" },
-    { "@type": "MedicalProcedure", name: "Kulağa özel kalıp" },
-    { "@type": "MedicalProcedure", name: "İşitme cihazı bakım ve onarımı" },
-    { "@type": "MedicalTherapy", name: "İşitsel rehabilitasyon" },
-  ],
-};
-
 export function seoFor(path) {
   return PAGES[path] ?? NOT_FOUND;
 }
