@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Anasayfa from "./pages/Anasayfa";
 import AudioServis from "./pages/AudioServisiUygulamasi";
 import Hakkimizda from "./pages/Hakkimizda.jsx";
+import IsitmeTesti from "./pages/IsitmeTesti.jsx";
 import KulakKalibi from "./pages/KulakKalibi.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import OdemePlanlari from "./pages/OdemePlanlari";
@@ -24,6 +25,7 @@ export default function AppRoutes() {
       <Route path="/odeme-planlari" element={<OdemePlanlari />} />
       <Route path="/audio-servis" element={<AudioServis />} />
       <Route path="/hakkimizda" element={<Hakkimizda />} />
+      <Route path="/isitme-testi" element={<IsitmeTesti />} />
       <Route path="/online-test" element={<OnlineTest />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

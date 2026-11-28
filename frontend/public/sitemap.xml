@@ -33,6 +33,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Hearing Test at the Centre -->
+  <url>
+    <loc>https://www.selaleisitme.com/isitme-testi</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Custom Ear Mould -->
   <url>
     <loc>https://www.selaleisitme.com/kulak-kalibi</loc>

@@ -73,6 +73,12 @@ export const PAGES = {
     description:
       "Şelale İşitme; Sarıyer'de işitme değerlendirmesi, kulağa özel kalıp, işitme cihazı uygulaması ve satış sonrası bakımla hizmet verir.",
   },
+  "/isitme-testi": {
+    title: "Sarıyer'de İşitme Testi | Şelale İşitme",
+    description:
+      "Merkezimizde işitme testi: nasıl yapılır, odyogram nasıl okunur, ne zaman test yaptırmalı. Ayrıntılı testler ücretlidir; bilgi için arayın. ☎ 0532 275 24 14",
+    structuredData: faqPage(tr.hearingTestPage.faq),
+  },
   "/online-test": {
     title: "Ücretsiz Online İşitme Testi | Şelale İşitme",
     description:
@@ -125,7 +131,7 @@ export const BUSINESS = {
   ],
   medicalSpecialty: "Audiology",
   availableService: [
-    { "@type": "Service", name: "İşitme değerlendirmesi" },
+    { "@type": "Service", name: "İşitme değerlendirmesi", url: `${SITE_URL}/isitme-testi` },
     { "@type": "Service", name: "İşitme cihazı uygulaması" },
     { "@type": "Service", name: "Kulağa özel kalıp", url: `${SITE_URL}/kulak-kalibi` },
     { "@type": "Service", name: "İşitme cihazı bakım ve onarımı" },

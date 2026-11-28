@@ -22,6 +22,7 @@ export default function KulakKalibi() {
     { to: "/odeme-planlari", label: t("navigation.sgk"), active: false },
     { to: "/audio-servis", label: t("navigation.phoneApp"), active: false },
     { to: "/hakkimizda", label: t("navigation.about"), active: false },
+    { to: "/isitme-testi", label: t("navigation.hearingTest"), active: false },
     { to: "/online-test", label: t("navigation.freeHearingTest"), active: false },
   ];
 

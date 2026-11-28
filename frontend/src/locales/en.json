@@ -27,7 +27,8 @@
     "phone": "0532 275 24 14",
     "email": "selalealagas@hotmail.com",
     "address": "Merkez Neighborhood, Sarıyer",
-    "earMould": "Custom Ear Moulds"
+    "earMould": "Custom Ear Moulds",
+    "hearingTest": "Hearing Test at Our Centre"
   },
   "anasayfa": {
     "title": "Sarıyer Hearing Aid Center",
@@ -985,6 +986,77 @@
     ],
     "ctaTitle": "Let us find the right solution for your ear together",
     "ctaText": "Book an appointment for a hearing test and an ear mould, or give us a call.",
+    "ctaButton": "Book an appointment",
+    "ctaPhone": "0532 275 24 14"
+  },
+  "hearingTestPage": {
+    "eyebrow": "Şelale Hearing · Sarıyer",
+    "title": "Hearing Test at Our Centre",
+    "intro": "A hearing test shows which sounds you struggle with and how much. Based on the result, we decide together whether you need a hearing aid and, if so, which type suits you. We do the test in a quiet test room at our centre in Sarıyer.",
+    "signsTitle": "When should you have a hearing test?",
+    "signs": [
+      "You turn the TV or phone up louder than before",
+      "You find it hard to follow conversations in busy places",
+      "You often ask people to repeat themselves",
+      "You notice ringing or buzzing in your ear",
+      "People close to you say your hearing has got worse"
+    ],
+    "stepsTitle": "How is the test done?",
+    "steps": [
+      {
+        "title": "Initial talk",
+        "text": "We talk about the difficulties you have, your hearing history and your daily life."
+      },
+      {
+        "title": "Ear check",
+        "text": "We check your ear canal and eardrum."
+      },
+      {
+        "title": "Tone test",
+        "text": "You listen to sounds of different pitches through headphones and signal as soon as you hear one."
+      },
+      {
+        "title": "Speech understanding test",
+        "text": "We measure how clearly you understand words, which shows how you hear everyday conversation."
+      },
+      {
+        "title": "Going through the results together",
+        "text": "We explain the results on an audiogram and, if needed, talk through hearing aid options."
+      }
+    ],
+    "resultTitle": "What is an audiogram?",
+    "resultText": "An audiogram is the chart that shows your test result. For each ear it shows how loud a sound of each pitch has to be for you to hear it. The lower the line on the chart, the louder a sound of that pitch has to be.",
+    "bringTitle": "When you come for the test",
+    "bring": [
+      "Bring any earlier hearing test results and hospital reports you have.",
+      "If you use a hearing aid, bring it with you.",
+      "Coming with a family member makes it easier to describe the difficulties you have day to day."
+    ],
+    "priceNote": "Detailed tests are paid. Call us for prices and details.",
+    "onlineTitle": "Would you like a first idea from home?",
+    "onlineText": "Our free online test on this site gives you a first idea in a few minutes. It does not replace the test at our centre.",
+    "onlineButton": "Start the online test",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Does a hearing test hurt?",
+        "a": "No. You listen to sounds through headphones and signal when you hear them; nothing is done inside your ear."
+      },
+      {
+        "q": "When do I get the result?",
+        "a": "After the test we go through the results with you on an audiogram."
+      },
+      {
+        "q": "Is the online test enough?",
+        "a": "The online test gives a first idea; a full assessment needs the test in a quiet room at our centre."
+      },
+      {
+        "q": "Is the hearing test paid?",
+        "a": "Detailed tests are paid. Call us for prices and details."
+      }
+    ],
+    "ctaTitle": "Book a hearing test",
+    "ctaText": "Book a day and time that suits you online, or give us a call.",
     "ctaButton": "Book an appointment",
     "ctaPhone": "0532 275 24 14"
   }

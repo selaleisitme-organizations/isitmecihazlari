@@ -27,7 +27,8 @@
     "phone": "0532 275 24 14",
     "email": "selalealagas@hotmail.com",
     "address": "Merkez Mah., Sarıyer",
-    "earMould": "Kulağa Özel Kalıp"
+    "earMould": "Kulağa Özel Kalıp",
+    "hearingTest": "Merkezde İşitme Testi"
   },
   "anasayfa": {
     "title": "Sarıyer İşitme Cihazı Merkezi",
@@ -985,6 +986,77 @@
     ],
     "ctaTitle": "Kulağınıza uygun çözümü birlikte belirleyelim",
     "ctaText": "İşitme testi ve kalıp için randevu alabilir ya da bizi arayabilirsiniz.",
+    "ctaButton": "Randevu alın",
+    "ctaPhone": "0532 275 24 14"
+  },
+  "hearingTestPage": {
+    "eyebrow": "Şelale İşitme · Sarıyer",
+    "title": "Merkezimizde İşitme Testi",
+    "intro": "İşitme testi, hangi seslerde ve ne düzeyde zorlandığınızı gösterir. Sonuca göre işitme cihazı gerekip gerekmediğini, gerekiyorsa size hangi tipin uygun olduğunu birlikte değerlendiriyoruz. Testi Sarıyer'deki merkezimizde, sessiz bir test odasında yapıyoruz.",
+    "signsTitle": "Ne zaman işitme testi yaptırmalı?",
+    "signs": [
+      "Televizyonun ya da telefonun sesini eskisinden daha çok açıyorsanız",
+      "Kalabalık ortamlarda konuşmaları anlamakta zorlanıyorsanız",
+      "Karşınızdakinden sık sık tekrar etmesini istiyorsanız",
+      "Kulağınızda çınlama ya da uğultu hissediyorsanız",
+      "Yakınlarınız işitmenizin azaldığını söylüyorsa"
+    ],
+    "stepsTitle": "Test nasıl yapılıyor?",
+    "steps": [
+      {
+        "title": "Ön görüşme",
+        "text": "Yaşadığınız güçlükleri, işitmenizle ilgili geçmişinizi ve günlük yaşamınızı konuşuyoruz."
+      },
+      {
+        "title": "Kulak kontrolü",
+        "text": "Kulak kanalınızın ve kulak zarınızın görünümünü kontrol ediyoruz."
+      },
+      {
+        "title": "Ses tonlarıyla test",
+        "text": "Kulaklıkla farklı perdelerde sesler dinletiyoruz; sesi duyduğunuz anda işaret veriyorsunuz."
+      },
+      {
+        "title": "Konuşmayı anlama testi",
+        "text": "Kelimeleri ne kadar net anladığınızı ölçüyoruz; bu, günlük konuşmalarda nasıl duyduğunuzu gösterir."
+      },
+      {
+        "title": "Sonucu birlikte değerlendirme",
+        "text": "Sonuçları odyogram üzerinde size anlatıyor, gerekirse işitme cihazı seçeneklerini konuşuyoruz."
+      }
+    ],
+    "resultTitle": "Odyogram nedir?",
+    "resultText": "Odyogram, test sonucunu gösteren grafiktir. Her kulak için hangi perdedeki sesleri ne kadar yüksek duyduğunuzu gösterir. Grafikteki çizgi aşağı indikçe o perdedeki sesleri duymak için daha yüksek ses gerekir.",
+    "bringTitle": "Teste gelirken",
+    "bring": [
+      "Varsa daha önceki işitme testi sonuçlarınızı ve hastane raporlarınızı getirin.",
+      "İşitme cihazı kullanıyorsanız cihazınızı yanınızda getirin.",
+      "Yakınınızla gelmeniz, günlük yaşamda yaşadığınız güçlükleri anlatmanızı kolaylaştırır."
+    ],
+    "priceNote": "Ayrıntılı testler ücretlidir. Ücret ve ayrıntılar için bizi arayabilirsiniz.",
+    "onlineTitle": "Önce evden bir fikir edinmek ister misiniz?",
+    "onlineText": "Sitemizdeki ücretsiz online testle birkaç dakikada ön bir fikir edinebilirsiniz. Online test, merkezde yapılan testin yerini tutmaz.",
+    "onlineButton": "Online teste başla",
+    "faqTitle": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "İşitme testi acıtır mı?",
+        "a": "Hayır. Kulaklıkla sesler dinler ve duyduğunuzda işaret verirsiniz; kulağınıza herhangi bir müdahale yapılmaz."
+      },
+      {
+        "q": "Sonucu ne zaman öğrenirim?",
+        "a": "Test bittikten sonra sonuçları odyogram üzerinde sizinle birlikte değerlendiriyoruz."
+      },
+      {
+        "q": "Online test yeterli mi?",
+        "a": "Online test ön bir fikir verir; kesin değerlendirme için merkezimizde sessiz bir odada yapılan test gerekir."
+      },
+      {
+        "q": "İşitme testi ücretli mi?",
+        "a": "Ayrıntılı testler ücretlidir. Ücret ve ayrıntılar için bizi arayabilirsiniz."
+      }
+    ],
+    "ctaTitle": "İşitme testi için randevu alın",
+    "ctaText": "Size uygun bir gün ve saat için online randevu oluşturabilir ya da bizi arayabilirsiniz.",
     "ctaButton": "Randevu alın",
     "ctaPhone": "0532 275 24 14"
   }
