@@ -85,6 +85,11 @@ export const BUSINESS = {
   ]
 };
 
+export const NOT FOUND = {
+title: "Sayfa Bulunamadı | Şelale İşitme",
+description: "Aradığınız sayfa bulunamadı. Şelale İşitme ana sayfasını ziyaret edebilirsiniz.",
+};
+
 export function seoFor(path) {
   return PAGES[path] ?? NOT_FOUND;
 }
