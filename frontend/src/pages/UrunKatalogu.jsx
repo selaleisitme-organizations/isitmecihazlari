@@ -264,6 +264,7 @@ export default function UrunKatalogu() {
     { to: "/randevu", label: t("navigation.appointment"), active: false },
     { to: "/terapi-programi", label: t("navigation.rehabilitation"), active: false },
     { to: "/urun-katalogu", label: t("navigation.productCatalog"), active: true },
+    { to: "/kulak-kalibi", label: t("navigation.earMould"), active: false },
     { to: "/odeme-planlari", label: t("navigation.sgk"), active: false },
     { to: "/audio-servis", label: t("navigation.phoneApp"), active: false },
     { to: "/hakkimizda", label: t("navigation.about"), active: false },

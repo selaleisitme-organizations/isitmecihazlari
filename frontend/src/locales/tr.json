@@ -26,7 +26,8 @@
     "personalizedDescription": "Her bireyin işitme kayıp düzeyi, yaşam tarzı ve ihtiyaçlarına en uygun işitme deneyimini sunmayı amaçlar.",
     "phone": "0532 275 24 14",
     "email": "selalealagas@hotmail.com",
-    "address": "Merkez Mah., Sarıyer"
+    "address": "Merkez Mah., Sarıyer",
+    "earMould": "Kulağa Özel Kalıp"
   },
   "anasayfa": {
     "title": "Sarıyer İşitme Cihazı Merkezi",
@@ -862,5 +863,75 @@
       "msg": "Mutlu Yıllar! Yeni yılınız kutlu olsun. 🎄"
     }
   ],
-  "specialDayClose": "Kapat"
+  "specialDayClose": "Kapat",
+  "earMouldPage": {
+    "eyebrow": "Şelale İşitme · Sarıyer",
+    "title": "Kulağınıza Özel Kalıp",
+    "intro": "Birçok işitme cihazı, hazır ve numaralı silikon başlıklarla takılır: birkaç boy arasından kulağa en yakın olan seçilir. Biz ise kulağınızdan ölçü alıyor, cihazınızı yalnızca sizin kulak kanalınızın şekline göre hazırlanan bir kalıpla uyguluyoruz. Satıştan sonra da kalıbınızın ve cihazınızın bakımını, adaptasyon sürecinizi birlikte takip ediyoruz.",
+    "whatTitle": "Kulak kalıbı nedir?",
+    "whatText": "Kulak kalıbı, kulak kanalınızın ve kulak kepçenizin şekline göre üretilen küçük bir parçadır. Cihazın sesi kulağa ileten ucunu yerinde tutar. Her kulak birbirinden farklı olduğu için kalıp da yalnızca size aittir.",
+    "compareTitle": "Hazır başlık ile özel kalıp arasındaki fark",
+    "readyTitle": "Hazır başlık",
+    "readyPoints": [
+      "Birkaç standart boy arasından seçilir.",
+      "Hemen takılabilir, ölçü almayı gerektirmez.",
+      "Kulak kanalının şekline göre değil, boyuna göre seçilir."
+    ],
+    "customTitle": "Kulağa özel kalıp",
+    "customPoints": [
+      "Kulağınızdan alınan ölçüyle, size göre üretilir.",
+      "Kulakta daha sabit oturması hedeflenir; gün boyu takarken rahatlığı artırabilir.",
+      "Cihazın ıslık sesine (geri besleme) yol açan boşlukları azaltmaya yardımcı olabilir."
+    ],
+    "stepsTitle": "Süreç nasıl ilerliyor?",
+    "steps": [
+      {
+        "title": "İşitme testi ve değerlendirme",
+        "text": "Önce işitmenizi test ediyor, size uygun cihaz tipini birlikte belirliyoruz."
+      },
+      {
+        "title": "Kulaktan ölçü alma",
+        "text": "Kulak kanalınıza yumuşak bir ölçü malzemesi yerleştiriyoruz. Malzeme birkaç dakika içinde şekil alıyor ve çıkarılıyor."
+      },
+      {
+        "title": "Kalıbın hazırlanması",
+        "text": "Alınan ölçüye göre size özel kalıp üretiliyor."
+      },
+      {
+        "title": "Takma ve ayar",
+        "text": "Kalıp cihazınıza takılıyor, kulağınızda nasıl oturduğu kontrol ediliyor ve cihaz size göre ayarlanıyor."
+      },
+      {
+        "title": "Adaptasyon ve bakım",
+        "text": "İlk haftalarda alışma sürecinizi takip ediyor, düzenli kontrollerde kalıbınızı ve cihazınızı bakımdan geçiriyoruz."
+      }
+    ],
+    "devicesTitle": "Hangi cihazlarla kullanılır?",
+    "devicesText": "Kulak arkası (BTE) ve kanal içi hoparlörlü (RIC) cihazlar özel kalıpla kullanılabilir. Kanal içi (ITC, CIC) cihazlarda ise cihazın gövdesi zaten kulağınızdan alınan ölçüye göre üretilir. Hangisinin size uygun olduğunu işitme testinden sonra birlikte değerlendiriyoruz.",
+    "careTitle": "Kalıbın bakımı",
+    "carePoints": [
+      "Kalıbı her gün kuru ve yumuşak bir bezle silin.",
+      "Ses çıkışı tıkanırsa kendiniz kurcalamayın; merkezimizde temizleyelim.",
+      "Kulak şekli zamanla değişebilir. Kalıp gevşerse ya da rahatsız ederse kontrol için gelin; gerekirse yenisini hazırlarız."
+    ],
+    "faqTitle": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "Kulaktan ölçü alınırken ne hissederim?",
+        "a": "Kulak kanalınıza yumuşak bir malzeme yerleştirilir ve birkaç dakika beklenir. Bu sırada kulakta hafif bir dolgunluk hissedilebilir; işlem kısa sürer."
+      },
+      {
+        "q": "Neden hazır başlık yerine kalıp kullanıyorsunuz?",
+        "a": "Her kulak kanalı farklıdır. Kulağınızdan ölçü alınarak üretilen kalıp, cihazın kulağınızda daha sabit ve size uygun şekilde oturması için hazırlanır."
+      },
+      {
+        "q": "Kalıbım ne zaman yenilenmeli?",
+        "a": "Kalıp gevşediğinde, kulakta rahatsızlık verdiğinde ya da ıslık sesi artmaya başladığında kontrol için gelin. Düzenli bakım ziyaretlerinde kalıbınızı biz de kontrol ediyoruz."
+      }
+    ],
+    "ctaTitle": "Kulağınıza uygun çözümü birlikte belirleyelim",
+    "ctaText": "İşitme testi ve kalıp için randevu alabilir ya da bizi arayabilirsiniz.",
+    "ctaButton": "Randevu alın",
+    "ctaPhone": "0532 275 24 14"
+  }
 }

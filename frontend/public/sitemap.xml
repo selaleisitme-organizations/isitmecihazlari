@@ -33,6 +33,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Custom Ear Mould -->
+  <url>
+    <loc>https://www.selaleisitme.com/kulak-kalibi</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Therapy Program -->
   <url>
     <loc>https://www.selaleisitme.com/terapi-programi</loc>

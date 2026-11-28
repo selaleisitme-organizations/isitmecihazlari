@@ -8,11 +8,24 @@
 // Wording rules (owner, 2026-11-25): no device brand or model names (medical device advertising rules), no
 // superlatives or guarantees, no try-before-you-buy, and the clinic test is not called free. The online test
 // on this site is free, so it may say so. The clinic is SGK-contracted (confirmed 2026-11-25).
+import tr from "../locales/tr.json";
 
 export const SITE_URL = "https://www.selaleisitme.com";
 export const SITE_NAME = "Şelale İşitme";
 export const DEFAULT_OG_IMAGE = "/images/anasayfaBigPic.jpeg";
 
+// FAQ answers as Google reads them (schema.org FAQPage), from the same Turkish texts the page shows.
+function faqPage(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
+}
 
 export const PAGES = {
   "/": {
@@ -30,6 +43,12 @@ export const PAGES = {
     description:
       "Kanal içi, kulak arkası, şarjlı ve Bluetooth işitme cihazı tiplerinin özelliklerini inceleyin; size uygun tipi testten sonra birlikte seçelim.",
     ogImage: "/images/products/SR_Li_8.png",
+  },
+  "/kulak-kalibi": {
+    title: "Kulağa Özel İşitme Cihazı Kalıbı | Şelale İşitme Sarıyer",
+    description:
+      "Hazır numaralı başlık yerine kulağınızdan ölçü alarak size özel kalıp hazırlıyoruz. Süreç, bakım ve sık sorulan sorular. ☎ 0532 275 24 14",
+    structuredData: faqPage(tr.earMouldPage.faq),
   },
   "/terapi-programi": {
     title: "İşitsel Rehabilitasyon ve Kulak Çınlaması | Şelale İşitme",
@@ -107,7 +126,7 @@ export const BUSINESS = {
   availableService: [
     { "@type": "Service", name: "İşitme değerlendirmesi" },
     { "@type": "Service", name: "İşitme cihazı uygulaması" },
-    { "@type": "Service", name: "Kulağa özel kalıp" },
+    { "@type": "Service", name: "Kulağa özel kalıp", url: `${SITE_URL}/kulak-kalibi` },
     { "@type": "Service", name: "İşitme cihazı bakım ve onarımı" },
     { "@type": "Service", name: "İşitsel rehabilitasyon" },
   ],

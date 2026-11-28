@@ -26,7 +26,8 @@
     "personalizedDescription": "We aim to provide the most suitable hearing experience for each individual's degree of hearing loss, lifestyle, and needs.",
     "phone": "0532 275 24 14",
     "email": "selalealagas@hotmail.com",
-    "address": "Merkez Neighborhood, Sarıyer"
+    "address": "Merkez Neighborhood, Sarıyer",
+    "earMould": "Custom Ear Moulds"
   },
   "anasayfa": {
     "title": "Sarıyer Hearing Aid Center",
@@ -862,5 +863,75 @@
       "msg": "Happy New Year! 🎄"
     }
   ],
-  "specialDayClose": "Close"
+  "specialDayClose": "Close",
+  "earMouldPage": {
+    "eyebrow": "Şelale Hearing · Sarıyer",
+    "title": "An Ear Mould Made for Your Ear",
+    "intro": "Many hearing aids are fitted with ready-made, numbered silicone domes: the closest of a few sizes is chosen. We take an impression of your ear instead and fit your hearing aid with a mould made only for the shape of your ear canal. After the purchase, we keep looking after your mould and hearing aid and follow your adaptation together with you.",
+    "whatTitle": "What is an ear mould?",
+    "whatText": "An ear mould is a small piece made to the shape of your ear canal and outer ear. It holds the part of the hearing aid that delivers sound into the ear. Because every ear is different, the mould is yours alone.",
+    "compareTitle": "Ready-made dome or custom mould",
+    "readyTitle": "Ready-made dome",
+    "readyPoints": [
+      "Chosen from a few standard sizes.",
+      "Can be fitted at once, without an impression.",
+      "Chosen by size, not by the shape of your ear canal."
+    ],
+    "customTitle": "Custom ear mould",
+    "customPoints": [
+      "Made for you from an impression of your ear.",
+      "Aims to sit more securely in the ear, which can make all-day wear more comfortable.",
+      "Can help reduce the gaps that cause whistling (feedback)."
+    ],
+    "stepsTitle": "How does it work?",
+    "steps": [
+      {
+        "title": "Hearing test and assessment",
+        "text": "We first test your hearing and decide together which type of hearing aid suits you."
+      },
+      {
+        "title": "Taking an impression",
+        "text": "We place a soft impression material in your ear canal. It sets within a few minutes and is then removed."
+      },
+      {
+        "title": "Making the mould",
+        "text": "Your mould is made to the impression taken."
+      },
+      {
+        "title": "Fitting and adjustment",
+        "text": "The mould is attached to your hearing aid, we check how it sits in your ear, and the hearing aid is adjusted for you."
+      },
+      {
+        "title": "Adaptation and care",
+        "text": "We follow your first weeks of getting used to it and service your mould and hearing aid at regular check-ups."
+      }
+    ],
+    "devicesTitle": "Which hearing aids use a mould?",
+    "devicesText": "Behind-the-ear (BTE) and receiver-in-canal (RIC) hearing aids can be used with a custom mould. In-the-canal (ITC, CIC) hearing aids are themselves made to an impression of your ear. We decide together which suits you after your hearing test.",
+    "careTitle": "Caring for your mould",
+    "carePoints": [
+      "Wipe the mould every day with a dry, soft cloth.",
+      "If the sound opening gets blocked, do not try to clear it yourself; we will clean it at our centre.",
+      "The shape of the ear can change over time. If the mould feels loose or uncomfortable, come in for a check; we will make a new one if needed."
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "What does taking an ear impression feel like?",
+        "a": "A soft material is placed in your ear canal and left for a few minutes. You may feel slight fullness in the ear; it takes only a short time."
+      },
+      {
+        "q": "Why do you use a mould instead of a ready-made dome?",
+        "a": "Every ear canal is different. A mould made from an impression of your ear is prepared so that the hearing aid sits more securely and suits your ear."
+      },
+      {
+        "q": "When should my mould be replaced?",
+        "a": "Come in for a check when the mould feels loose, becomes uncomfortable or whistling increases. We also check your mould at regular maintenance visits."
+      }
+    ],
+    "ctaTitle": "Let us find the right solution for your ear together",
+    "ctaText": "Book an appointment for a hearing test and an ear mould, or give us a call.",
+    "ctaButton": "Book an appointment",
+    "ctaPhone": "0532 275 24 14"
+  }
 }
