@@ -60,6 +60,7 @@ export const PAGES = {
     title: "SGK Anlaşmalı İşitme Cihazı ve Ödeme | Şelale İşitme",
     description:
       "SGK anlaşmalı merkezimizde SGK katkısıyla işitme cihazı alma süreci ve ödeme seçenekleri. Ayrıntılar için Sarıyer merkezimizi arayın.",
+    structuredData: faqPage(tr.sgkPage.faq),
   },
   "/audio-servis": {
     title: "İşitme Cihazı Telefon Uygulamaları | Şelale İşitme",

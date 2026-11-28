@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 export default function OdemePlanlari() {
   const { t } = useTranslation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const list = (key) => t(`sgkPage.${key}`, { returnObjects: true });
 
   const navLinks = [
     { to: "/", label: t("navigation.home"), active: false },
@@ -153,6 +154,52 @@ export default function OdemePlanlari() {
               </div>
             </div>
           </div>
+
+          {/* SGK process, what to bring, notes and FAQ (texts in locales/*.json under sgkPage; the FAQ's
+              structured data comes from seo/pages.js) */}
+          <section className="bg-white rounded-2xl shadow-lg p-8 mb-10" aria-labelledby="sgk-adimlar">
+            <h2 id="sgk-adimlar" className="text-2xl md:text-3xl font-bold text-blue-900 mb-6">{t("sgkPage.stepsTitle")}</h2>
+            <ol className="space-y-5">
+              {list("steps").map((step, index) => (
+                <li key={step.title} className="flex gap-4">
+                  <span className="flex-none w-9 h-9 rounded-full bg-blue-900 text-white font-bold flex items-center justify-center">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-900">{step.title}</h3>
+                    <p className="text-gray-700 leading-relaxed">{step.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <section className="bg-white rounded-2xl shadow-lg p-8" aria-labelledby="sgk-getir">
+              <h2 id="sgk-getir" className="text-xl font-bold text-blue-900 mb-4">{t("sgkPage.bringTitle")}</h2>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed">
+                {list("bring").map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </section>
+            <section className="bg-white rounded-2xl shadow-lg p-8" aria-labelledby="sgk-bilgi">
+              <h2 id="sgk-bilgi" className="text-xl font-bold text-blue-900 mb-4">{t("sgkPage.notesTitle")}</h2>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed">
+                {list("notes").map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </section>
+          </div>
+
+          <section className="bg-white rounded-2xl shadow-lg p-8 mb-16" aria-labelledby="sgk-sss">
+            <h2 id="sgk-sss" className="text-2xl font-bold text-blue-900 mb-4">{t("sgkPage.faqTitle")}</h2>
+            <div className="space-y-3">
+              {list("faq").map((item) => (
+                <details key={item.q} className="rounded-lg border border-gray-200 p-4">
+                  <summary className="cursor-pointer font-semibold text-gray-900">{item.q}</summary>
+                  <p className="mt-3 text-gray-700 leading-relaxed">{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
 
           {/* CTA Button */}
           <div className="text-center">

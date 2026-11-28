@@ -328,7 +328,61 @@
       "deviceEligibility": "SGK kapsamındaki cihazlar, hastanın raporu ve SGK onayına bağlı olarak temin edilmektedir.",
       "contributionDetails": "SGK katkı oranları ve hangi cihazların kapsandığı hakkında ayrıntılı bilgi için lütfen bizimle iletişime geçin veya merkezimizi ziyaret edin."
     },
-    "contactButton": "Bize Ulaşın"
+    "contactButton": "Bize Ulaşın",
+    "stepsTitle": "SGK ile işitme cihazı nasıl alınır?",
+    "steps": [
+      {
+        "title": "Hastanede muayene ve rapor",
+        "text": "Kulak burun boğaz (KBB) uzmanı muayene eder, işitme testi yapılır. İşitme cihazı gerekiyorsa sağlık raporu düzenlenir."
+      },
+      {
+        "title": "Merkezimize başvuru",
+        "text": "Raporunuzla SGK anlaşmalı merkezimize gelirsiniz. İşitmenizi yeniden değerlendirir, size uygun cihaz tipini birlikte belirleriz."
+      },
+      {
+        "title": "SGK işlemleri",
+        "text": "Raporunuzun SGK sistemindeki kaydını ve provizyon işlemlerini merkezimiz yapar; sizin ayrıca SGK'ya gitmeniz gerekmez."
+      },
+      {
+        "title": "Kulak kalıbı ve cihaz uygulaması",
+        "text": "Kulağınızdan ölçü alınır, size özel kalıp hazırlanır ve cihazınız işitmenize göre ayarlanarak teslim edilir."
+      },
+      {
+        "title": "Adaptasyon ve bakım",
+        "text": "Cihaza alışma sürecinizi takip eder, düzenli kontrollerde cihazınızın bakımını yaparız."
+      }
+    ],
+    "bringTitle": "Yanınızda getirmeniz gerekenler",
+    "bring": [
+      "Kimlik kartınız",
+      "Hastaneden aldığınız işitme cihazı raporu",
+      "Varsa daha önce kullandığınız işitme cihazı ve eski test sonuçlarınız"
+    ],
+    "notesTitle": "Bilmeniz gerekenler",
+    "notes": [
+      "SGK, rapora göre belirlenen tutarı öder. Seçilen cihazın fiyatı bu tutarın üzerindeyse aradaki farkı hasta öder.",
+      "SGK katkısıyla yeni cihaz alabilmek için önceki cihazın üzerinden SGK'nın belirlediği sürenin geçmiş olması gerekir. Güncel süreyi ve katkı tutarını bize sorabilirsiniz.",
+      "Raporun geçerlilik süresi sınırlıdır; raporunuzu aldıktan sonra merkezimize gecikmeden başvurmanızı öneririz."
+    ],
+    "faqTitle": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "SGK işitme cihazının tamamını öder mi?",
+        "a": "SGK, rapora göre belirlenen tutarı öder. Seçtiğiniz cihazın fiyatı bu tutarı aşarsa aradaki farkı siz ödersiniz. Size uygun seçenekleri ve fiyatları merkezimizde birlikte değerlendiriyoruz."
+      },
+      {
+        "q": "SGK raporunu nereden alırım?",
+        "a": "Raporu hastanede kulak burun boğaz (KBB) uzmanı, muayene ve işitme testinden sonra düzenler. Raporunuzla SGK anlaşmalı merkezimize başvurabilirsiniz."
+      },
+      {
+        "q": "SGK işlemleri için ayrıca bir yere gitmem gerekiyor mu?",
+        "a": "Hayır. Raporunuzla merkezimize geldiğinizde SGK sistemindeki işlemleri biz yapıyoruz."
+      },
+      {
+        "q": "Taksitle ödeme yapabilir miyim?",
+        "a": "SGK katkısının dışında kalan tutar için ödeme seçeneklerini merkezimizde sizinle birlikte planlıyoruz. Ayrıntılar için bizi arayabilirsiniz."
+      }
+    ]
   },
   "onlineTest": {
     "seo": {

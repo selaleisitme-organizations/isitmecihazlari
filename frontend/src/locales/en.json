@@ -328,7 +328,61 @@
       "deviceEligibility": "Hearing devices covered by SGK are provided subject to the patient's medical report and SGK approval.",
       "contributionDetails": "For detailed information about SGK reimbursement amounts and which hearing devices are covered, please contact us or visit our center."
     },
-    "contactButton": "Contact Us"
+    "contactButton": "Contact Us",
+    "stepsTitle": "How do you get a hearing aid with SGK?",
+    "steps": [
+      {
+        "title": "Hospital examination and report",
+        "text": "An ear, nose and throat (ENT) specialist examines you and a hearing test is done. If you need a hearing aid, a medical report is issued."
+      },
+      {
+        "title": "Coming to our centre",
+        "text": "You bring your report to our SGK-contracted centre. We assess your hearing again and decide together which type of hearing aid suits you."
+      },
+      {
+        "title": "SGK procedures",
+        "text": "Our centre records your report in the SGK system and handles the approval; you do not need to go to SGK yourself."
+      },
+      {
+        "title": "Ear mould and fitting",
+        "text": "We take an impression of your ear, have your custom mould made, and fit your hearing aid adjusted to your hearing."
+      },
+      {
+        "title": "Adaptation and care",
+        "text": "We follow your adaptation and service your hearing aid at regular check-ups."
+      }
+    ],
+    "bringTitle": "What to bring",
+    "bring": [
+      "Your identity card",
+      "The hearing aid report from the hospital",
+      "Your previous hearing aid and earlier test results, if you have them"
+    ],
+    "notesTitle": "Good to know",
+    "notes": [
+      "SGK pays the amount set according to your report. If the chosen hearing aid costs more, the patient pays the difference.",
+      "To receive SGK support for a new hearing aid, the period set by SGK must have passed since the previous one. Ask us for the current period and support amount.",
+      "A report is valid for a limited time, so we recommend coming to our centre soon after you receive it."
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Does SGK pay for the whole hearing aid?",
+        "a": "SGK pays the amount set according to your report. If the hearing aid you choose costs more, you pay the difference. We go through the options and prices with you at our centre."
+      },
+      {
+        "q": "Where do I get the SGK report?",
+        "a": "An ear, nose and throat (ENT) specialist at a hospital issues the report after an examination and a hearing test. You can then come to our SGK-contracted centre with it."
+      },
+      {
+        "q": "Do I need to go anywhere else for the SGK procedures?",
+        "a": "No. When you come to our centre with your report, we handle the procedures in the SGK system."
+      },
+      {
+        "q": "Can I pay in instalments?",
+        "a": "We plan the payment of the amount not covered by SGK together with you at our centre. Call us for details."
+      }
+    ]
   },
   "onlineTest": {
     "seo": {
