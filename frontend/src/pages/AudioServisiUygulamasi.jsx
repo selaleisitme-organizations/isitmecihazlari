@@ -181,7 +181,7 @@ export default function AudioServis() {
           <div className="grid md:grid-cols-2 gap-10 items-center mb-24">
             <div>
               <img loading="lazy" decoding="async"
-                src="/images/products/wp3.png"
+                src="/images/products/hearing-aid-app.jpg"
                 alt={t("audioServis.app3.imageAlt")}
                 className="rounded-lg shadow-lg mx-auto w-full max-w-md object-cover"
               />
